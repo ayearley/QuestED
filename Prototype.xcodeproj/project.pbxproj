@@ -18,7 +18,6 @@
 		10975B8321A9B12700C1F573 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8121A9B12700C1F573 /* IntroViewController.xib */; };
 		10975B8621A9B54200C1F573 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10975B8421A9B54200C1F573 /* MapViewController.swift */; };
 		10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8521A9B54200C1F573 /* MapViewController.xib */; };
-		10975B8921A9B7EB00C1F573 /* s0105131_sc7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8821A9B7EB00C1F573 /* s0105131_sc7.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 		10975B8121A9B12700C1F573 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		10975B8421A9B54200C1F573 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		10975B8521A9B54200C1F573 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
-		10975B8821A9B7EB00C1F573 /* s0105131_sc7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = s0105131_sc7.jpeg; path = ../../../Desktop/s0105131_sc7.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +115,6 @@
 				10975B5921A9AB0800C1F573 /* Assets.xcassets */,
 				10975B5B21A9AB0800C1F573 /* LaunchScreen.storyboard */,
 				10975B5E21A9AB0800C1F573 /* Info.plist */,
-				10975B8821A9B7EB00C1F573 /* s0105131_sc7.jpeg */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -247,7 +244,6 @@
 				10975B5D21A9AB0800C1F573 /* LaunchScreen.storyboard in Resources */,
 				10975B5A21A9AB0800C1F573 /* Assets.xcassets in Resources */,
 				10975B5821A9AB0700C1F573 /* Main.storyboard in Resources */,
-				10975B8921A9B7EB00C1F573 /* s0105131_sc7.jpeg in Resources */,
 				10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */,
 				10975B8321A9B12700C1F573 /* IntroViewController.xib in Resources */,
 			);
