@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 class IntroViewController: UIViewController {
 
@@ -20,6 +21,18 @@ class IntroViewController: UIViewController {
     }
 
     @IBAction func toMap(_ sender: Any) {
+        guard let path = Bundle.main.path(forResource: "QuestED Video", ofType: "mov") else {
+            debugPrint("video.mp4 not found")
+            return
+        }
+        
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true, completion: {
+            player.play()
+        })
+        
         self.navigationController?.pushViewController(MapViewController(), animated: true)
     }
     
