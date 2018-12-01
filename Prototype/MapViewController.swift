@@ -24,7 +24,7 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Bundle.main.loadNibNamed("IntroMapController", owner: self, options: nil)
+        Bundle.main.loadNibNamed("MapViewController", owner: self, options: nil)
         
         let buttonLevel1 = UIButton(type: .custom)
         buttonLevel1.frame = CGRect(x: level1x, y: level1y, width: buttonWidth, height: buttonHeight)
