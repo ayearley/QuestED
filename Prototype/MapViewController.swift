@@ -30,6 +30,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         Bundle.main.loadNibNamed("MapViewController", owner: self, options: nil)
         
+        
         let buttonLevel1 = UIButton(type: .custom)
         buttonLevel1.frame = CGRect(x: Double(screenSize.width)/7.35, y: Double(screenSize.height)/4.3, width: Double(buttonWidth), height: Double(buttonHeight))
         buttonLevel1.layer.cornerRadius = 0.5*buttonLevel1.bounds.size.width
@@ -55,6 +56,21 @@ class MapViewController: UIViewController {
         view.addSubview(buttonLevel3)
         // Do any additional setup after loading the view.
     }
+
+    /*func addBackground() {
+        // screen width and height:
+        let width = screenSize.width
+        let height = screenSize.height
+        
+        let imageViewBackground = UIImage(frame: CGRect(0, 0, width, height))
+        imageViewBackground.image = UIImage(named: "YOUR IMAGE NAME GOES HERE")
+        
+        // you can change the content mode:
+        imageViewBackground.contentMode = UIViewContentMode.scaleAspectFill
+        
+        self.addSubview(imageViewBackground)
+        self.sendSubviewToBack(imageViewBackground)
+    }*/
     
     @objc func buttonPressed(){
         // print("that was easy")
