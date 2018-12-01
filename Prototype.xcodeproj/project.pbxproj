@@ -90,9 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		027ECDE021B305D00026E34E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		10975B4621A9AB0700C1F573 = {
 			isa = PBXGroup;
 			children = (
+				027ECDE021B305D00026E34E /* Assets */,
 				10975B5121A9AB0700C1F573 /* Prototype */,
 				10975B6621A9AB0800C1F573 /* PrototypeTests */,
 				10975B7121A9AB0800C1F573 /* PrototypeUITests */,
