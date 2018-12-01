@@ -19,6 +19,7 @@
 		10975B8621A9B54200C1F573 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10975B8421A9B54200C1F573 /* MapViewController.swift */; };
 		10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8521A9B54200C1F573 /* MapViewController.xib */; };
 		10975B8921A9B7EB00C1F573 /* s0105131_sc7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8821A9B7EB00C1F573 /* s0105131_sc7.jpeg */; };
+		B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7221B2FDC7001FBA42 /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		10975B8421A9B54200C1F573 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		10975B8521A9B54200C1F573 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		10975B8821A9B7EB00C1F573 /* s0105131_sc7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = s0105131_sc7.jpeg; path = ../../../Desktop/s0105131_sc7.jpeg; sourceTree = "<group>"; };
+		B10A0A7221B2FDC7001FBA42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				10975B5B21A9AB0800C1F573 /* LaunchScreen.storyboard */,
 				10975B5E21A9AB0800C1F573 /* Info.plist */,
 				10975B8821A9B7EB00C1F573 /* s0105131_sc7.jpeg */,
+				B10A0A7221B2FDC7001FBA42 /* README.txt */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				10975B5821A9AB0700C1F573 /* Main.storyboard in Resources */,
 				10975B8921A9B7EB00C1F573 /* s0105131_sc7.jpeg in Resources */,
 				10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */,
+				B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */,
 				10975B8321A9B12700C1F573 /* IntroViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
