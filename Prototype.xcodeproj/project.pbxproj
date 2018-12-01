@@ -63,6 +63,7 @@
 		10975B8521A9B54200C1F573 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		B10A0A7221B2FDC7001FBA42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "QuestED Video.mov"; sourceTree = "<group>"; };
+		B10A0A7621B31262001FBA42 /* example.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = example.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +135,7 @@
 				10975B5B21A9AB0800C1F573 /* LaunchScreen.storyboard */,
 				10975B5E21A9AB0800C1F573 /* Info.plist */,
 				B10A0A7221B2FDC7001FBA42 /* README.txt */,
+				B10A0A7621B31262001FBA42 /* example.txt */,
 				B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */,
 			);
 			path = Prototype;

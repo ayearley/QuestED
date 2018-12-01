@@ -24,14 +24,16 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Bundle.main.loadNibNamed("IntroMapController", owner: self, options: nil)
+        Bundle.main.loadNibNamed("MapViewController", owner: self, options: nil)
         
         let buttonLevel1 = UIButton(type: .custom)
         buttonLevel1.frame = CGRect(x: level1x, y: level1y, width: buttonWidth, height: buttonHeight)
         buttonLevel1.layer.cornerRadius = 0.5*buttonLevel1.bounds.size.width
         buttonLevel1.clipsToBounds = true
         buttonLevel1.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
-        view.addSubview(buttonLevel1)
+        mapImage.addSubview(buttonLevel1)
+        
+        print(buttonLevel1.frame)
         // Do any additional setup after loading the view.
     }
     

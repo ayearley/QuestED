@@ -15,6 +15,19 @@ class IntroLevelViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    func readTextFile() {
+        if let filepath = Bundle.main.path(forResource: "example", ofType: "txt") {
+            do {
+                let contents = try String(contentsOfFile: filepath)
+                print(contents)
+            } catch {
+                debugPrint("contents of text file could not be loaded")
+            }
+        } else {
+            debugPrint("text file not found")
+        }
+    }
 
 
     /*
