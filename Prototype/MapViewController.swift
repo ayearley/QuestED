@@ -15,12 +15,12 @@ class MapViewController: UIViewController {
     //Load all of these from file instead of hard coding
     var buttonWidth = 50;
     var buttonHeight = 50;
-    var level1x = 485;
-    var level1y = 615;
-    var level2x = 200;
-    var level2y = 425;
-    var level3x = 395;
-    var level3y = 158;
+    var level1x = 45;
+    var level1y = 220;
+    var level2x = 245;
+    var level2y = 350;
+    var level3x = 120;
+    var level3y = 545;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,10 +30,25 @@ class MapViewController: UIViewController {
         buttonLevel1.frame = CGRect(x: level1x, y: level1y, width: buttonWidth, height: buttonHeight)
         buttonLevel1.layer.cornerRadius = 0.5*buttonLevel1.bounds.size.width
         buttonLevel1.clipsToBounds = true
+        buttonLevel1.setImage(UIImage(named:"easyButton.png"), for: .normal)
         buttonLevel1.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
-        mapImage.addSubview(buttonLevel1)
+        view.addSubview(buttonLevel1)
         
-        print(buttonLevel1.frame)
+        let buttonLevel2 = UIButton(type: .custom)
+        buttonLevel2.frame = CGRect(x: level2x, y: level2y, width: buttonWidth, height: buttonHeight)
+        buttonLevel2.layer.cornerRadius = 0.5*buttonLevel2.bounds.size.width
+        buttonLevel2.clipsToBounds = true
+        buttonLevel2.setImage(UIImage(named:"easyButton.png"), for: .normal)
+        buttonLevel2.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
+        view.addSubview(buttonLevel2)
+        
+        let buttonLevel3 = UIButton(type: .custom)
+        buttonLevel3.frame = CGRect(x: level3x, y: level3y, width: buttonWidth, height: buttonHeight)
+        buttonLevel3.layer.cornerRadius = 0.5*buttonLevel3.bounds.size.width
+        buttonLevel3.clipsToBounds = true
+        buttonLevel3.setImage(UIImage(named:"easyButton.png"), for: .normal)
+        buttonLevel3.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
+        view.addSubview(buttonLevel3)
         // Do any additional setup after loading the view.
     }
     
