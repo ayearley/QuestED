@@ -53,7 +53,8 @@ class MapViewController: UIViewController {
     }
     
     @objc func buttonPressed(){
-        print("that was easy")
+        // print("that was easy")
+        self.navigationController?.pushViewController(IntroLevelViewController(), animated: true)
     }
     
     /*

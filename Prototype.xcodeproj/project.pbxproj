@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		106F5B4F21B312E800CCBBD2 /* Jacob Z is a Bitch.txt in Resources */ = {isa = PBXBuildFile; fileRef = 106F5B4E21B312E800CCBBD2 /* Jacob Z is a Bitch.txt */; };
 		10879C6A21B3063B001D7F0B /* IntroLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10879C6821B3063B001D7F0B /* IntroLevelViewController.swift */; };
 		10879C6B21B3063B001D7F0B /* IntroLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10879C6921B3063B001D7F0B /* IntroLevelViewController.xib */; };
 		10975B5321A9AB0700C1F573 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10975B5221A9AB0700C1F573 /* AppDelegate.swift */; };
@@ -23,6 +22,7 @@
 		10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8521A9B54200C1F573 /* MapViewController.xib */; };
 		B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7221B2FDC7001FBA42 /* README.txt */; };
 		B10A0A7521B30C2E001FBA42 /* QuestED Video.mov in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */; };
+		B10A0A7721B31415001FBA42 /* example.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7621B31262001FBA42 /* example.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		106F5B4E21B312E800CCBBD2 /* Jacob Z is a Bitch.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Jacob Z is a Bitch.txt"; sourceTree = "<group>"; };
 		10879C6821B3063B001D7F0B /* IntroLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroLevelViewController.swift; sourceTree = "<group>"; };
 		10879C6921B3063B001D7F0B /* IntroLevelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroLevelViewController.xib; sourceTree = "<group>"; };
 		10975B4F21A9AB0700C1F573 /* Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +138,6 @@
 				B10A0A7221B2FDC7001FBA42 /* README.txt */,
 				B10A0A7621B31262001FBA42 /* example.txt */,
 				B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */,
-				106F5B4E21B312E800CCBBD2 /* Jacob Z is a Bitch.txt */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -266,9 +264,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10A0A7721B31415001FBA42 /* example.txt in Resources */,
 				10879C6B21B3063B001D7F0B /* IntroLevelViewController.xib in Resources */,
 				10975B5D21A9AB0800C1F573 /* LaunchScreen.storyboard in Resources */,
-				106F5B4F21B312E800CCBBD2 /* Jacob Z is a Bitch.txt in Resources */,
 				10975B5A21A9AB0800C1F573 /* Assets.xcassets in Resources */,
 				B10A0A7521B30C2E001FBA42 /* QuestED Video.mov in Resources */,
 				10975B5821A9AB0700C1F573 /* Main.storyboard in Resources */,
