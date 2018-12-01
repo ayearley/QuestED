@@ -12,13 +12,17 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var mapImage: UIImageView!
     
+    let screenSize = UIScreen.main.bounds
+   // let screenWidth = screenSize.width
+   // let screenHeight = screenSize.height
+    
     //Load all of these from file instead of hard coding
     var buttonWidth = 50;
     var buttonHeight = 50;
     var level1x = 45;
     var level1y = 220;
-    var level2x = 245;
-    var level2y = 350;
+    //var level2x = 245;
+    //var level2y = 350;
     var level3x = 120;
     var level3y = 545;
     
@@ -35,7 +39,7 @@ class MapViewController: UIViewController {
         view.addSubview(buttonLevel1)
         
         let buttonLevel2 = UIButton(type: .custom)
-        buttonLevel2.frame = CGRect(x: level2x, y: level2y, width: buttonWidth, height: buttonHeight)
+        buttonLevel2.frame = CGRect(x: Double(screenSize.width)/40, y: Double(screenSize.height)/15, width: Double(buttonWidth), height: Double(buttonHeight))
         buttonLevel2.layer.cornerRadius = 0.5*buttonLevel2.bounds.size.width
         buttonLevel2.clipsToBounds = true
         buttonLevel2.setImage(UIImage(named:"easyButton.png"), for: .normal)
