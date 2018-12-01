@@ -30,8 +30,25 @@ class MapViewController: UIViewController {
         buttonLevel1.frame = CGRect(x: level1x, y: level1y, width: buttonWidth, height: buttonHeight)
         buttonLevel1.layer.cornerRadius = 0.5*buttonLevel1.bounds.size.width
         buttonLevel1.clipsToBounds = true
+        buttonLevel1.setImage(UIImage(named:"easyButton.png"), for: .normal)
         buttonLevel1.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
         view.addSubview(buttonLevel1)
+        
+        let buttonLevel2 = UIButton(type: .custom)
+        buttonLevel2.frame = CGRect(x: level2x, y: level2y, width: buttonWidth, height: buttonHeight)
+        buttonLevel2.layer.cornerRadius = 0.5*buttonLevel2.bounds.size.width
+        buttonLevel2.clipsToBounds = true
+        buttonLevel2.setImage(UIImage(named:"easyButton.png"), for: .normal)
+        buttonLevel2.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
+        view.addSubview(buttonLevel2)
+        
+        let buttonLevel3 = UIButton(type: .custom)
+        buttonLevel3.frame = CGRect(x: level3x, y: level3y, width: buttonWidth, height: buttonHeight)
+        buttonLevel3.layer.cornerRadius = 0.5*buttonLevel3.bounds.size.width
+        buttonLevel3.clipsToBounds = true
+        buttonLevel3.setImage(UIImage(named:"easyButton.png"), for: .normal)
+        buttonLevel3.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
+        view.addSubview(buttonLevel3)
         // Do any additional setup after loading the view.
     }
     
