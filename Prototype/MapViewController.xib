@@ -33,7 +33,7 @@
                 <constraint firstItem="1q3-sr-3RA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yzN-uy-ztR"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="122" y="47"/>
+            <point key="canvasLocation" x="121.5" y="46.5"/>
         </view>
     </objects>
     <resources>

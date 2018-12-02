@@ -13,9 +13,13 @@ class IntroViewController: UIViewController {
 
     @IBOutlet weak var WelcomeLabel: UILabel!
     
+     let screenSize = UIScreen.main.bounds
+    
     override func viewDidLoad() {
         super.viewDidLoad()
            Bundle.main.loadNibNamed("IntroViewController", owner: self, options: nil)
+        self.WelcomeLabel.frame.origin.x = screenSize.width/2;
+        self.WelcomeLabel.frame.origin.y = screenSize.height/2;
         self.WelcomeLabel.text = "Welcome to QuestED";
         // Do any additional setup after loading the view.
     }
