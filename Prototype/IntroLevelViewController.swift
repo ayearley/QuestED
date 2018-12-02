@@ -10,6 +10,8 @@ import UIKit
 
 class IntroLevelViewController: UIViewController {
 
+    @IBOutlet weak var introLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,15 @@ class IntroLevelViewController: UIViewController {
         if let filepath = Bundle.main.path(forResource: "example", ofType: "txt") {
             do {
                 let contents = try String(contentsOfFile: filepath)
-                print(contents)
+                
+                let introRange = contents.range(of: "*INTRO*:\n")
+                let cadeucesRange = contents.range(of: "*CADEUCES*:\n")
+                
+                let introText = contents[introRange!.upperBound..<cadeucesRange!.lowerBound]
+                
+                print(introText)
+                
+                introLabel.text = String(introText)
             } catch {
                 debugPrint("contents of text file could not be loaded")
             }

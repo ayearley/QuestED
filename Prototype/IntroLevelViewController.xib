@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroLevelViewController" customModule="Prototype" customModuleProvider="target">
             <connections>
+                <outlet property="introLabel" destination="jpF-z1-jfB" id="lyp-1O-MUd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,8 +20,22 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpF-z1-jfB">
+                    <rect key="frame" x="0.0" y="448" width="414" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jpF-z1-jfB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="MFV-f9-P4u"/>
+                <constraint firstItem="jpF-z1-jfB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="c5a-Eo-0jz"/>
+                <constraint firstItem="jpF-z1-jfB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cpE-oJ-y8t"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
         </view>
     </objects>
 </document>

@@ -1,5 +1,10 @@
+*INTRO*:
 The King and Queen have called upon you, (NAME), to save the Kingdom of Panacea. But fear not, you will not venture on this journey alone! The brilliant Royal Doctor will accompany you along the way and help you on your quest.
 
 
 **Doctor will Introduce Himself Here*
 “Hello, (NAME)! Thank goodness you have arrived to save the kingdom. I am here to be your guide through Panacea. I have trained for many years to develop my skills to help you on your journey, but you too must prepare for this adventure. First we must test your physical strength as this is a long and tiring journey.”
+
+
+
+*CADEUCES*:
