@@ -38,6 +38,29 @@ class IntroViewController: UIViewController {
         })
         
         self.navigationController?.pushViewController(MapViewController(), animated: true)
+        
+        readTextFile();
+    }
+    
+    func readTextFile() {
+        if let filepath = Bundle.main.path(forResource: "example", ofType: "txt") {
+            do {
+                let contents = try String(contentsOfFile: filepath)
+                
+                let introRange = contents.range(of: "*INTRO*:\n")
+                let cadeucesRange = contents.range(of: "*CADEUCES*:\n")
+                
+                let introText = contents[introRange!.upperBound..<cadeucesRange!.lowerBound]
+                
+                print(introText)
+                
+                // introLabel.text = String(introText)
+            } catch {
+                debugPrint("contents of text file could not be loaded")
+            }
+        } else {
+            debugPrint("text file not found")
+        }
     }
     
     /*
