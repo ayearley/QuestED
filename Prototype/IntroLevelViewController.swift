@@ -12,15 +12,33 @@ class IntroLevelViewController: UIViewController {
 
     @IBOutlet weak var introLabel: UILabel!
     
+    var textFile: String
+    var levelRunner: LevelRunner
+    
+    init(textIn: String, runner: LevelRunner) {
+        textFile = textIn
+        levelRunner = runner
+        print("Text file: \(textFile)")
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.textFile = ""
+        self.levelRunner = LevelRunner(textIn: self.textFile)
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         readTextFile()
+        
+        levelRunner.cadeuces()
     }
     
     func readTextFile() {
-        if let filepath = Bundle.main.path(forResource: "example", ofType: "txt") {
+        if let filepath = Bundle.main.path(forResource: textFile, ofType: "txt") {
             do {
                 let contents = try String(contentsOfFile: filepath)
                 

@@ -7,30 +7,37 @@
 //
 
 import Foundation
+import UIKit
 
-//instantiated with a text file for intro, cadeuces, and game
-let String levelText;
-//constructor
-init(textIn: String){
-    levelText = textIn;
-    runLevel();
-}
-
-func runLevel(){
-    while(levelQueue not emtpy){
-        run next screen;
+class LevelRunner {
+    
+    //instantiated with a text file for intro, cadeuces, and game
+    var levelText: String
+    
+    init(textIn: String){
+        levelText = textIn
+        
+        print(levelText)
+        
+        runLevel()
     }
-}
+    
+    func runLevel(){
+    }
+    
+    //create the introView
+    func intro(){
+        //Replace this with code that creates a screen instead of running self.navigationController?.pushViewController(IntroLevelViewController(), animated: true)
+        (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(IntroLevelViewController(textIn: levelText, runner: self), animated: true)
 
-//create the introView
-func intro(){
-   //Replace this with code that creates a screen instead of running self.navigationController?.pushViewController(IntroLevelViewController(), animated: true)
-}
-
-func cadeuces(){
-    //create cadeuces view controller
-}
-
-func game(){
-    //create game view controller
+    }
+    
+    func cadeuces(){
+        //create cadeuces view controller
+    }
+    
+    func game(){
+        //create game view controller
+        print("Level text: \(levelText)")
+    }
 }

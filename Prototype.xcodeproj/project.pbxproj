@@ -23,7 +23,7 @@
 		10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8521A9B54200C1F573 /* MapViewController.xib */; };
 		B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7221B2FDC7001FBA42 /* README.txt */; };
 		B10A0A7521B30C2E001FBA42 /* QuestED Video.mov in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */; };
-		B10A0A7721B31415001FBA42 /* example.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7621B31262001FBA42 /* example.txt */; };
+		B10A0A7721B31415001FBA42 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7621B31262001FBA42 /* level1.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,7 @@
 		10975B8521A9B54200C1F573 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		B10A0A7221B2FDC7001FBA42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "QuestED Video.mov"; sourceTree = "<group>"; };
-		B10A0A7621B31262001FBA42 /* example.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = example.txt; sourceTree = "<group>"; };
+		B10A0A7621B31262001FBA42 /* level1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 				10975B5B21A9AB0800C1F573 /* LaunchScreen.storyboard */,
 				10975B5E21A9AB0800C1F573 /* Info.plist */,
 				B10A0A7221B2FDC7001FBA42 /* README.txt */,
-				B10A0A7621B31262001FBA42 /* example.txt */,
+				B10A0A7621B31262001FBA42 /* level1.txt */,
 				B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */,
 				026F896C21B3328E009C66A6 /* LevelRunner.swift */,
 			);
@@ -267,7 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10A0A7721B31415001FBA42 /* example.txt in Resources */,
+				B10A0A7721B31415001FBA42 /* level1.txt in Resources */,
 				10879C6B21B3063B001D7F0B /* IntroLevelViewController.xib in Resources */,
 				10975B5D21A9AB0800C1F573 /* LaunchScreen.storyboard in Resources */,
 				10975B5A21A9AB0800C1F573 /* Assets.xcassets in Resources */,

@@ -10,20 +10,23 @@ import UIKit
 import AVKit
 
 class IntroViewController: UIViewController {
-
+    
     @IBOutlet weak var WelcomeLabel: UILabel!
     
-     let screenSize = UIScreen.main.bounds
+    let screenSize = UIScreen.main.bounds
     
     override func viewDidLoad() {
         super.viewDidLoad()
-           Bundle.main.loadNibNamed("IntroViewController", owner: self, options: nil)
+        
+        (UIApplication.shared.delegate as! AppDelegate).navController = self.navigationController
+        
+        Bundle.main.loadNibNamed("IntroViewController", owner: self, options: nil)
         self.WelcomeLabel.frame.origin.x = screenSize.width/2;
         self.WelcomeLabel.frame.origin.y = screenSize.height/2;
         self.WelcomeLabel.text = "Welcome to QuestED";
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func toMap(_ sender: Any) {
         guard let path = Bundle.main.path(forResource: "QuestED Video", ofType: "mov") else {
             debugPrint("video.mp4 not found")
@@ -64,13 +67,13 @@ class IntroViewController: UIViewController {
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

@@ -32,6 +32,7 @@ class MapViewController: UIViewController {
         
         
         let buttonLevel1 = UIButton(type: .custom)
+        buttonLevel1.tag = 1
         buttonLevel1.frame = CGRect(x: Double(screenSize.width)/7.35, y: Double(screenSize.height)/4.3, width: Double(buttonWidth), height: Double(buttonHeight))
         buttonLevel1.layer.cornerRadius = 0.5*buttonLevel1.bounds.size.width
         buttonLevel1.clipsToBounds = true
@@ -40,6 +41,7 @@ class MapViewController: UIViewController {
         view.addSubview(buttonLevel1)
         
         let buttonLevel2 = UIButton(type: .custom)
+        buttonLevel2.tag = 2
         buttonLevel2.frame = CGRect(x: Double(screenSize.width)/1.63, y: Double(screenSize.height)/2.48, width: Double(buttonWidth), height: Double(buttonHeight))
         buttonLevel2.layer.cornerRadius = 0.5*buttonLevel2.bounds.size.width
         buttonLevel2.clipsToBounds = true
@@ -48,6 +50,7 @@ class MapViewController: UIViewController {
         view.addSubview(buttonLevel2)
         
         let buttonLevel3 = UIButton(type: .custom)
+        buttonLevel3.tag = 3
         buttonLevel3.frame = CGRect(x: Double(screenSize.width)/4.42, y: Double(screenSize.height)/1.65, width: Double(buttonWidth), height: Double(buttonHeight))
         buttonLevel3.layer.cornerRadius = 0.5*buttonLevel3.bounds.size.width
         buttonLevel3.clipsToBounds = true
@@ -74,9 +77,11 @@ class MapViewController: UIViewController {
         self.sendSubviewToBack(imageViewBackground)
     }*/
     
-    @objc func buttonPressed(){
+    @objc func buttonPressed(sender: UIButton){
         // print("that was easy")
-        self.navigationController?.pushViewController(IntroLevelViewController(), animated: true)
+        print(sender.tag)        
+        var levelRunner = LevelRunner(textIn: "level\(sender.tag)")
+        levelRunner.intro()
     }
     
     func readTextFile() {
