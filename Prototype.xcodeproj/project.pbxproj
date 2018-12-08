@@ -24,6 +24,9 @@
 		B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7221B2FDC7001FBA42 /* README.txt */; };
 		B10A0A7521B30C2E001FBA42 /* QuestED Video.mov in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */; };
 		B10A0A7721B31415001FBA42 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7621B31262001FBA42 /* level1.txt */; };
+		B187219521BC49D1007862FA /* CadeucesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187219321BC49D1007862FA /* CadeucesViewController.swift */; };
+		B187219621BC49D1007862FA /* CadeucesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B187219421BC49D1007862FA /* CadeucesViewController.xib */; };
+		B187219821BC4C34007862FA /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = B187219721BC4BEB007862FA /* level2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		B10A0A7221B2FDC7001FBA42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "QuestED Video.mov"; sourceTree = "<group>"; };
 		B10A0A7621B31262001FBA42 /* level1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		B187219321BC49D1007862FA /* CadeucesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadeucesViewController.swift; sourceTree = "<group>"; };
+		B187219421BC49D1007862FA /* CadeucesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CadeucesViewController.xib; sourceTree = "<group>"; };
+		B187219721BC4BEB007862FA /* level2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,12 +139,15 @@
 				10975B8521A9B54200C1F573 /* MapViewController.xib */,
 				10879C6821B3063B001D7F0B /* IntroLevelViewController.swift */,
 				10879C6921B3063B001D7F0B /* IntroLevelViewController.xib */,
+				B187219321BC49D1007862FA /* CadeucesViewController.swift */,
+				B187219421BC49D1007862FA /* CadeucesViewController.xib */,
 				10975B5621A9AB0700C1F573 /* Main.storyboard */,
 				10975B5921A9AB0800C1F573 /* Assets.xcassets */,
 				10975B5B21A9AB0800C1F573 /* LaunchScreen.storyboard */,
 				10975B5E21A9AB0800C1F573 /* Info.plist */,
 				B10A0A7221B2FDC7001FBA42 /* README.txt */,
 				B10A0A7621B31262001FBA42 /* level1.txt */,
+				B187219721BC4BEB007862FA /* level2.txt */,
 				B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */,
 				026F896C21B3328E009C66A6 /* LevelRunner.swift */,
 			);
@@ -267,11 +276,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B187219821BC4C34007862FA /* level2.txt in Resources */,
 				B10A0A7721B31415001FBA42 /* level1.txt in Resources */,
 				10879C6B21B3063B001D7F0B /* IntroLevelViewController.xib in Resources */,
 				10975B5D21A9AB0800C1F573 /* LaunchScreen.storyboard in Resources */,
 				10975B5A21A9AB0800C1F573 /* Assets.xcassets in Resources */,
 				B10A0A7521B30C2E001FBA42 /* QuestED Video.mov in Resources */,
+				B187219621BC49D1007862FA /* CadeucesViewController.xib in Resources */,
 				10975B5821A9AB0700C1F573 /* Main.storyboard in Resources */,
 				10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */,
 				B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */,
@@ -304,6 +315,7 @@
 				10975B5521A9AB0700C1F573 /* ViewController.swift in Sources */,
 				026F896D21B3328E009C66A6 /* LevelRunner.swift in Sources */,
 				10879C6A21B3063B001D7F0B /* IntroLevelViewController.swift in Sources */,
+				B187219521BC49D1007862FA /* CadeucesViewController.swift in Sources */,
 				10975B5321A9AB0700C1F573 /* AppDelegate.swift in Sources */,
 				10975B8621A9B54200C1F573 /* MapViewController.swift in Sources */,
 			);

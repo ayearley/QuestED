@@ -28,12 +28,13 @@ class LevelRunner {
     //create the introView
     func intro(){
         //Replace this with code that creates a screen instead of running self.navigationController?.pushViewController(IntroLevelViewController(), animated: true)
-        (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(IntroLevelViewController(textIn: levelText, runner: self), animated: true)
+        (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(IntroLevelViewController(runner: self), animated: true)
 
     }
     
     func cadeuces(){
         //create cadeuces view controller
+        (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(CadeucesViewController(runner: self), animated: true)
     }
     
     func game(){

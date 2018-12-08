@@ -1,31 +1,15 @@
 //
-//  IntroLevelViewController.swift
+//  CadeucesViewController.swift
 //  Prototype
 //
-//  Created by Alex Yearley on 12/1/18.
+//  Created by Jacob Zeitlin on 12/8/18.
 //  Copyright © 2018 Alex Yearley. All rights reserved.
 //
 
 import UIKit
 
-class IntroLevelViewController: UIViewController {
+class CadeucesViewController: UIViewController {
 
-    @IBOutlet weak var introLabel: UILabel!
-    
-    let screenSize = UIScreen.main.bounds
-    // let screenWidth = screenSize.width
-    // let screenHeight = screenSize.height
-    
-    //Load all of these from file instead of hard coding
-    var buttonWidth = 50;
-    var buttonHeight = 50;
-    //var level1x = 45;
-    //var level1y = 220;
-    //var level2x = 245;
-    //var level2y = 350;
-    //var level3x = 120;
-    //var level3y = 545;
-    
     var textFile: String
     var levelRunner: LevelRunner
     
@@ -42,26 +26,12 @@ class IntroLevelViewController: UIViewController {
         super.init(coder: aDecoder)
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         readTextFile()
-        
-        let buttonLevel1 = UIButton(type: .custom)
-        buttonLevel1.tag = 1
-        buttonLevel1.frame = CGRect(x: Double(screenSize.width)/7.35, y: Double(screenSize.height)/4.3, width: Double(buttonWidth), height: Double(buttonHeight))
-        buttonLevel1.layer.cornerRadius = 0.5*buttonLevel1.bounds.size.width
-        buttonLevel1.clipsToBounds = true
-        buttonLevel1.setImage(UIImage(named:"easyButton.png"), for: .normal)
-        buttonLevel1.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
-        view.addSubview(buttonLevel1)
-        
-    }
-    
-    @objc func buttonPressed(sender: UIButton){
-        // print("that was easy")
-        self.levelRunner.cadeuces()
     }
     
     func readTextFile() {
@@ -69,14 +39,14 @@ class IntroLevelViewController: UIViewController {
             do {
                 let contents = try String(contentsOfFile: filepath)
                 
-                let introRange = contents.range(of: "*INTRO*:\n")
                 let cadeucesRange = contents.range(of: "*CADEUCES*:\n")
+                let endRange = contents.range(of: "*END*")
                 
-                let introText = contents[introRange!.upperBound..<cadeucesRange!.lowerBound]
+                let cadeucesText = contents[cadeucesRange!.upperBound..<endRange!.lowerBound]
                 
-                print(introText)
+                print(cadeucesText)
                 
-                introLabel.text = String(introText)
+                // introLabel.text = String(introText)
             } catch {
                 debugPrint("contents of text file could not be loaded")
             }
