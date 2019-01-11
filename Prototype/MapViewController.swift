@@ -105,6 +105,10 @@ class MapViewController: UIViewController {
         }
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
+    
     /*
     // MARK: - Navigation
 

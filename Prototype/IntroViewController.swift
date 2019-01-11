@@ -66,6 +66,10 @@ class IntroViewController: UIViewController {
         }
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
+    
     /*
      // MARK: - Navigation
      

@@ -84,6 +84,10 @@ class IntroLevelViewController: UIViewController {
             debugPrint("text file not found")
         }
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
 
 
     /*
