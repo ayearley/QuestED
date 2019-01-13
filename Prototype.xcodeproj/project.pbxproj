@@ -71,7 +71,7 @@
 		1044E5C121EBF48E003EEC1A /* level5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level5.txt; sourceTree = "<group>"; };
 		1044E5C221EBF48E003EEC1A /* level11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level11.txt; sourceTree = "<group>"; };
 		1044E5CC21EBF5D1003EEC1A /* level13.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level13.txt; sourceTree = "<group>"; };
-		1044E5CE21EBF601003EEC1A /* level14.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = level14.txt; path = Prototype/level14.txt; sourceTree = "<group>"; };
+		1044E5CE21EBF601003EEC1A /* level14.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level14.txt; sourceTree = "<group>"; };
 		10879C6821B3063B001D7F0B /* IntroLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroLevelViewController.swift; sourceTree = "<group>"; };
 		10879C6921B3063B001D7F0B /* IntroLevelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroLevelViewController.xib; sourceTree = "<group>"; };
 		10975B4F21A9AB0700C1F573 /* Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +139,6 @@
 				10975B6621A9AB0800C1F573 /* PrototypeTests */,
 				10975B7121A9AB0800C1F573 /* PrototypeUITests */,
 				10975B5021A9AB0700C1F573 /* Products */,
-				1044E5CE21EBF601003EEC1A /* level14.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,6 +183,7 @@
 				1044E5C221EBF48E003EEC1A /* level11.txt */,
 				1044E5BF21EBF48E003EEC1A /* level12.txt */,
 				1044E5CC21EBF5D1003EEC1A /* level13.txt */,
+				1044E5CE21EBF601003EEC1A /* level14.txt */,
 				B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */,
 				026F896C21B3328E009C66A6 /* LevelRunner.swift */,
 			);
