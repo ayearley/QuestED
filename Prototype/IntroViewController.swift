@@ -29,7 +29,6 @@ class IntroViewController: UIViewController {
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         self.view.backgroundColor = UIColor(patternImage: image)
-    
         // Do any additional setup after loading the view.
     }
     
