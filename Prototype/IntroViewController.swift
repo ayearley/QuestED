@@ -24,6 +24,11 @@ class IntroViewController: UIViewController {
         self.WelcomeLabel.frame.origin.x = screenSize.width/2;
         self.WelcomeLabel.frame.origin.y = screenSize.height/2;
         self.WelcomeLabel.text = "Welcome to QuestED";
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "StartScreenBg")?.draw(in: self.view.bounds)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        self.view.backgroundColor = UIColor(patternImage: image)
         // Do any additional setup after loading the view.
     }
     
