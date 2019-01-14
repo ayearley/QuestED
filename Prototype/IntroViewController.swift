@@ -11,7 +11,7 @@ import AVKit
 
 class IntroViewController: UIViewController {
     
-    @IBOutlet weak var WelcomeLabel: UILabel!
+//     @IBOutlet weak var WelcomeLabel: UILabel!
     
     let screenSize = UIScreen.main.bounds
     
@@ -29,6 +29,7 @@ class IntroViewController: UIViewController {
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         self.view.backgroundColor = UIColor(patternImage: image)
+    
         // Do any additional setup after loading the view.
     }
     
