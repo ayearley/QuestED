@@ -13,6 +13,10 @@ class CadeucesViewController: UIViewController {
     var textFile: String
     var levelRunner: LevelRunner
     
+    let screenSize = UIScreen.main.bounds
+    
+    @IBOutlet weak var cadeucesLabel: UILabel!
+    
     init(runner: LevelRunner) {
         levelRunner = runner
         textFile = runner.levelText
@@ -32,6 +36,12 @@ class CadeucesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         readTextFile()
+        
+        let continueButton = UIButton(type: .custom)
+        continueButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10)
+        continueButton.setImage(UIImage(named: "continue.png"), for: .normal)
+        continueButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        view.addSubview(continueButton)
     }
     
     func readTextFile() {
@@ -46,7 +56,7 @@ class CadeucesViewController: UIViewController {
                 
                 print(cadeucesText)
                 
-                // introLabel.text = String(introText)
+                cadeucesLabel.text = String(cadeucesText)
             } catch {
                 debugPrint("contents of text file could not be loaded")
             }
@@ -58,7 +68,11 @@ class CadeucesViewController: UIViewController {
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .landscape
     }
-
+    
+    @objc func buttonPressed(sender: UIButton){
+        // print("that was easy")
+        self.levelRunner.map()
+    }
 
     /*
     // MARK: - Navigation

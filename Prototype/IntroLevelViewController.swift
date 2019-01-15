@@ -55,8 +55,13 @@ class IntroLevelViewController: UIViewController {
         buttonLevel1.clipsToBounds = true
         buttonLevel1.setImage(UIImage(named:"easyButton.png"), for: .normal)
         buttonLevel1.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
-        view.addSubview(buttonLevel1)
+        // view.addSubview(buttonLevel1)
         
+        let continueButton = UIButton(type: .custom)
+        continueButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10)
+        continueButton.setImage(UIImage(named: "continue.png"), for: .normal)
+        continueButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        view.addSubview(continueButton)
     }
     
     @objc func buttonPressed(sender: UIButton){

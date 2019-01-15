@@ -41,4 +41,8 @@ class LevelRunner {
         //create game view controller
         print("Level text: \(levelText)")
     }
+    
+    func map() {
+        (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(MapViewController(), animated: true)
+    }
 }

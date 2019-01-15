@@ -21,6 +21,10 @@
             <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lightbg" translatesAutoresizingMaskIntoConstraints="NO" id="EsU-t0-Ngj">
+                    <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpF-z1-jfB">
                     <rect key="frame" x="44" y="207" width="808" height="0.0"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -35,7 +39,10 @@
                 <constraint firstItem="jpF-z1-jfB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cpE-oJ-y8t"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+            <point key="canvasLocation" x="47.544642857142854" y="34.782608695652179"/>
         </view>
     </objects>
+    <resources>
+        <image name="lightbg" width="915" height="516"/>
+    </resources>
 </document>
