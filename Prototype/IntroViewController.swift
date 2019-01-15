@@ -11,7 +11,7 @@ import AVKit
 
 class IntroViewController: UIViewController {
     
-//     @IBOutlet weak var WelcomeLabel: UILabel!
+     //@IBOutlet weak var WelcomeLabel: UILabel!
     
     let screenSize = UIScreen.main.bounds
     
@@ -21,9 +21,14 @@ class IntroViewController: UIViewController {
         (UIApplication.shared.delegate as! AppDelegate).navController = self.navigationController
         
         Bundle.main.loadNibNamed("IntroViewController", owner: self, options: nil)
-        // self.WelcomeLabel.frame.origin.x = screenSize.width/2;
-        // self.WelcomeLabel.frame.origin.y = screenSize.height/2;
-        // self.WelcomeLabel.text = "Welcome to QuestED";
+//        self.WelcomeLabel.frame.origin.x = screenSize.width/2;
+//        self.WelcomeLabel.frame.origin.y = screenSize.height/2;
+//        self.WelcomeLabel.text = "Welcome to QuestED";
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "introbg")?.draw(in: self.view.bounds)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        self.view.backgroundColor = UIColor(patternImage: image)
         // Do any additional setup after loading the view.
     }
     
