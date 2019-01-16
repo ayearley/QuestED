@@ -13,6 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var navController: UINavigationController?
+    
+    var levelStatus = [Int]()
+    var currentLevel = 0
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -27,6 +30,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        var statusString: String = ""
+        
+        for i in levelStatus {
+            // statusString.append(Character(UnicodeScalar(i)!))
+            statusString = String(format: "%@%d", statusString, i)
+        }
+        
+        print("Writing \(statusString)")
+        
+        if let filepath = Bundle.main.path(forResource: "levelstatus", ofType: "txt") {
+            do {
+                try statusString.write(toFile: filepath, atomically: true, encoding: String.Encoding.utf8)
+            } catch {
+                print("Failed to write file.")
+            }
+        }
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
