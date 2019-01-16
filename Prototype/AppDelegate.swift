@@ -34,8 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var statusString: String = ""
         
         for i in levelStatus {
-            statusString.append(Character(UnicodeScalar(i)!))
+            // statusString.append(Character(UnicodeScalar(i)!))
+            statusString = String(format: "%@%d", statusString, i)
         }
+        
+        print("Writing \(statusString)")
         
         if let filepath = Bundle.main.path(forResource: "levelstatus", ofType: "txt") {
             do {
