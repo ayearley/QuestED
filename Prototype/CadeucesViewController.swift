@@ -71,6 +71,12 @@ class CadeucesViewController: UIViewController {
     
     @objc func buttonPressed(sender: UIButton){
         // print("that was easy")
+        (UIApplication.shared.delegate as! AppDelegate).levelStatus[((UIApplication.shared.delegate as! AppDelegate).currentLevel - 1)] = 2
+        
+        if ((UIApplication.shared.delegate as! AppDelegate).currentLevel != 20) {
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[(UIApplication.shared.delegate as! AppDelegate).currentLevel] = 1
+        }
+        
         self.levelRunner.map()
     }
 

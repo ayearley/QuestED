@@ -79,7 +79,8 @@ class MapViewController: UIViewController {
     
     @objc func buttonPressed(sender: UIButton){
         // print("that was easy")
-        print(sender.tag)        
+        print(sender.tag)
+        (UIApplication.shared.delegate as! AppDelegate).currentLevel = sender.tag
         var levelRunner = LevelRunner(textIn: "level\(sender.tag)")
         levelRunner.intro()
     }
