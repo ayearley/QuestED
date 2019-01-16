@@ -32,13 +32,11 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         Bundle.main.loadNibNamed("MapViewController", owner: self, options: nil)
         
-        
-        
         //Creates the level buttons for the map
-        createButton(tag:1, widthRatio:1.75, heightRatio:2.5, completed:true)
-        createButton(tag:2, widthRatio:1.88, heightRatio:1.9, completed:false)
-        createButton(tag:3, widthRatio:2.05, heightRatio:1.65, completed:false)
-        createButton(tag:4, widthRatio:2.28, heightRatio:1.45, completed:false)
+        createButton(tag:1, widthRatio:1.75, heightRatio:2.5, completed:(UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 1)
+        createButton(tag:2, widthRatio:1.88, heightRatio:1.9, completed:(UIApplication.shared.delegate as! AppDelegate).levelStatus[1] == 1)
+        createButton(tag:3, widthRatio:2.05, heightRatio:1.65, completed:(UIApplication.shared.delegate as! AppDelegate).levelStatus[2] == 1)
+        createButton(tag:4, widthRatio:2.28, heightRatio:1.45, completed:(UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 1)
         
         
         readTextFile();
