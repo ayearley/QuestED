@@ -26,42 +26,40 @@ class MapViewController: UIViewController {
     //var level3x = 120;
     //var level3y = 545;
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Bundle.main.loadNibNamed("MapViewController", owner: self, options: nil)
         
         
-        let buttonLevel1 = UIButton(type: .custom)
-        buttonLevel1.tag = 1
-        buttonLevel1.frame = CGRect(x: Double(screenSize.width)/7.35, y: Double(screenSize.height)/4.3, width: Double(buttonWidth), height: Double(buttonHeight))
-        buttonLevel1.layer.cornerRadius = 0.5*buttonLevel1.bounds.size.width
-        buttonLevel1.clipsToBounds = true
-        buttonLevel1.setImage(UIImage(named:"easyButton.png"), for: .normal)
-        buttonLevel1.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
-        view.addSubview(buttonLevel1)
         
-        let buttonLevel2 = UIButton(type: .custom)
-        buttonLevel2.tag = 2
-        buttonLevel2.frame = CGRect(x: Double(screenSize.width)/1.63, y: Double(screenSize.height)/2.48, width: Double(buttonWidth), height: Double(buttonHeight))
-        buttonLevel2.layer.cornerRadius = 0.5*buttonLevel2.bounds.size.width
-        buttonLevel2.clipsToBounds = true
-        buttonLevel2.setImage(UIImage(named:"easyButton.png"), for: .normal)
-        buttonLevel2.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
-        view.addSubview(buttonLevel2)
+        //Creates the level buttons for the map
+        createButton(tag:1, widthRatio:1.75, heightRatio:2.5, completed:true)
+        createButton(tag:2, widthRatio:1.88, heightRatio:1.9, completed:false)
+        createButton(tag:3, widthRatio:2.05, heightRatio:1.65, completed:false)
+        createButton(tag:4, widthRatio:2.28, heightRatio:1.45, completed:false)
         
-        let buttonLevel3 = UIButton(type: .custom)
-        buttonLevel3.tag = 3
-        buttonLevel3.frame = CGRect(x: Double(screenSize.width)/4.42, y: Double(screenSize.height)/1.65, width: Double(buttonWidth), height: Double(buttonHeight))
-        buttonLevel3.layer.cornerRadius = 0.5*buttonLevel3.bounds.size.width
-        buttonLevel3.clipsToBounds = true
-        buttonLevel3.setImage(UIImage(named:"easyButton.png"), for: .normal)
-        buttonLevel3.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
-        view.addSubview(buttonLevel3)
-        // Do any additional setup after loading the view.
         
         readTextFile();
     }
 
+    //This method creates a level button with the tag, x location, y location, and status as parameters
+    func createButton(tag:Int, widthRatio:Double, heightRatio:Double, completed:Bool){
+        let buttonLevel = UIButton(type: .custom)
+        buttonLevel.tag = tag
+        buttonLevel.frame = CGRect(x: Double(screenSize.width)/widthRatio, y: Double(screenSize.height)/heightRatio, width: Double(buttonWidth), height: Double(buttonHeight))
+        buttonLevel.layer.cornerRadius = 0.5*buttonLevel.bounds.size.width
+        buttonLevel.clipsToBounds = true
+        if(completed){
+            buttonLevel.setImage(UIImage(named:"easyButtonBlue.png"), for: .normal)
+        } else {
+            buttonLevel.setImage(UIImage(named:"easyButton.png"), for: .normal)
+        }
+        buttonLevel.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
+        view.addSubview(buttonLevel)
+    }
+    
     /*func addBackground() {
         // screen width and height:
         let width = screenSize.width
