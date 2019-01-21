@@ -26,6 +26,9 @@ class MapViewController: UIViewController {
     //var level3x = 120;
     //var level3y = 545;
     
+    var doctorImage: UIImageView = UIImageView()
+    var doctorLabel: UILabel = UILabel()
+    var state = 0
     
     
     override func viewDidLoad() {
@@ -44,6 +47,8 @@ class MapViewController: UIViewController {
         createButton(tag:4, widthRatio:2.28, heightRatio:1.45, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 2)
+        
+        createDoctor()
         
         
         readTextFile();
@@ -64,6 +69,33 @@ class MapViewController: UIViewController {
         }
         buttonLevel.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
         view.addSubview(buttonLevel)
+    }
+    
+    func createDoctor() {
+        doctorImage = UIImageView(image: UIImage(imageLiteralResourceName: "doctor.png"))
+        doctorImage.frame = CGRect(x: Double(screenSize.width) * 0.1, y: Double(screenSize.height * 0.4), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
+        view.addSubview(doctorImage)
+        doctorImage.isHidden = true
+        
+        doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.22, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
+        doctorLabel.backgroundColor = UIColor.white
+        view.addSubview(doctorLabel)
+        doctorLabel.isHidden = true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        switch state {
+        case 0:
+            doctorImage.isHidden = false
+            doctorLabel.isHidden = false
+        case 1:
+            doctorImage.isHidden = true
+            doctorLabel.isHidden = true
+        default:
+            doctorImage.isHidden = doctorImage.isHidden
+        }
+        
+        state += 1
     }
     
     /*func addBackground() {
