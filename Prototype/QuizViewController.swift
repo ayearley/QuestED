@@ -36,6 +36,12 @@ class QuizViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         readTextFile()
+        // set up the question title, choices and submit button
+        let questionTitle = UITextField();
+        questionTitle.text = "question1";
+        view.addSubview(questionTitle)
+        
+        
         
         let continueButton = UIButton(type: .custom)
         continueButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10)
