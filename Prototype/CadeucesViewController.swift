@@ -12,12 +12,14 @@ class CadeucesViewController: UIViewController {
 
     var textFile: String
     var levelRunner: LevelRunner
+    var quiz: Bool
     
     let screenSize = UIScreen.main.bounds
     
     @IBOutlet weak var cadeucesLabel: UILabel!
     
     init(runner: LevelRunner) {
+        self.quiz = false;
         levelRunner = runner
         textFile = runner.levelText
         print("Text file: \(textFile)")
@@ -25,6 +27,7 @@ class CadeucesViewController: UIViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
+        self.quiz = false;
         self.textFile = ""
         self.levelRunner = LevelRunner(textIn: self.textFile)
         super.init(coder: aDecoder)
@@ -53,6 +56,11 @@ class CadeucesViewController: UIViewController {
                 let endRange = contents.range(of: "*END*")
                 
                 let cadeucesText = contents[cadeucesRange!.upperBound..<endRange!.lowerBound]
+                if(cadeucesText.contains("*QUIZ*")){
+                    quiz = true;
+                    let endRange = contents.range(of: "*QUIZ*")
+                    let cadeucesText = contents[cadeucesRange!.upperBound..<endRange!.lowerBound]
+                }
                 
                 print(cadeucesText)
                 
@@ -76,8 +84,11 @@ class CadeucesViewController: UIViewController {
         if ((UIApplication.shared.delegate as! AppDelegate).currentLevel != 20) {
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[(UIApplication.shared.delegate as! AppDelegate).currentLevel] = 1
         }
-        
-        self.levelRunner.map()
+        if(quiz){
+            self.levelRunner.quiz()
+        } else {
+            self.levelRunner.map()
+        }
     }
 
     /*

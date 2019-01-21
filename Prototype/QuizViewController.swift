@@ -50,13 +50,36 @@ class QuizViewController: UIViewController {
                 let contents = try String(contentsOfFile: filepath)
                 
                 let quizRange = contents.range(of: "*QUIZ*:\n")
-                let endRange = contents.range(of: "*END*")
+                let endQuizRange = contents.range(of: "*END*")
                 
-                let quizText = contents[quizRange!.upperBound..<endRange!.lowerBound]
+                let quizText = contents[quizRange!.upperBound..<endQuizRange!.lowerBound]
                 
-                print(quizText)
+                let questionRange = contents.range(of: "*QUIZ*:\n")
+                let endQuestionRange = contents.range(of: "a1:")
                 
-                quizLabel.text = String(quizText)
+                let questionText = contents[questionRange!.upperBound..<endQuestionRange!.lowerBound]
+                
+                let a1Range = contents.range(of: "a1:")
+                let enda1Range = contents.range(of: "a2:")
+                
+                let a1Text = contents[a1Range!.upperBound..<enda1Range!.lowerBound]
+                
+                let a2Range = contents.range(of: "a2:")
+                let enda2Range = contents.range(of: "a3:")
+                
+                let a2Text = contents[a2Range!.upperBound..<enda2Range!.lowerBound]
+                
+                let a3Range = contents.range(of: "a3:")
+                let enda3Range = contents.range(of: "*END*")
+                
+                let a3Text = contents[a3Range!.upperBound..<enda3Range!.lowerBound]
+                
+                print(questionText)
+                print(a1Text)
+                print(a2Text)
+                print(a3Text)
+                
+                //quizLabel.text = String(quizText)
             } catch {
                 debugPrint("contents of text file could not be loaded")
             }

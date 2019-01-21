@@ -25,6 +25,11 @@ class LevelRunner {
     func runLevel(){
     }
     
+    func quiz(){
+        //create the quiz view controller
+        (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(QuizViewController(runner: self), animated: true)
+    }
+    
     //create the introView
     func intro(){
         //Replace this with code that creates a screen instead of running self.navigationController?.pushViewController(IntroLevelViewController(), animated: true)
