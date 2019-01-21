@@ -34,6 +34,7 @@
 		10975B8321A9B12700C1F573 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8121A9B12700C1F573 /* IntroViewController.xib */; };
 		10975B8621A9B54200C1F573 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10975B8421A9B54200C1F573 /* MapViewController.swift */; };
 		10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8521A9B54200C1F573 /* MapViewController.xib */; };
+		10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E8675221F64F0000D1D69E /* QuizViewController.xib */; };
 		B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7221B2FDC7001FBA42 /* README.txt */; };
 		B10A0A7521B30C2E001FBA42 /* QuestED Video.mov in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */; };
 		B10A0A7721B31415001FBA42 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7621B31262001FBA42 /* level1.txt */; };
@@ -94,6 +95,7 @@
 		10975B8121A9B12700C1F573 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		10975B8421A9B54200C1F573 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		10975B8521A9B54200C1F573 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		10E8675221F64F0000D1D69E /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 		B10A0A7221B2FDC7001FBA42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "QuestED Video.mov"; sourceTree = "<group>"; };
 		B10A0A7621B31262001FBA42 /* level1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */,
 				026F896C21B3328E009C66A6 /* LevelRunner.swift */,
 				106DA72221F5679300704477 /* QuizViewController.swift */,
+				10E8675221F64F0000D1D69E /* QuizViewController.xib */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				10879C6B21B3063B001D7F0B /* IntroLevelViewController.xib in Resources */,
 				1044E5C321EBF48E003EEC1A /* level7.txt in Resources */,
 				10975B5D21A9AB0800C1F573 /* LaunchScreen.storyboard in Resources */,
+				10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */,
 				1044E5CD21EBF5D1003EEC1A /* level13.txt in Resources */,
 				1044E5CA21EBF48E003EEC1A /* level5.txt in Resources */,
 				10975B5A21A9AB0800C1F573 /* Assets.xcassets in Resources */,
