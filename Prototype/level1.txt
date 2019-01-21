@@ -11,4 +11,10 @@ Unfortunately, the beloved people of our lands haven’t been feeling like thems
 You may have have felt crummy before you went to your doctor. These are what doctors refer to as symptoms. Symptoms are usually physical or mental changes to your body and health that you notice to be different from how you would normally feel. Telling doctors about all the symptoms you have when you have them is really important because it will help the doctor to diagnose you with an illness or help make treatment decisions and medical decisions throughout your treatment. When you first came to your doctor you may have experienced symptoms including pain in your bones, being really tired, not being hungry, fevers, and belly pain. These feelings are really normal, and let’s explain why you are feeling this way.
 
 
+*QUIZ*:
+q1: example question
+a1: example answer1
+a2: example answer2*
+a3: example answer3
+
 *END*

@@ -20,6 +20,7 @@
 		1044E5CB21EBF48E003EEC1A /* level11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1044E5C221EBF48E003EEC1A /* level11.txt */; };
 		1044E5CD21EBF5D1003EEC1A /* level13.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1044E5CC21EBF5D1003EEC1A /* level13.txt */; };
 		1044E5CF21EBF601003EEC1A /* level14.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1044E5CE21EBF601003EEC1A /* level14.txt */; };
+		106DA72321F5679300704477 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106DA72221F5679300704477 /* QuizViewController.swift */; };
 		10879C6A21B3063B001D7F0B /* IntroLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10879C6821B3063B001D7F0B /* IntroLevelViewController.swift */; };
 		10879C6B21B3063B001D7F0B /* IntroLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10879C6921B3063B001D7F0B /* IntroLevelViewController.xib */; };
 		10975B5321A9AB0700C1F573 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10975B5221A9AB0700C1F573 /* AppDelegate.swift */; };
@@ -73,6 +74,7 @@
 		1044E5C221EBF48E003EEC1A /* level11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level11.txt; sourceTree = "<group>"; };
 		1044E5CC21EBF5D1003EEC1A /* level13.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level13.txt; sourceTree = "<group>"; };
 		1044E5CE21EBF601003EEC1A /* level14.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level14.txt; sourceTree = "<group>"; };
+		106DA72221F5679300704477 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		10879C6821B3063B001D7F0B /* IntroLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroLevelViewController.swift; sourceTree = "<group>"; };
 		10879C6921B3063B001D7F0B /* IntroLevelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroLevelViewController.xib; sourceTree = "<group>"; };
 		10975B4F21A9AB0700C1F573 /* Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,7 @@
 				B1DE2A0E21EEC9EB000D1614 /* levelstatus.txt */,
 				B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */,
 				026F896C21B3328E009C66A6 /* LevelRunner.swift */,
+				106DA72221F5679300704477 /* QuizViewController.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				10975B8221A9B12700C1F573 /* IntroViewController.swift in Sources */,
 				10975B5521A9AB0700C1F573 /* ViewController.swift in Sources */,
 				026F896D21B3328E009C66A6 /* LevelRunner.swift in Sources */,
+				106DA72321F5679300704477 /* QuizViewController.swift in Sources */,
 				10879C6A21B3063B001D7F0B /* IntroLevelViewController.swift in Sources */,
 				B187219521BC49D1007862FA /* CadeucesViewController.swift in Sources */,
 				10975B5321A9AB0700C1F573 /* AppDelegate.swift in Sources */,
