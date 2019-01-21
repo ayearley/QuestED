@@ -19,12 +19,6 @@ class IntroLevelViewController: UIViewController {
     //Load all of these from file instead of hard coding
     var buttonWidth = 50;
     var buttonHeight = 50;
-    //var level1x = 45;
-    //var level1y = 220;
-    //var level2x = 245;
-    //var level2y = 350;
-    //var level3x = 120;
-    //var level3y = 545;
     
     var textFile: String
     var levelRunner: LevelRunner
