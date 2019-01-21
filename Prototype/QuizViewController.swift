@@ -41,7 +41,8 @@ class QuizViewController: UIViewController {
         questionTitle.text = "question1";
         view.addSubview(questionTitle)
         
-        
+        let ans1 = UIButton(type: .custom)
+        ans1.titleLabel?.text = "answer1"
         
         let continueButton = UIButton(type: .custom)
         continueButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10)
