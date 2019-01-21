@@ -11,18 +11,18 @@ import UIKit
 class Question: NSObject {
     var title: String
     var choices: [String]
-    var correctAns: String
+    var correctAns: Int
     var correctAnsIndex: Int = 0
     
-    init(title: String, choices: [String], correctAns: String) {
+    init(title: String, choices: [String], correctAns: Int) {
         self.title = title
         self.choices = choices
         self.correctAns = correctAns
         super.init()
-        self.correctAnsIndex = getCorrectAnsIndex()
+        //self.correctAnsIndex = getCorrectAnsIndex()
     }
     
-    func getCorrectAnsIndex() -> Int {
+    /*func getCorrectAnsIndex() -> Int {
         for (index, choice) in choices.enumerated() {
             if (choice == correctAns) {
                 correctAnsIndex = index
@@ -31,7 +31,7 @@ class Question: NSObject {
         }
         debugPrint("No correct answer in available choices.")
         return -1
-    }
+    }*/
 
 
 }

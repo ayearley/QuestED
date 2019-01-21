@@ -102,6 +102,8 @@ class QuizViewController: UIViewController {
                     correctAns = 3;
                 }
                 
+                var currentQuestion = Question(title: String(questionText), choices: [String(a1Text), String(a2Text), String(a3Text)], correctAns: correctAns)
+                
                 print(questionText)
                 print(a1Text)
                 print(a2Text)
