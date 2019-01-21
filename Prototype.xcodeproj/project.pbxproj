@@ -42,6 +42,7 @@
 		B187219621BC49D1007862FA /* CadeucesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B187219421BC49D1007862FA /* CadeucesViewController.xib */; };
 		B187219821BC4C34007862FA /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = B187219721BC4BEB007862FA /* level2.txt */; };
 		B1DE2A0F21EEC9EB000D1614 /* levelstatus.txt in Resources */ = {isa = PBXBuildFile; fileRef = B1DE2A0E21EEC9EB000D1614 /* levelstatus.txt */; };
+		C5FDC73921F6611C0045AAA8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FDC73821F6611C0045AAA8 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		B187219421BC49D1007862FA /* CadeucesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CadeucesViewController.xib; sourceTree = "<group>"; };
 		B187219721BC4BEB007862FA /* level2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 		B1DE2A0E21EEC9EB000D1614 /* levelstatus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = levelstatus.txt; sourceTree = "<group>"; };
+		C5FDC73821F6611C0045AAA8 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 				B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */,
 				026F896C21B3328E009C66A6 /* LevelRunner.swift */,
 				106DA72221F5679300704477 /* QuizViewController.swift */,
+				C5FDC73821F6611C0045AAA8 /* Question.swift */,
 				10E8675221F64F0000D1D69E /* QuizViewController.xib */,
 			);
 			path = Prototype;
@@ -373,6 +376,7 @@
 				10975B8221A9B12700C1F573 /* IntroViewController.swift in Sources */,
 				10975B5521A9AB0700C1F573 /* ViewController.swift in Sources */,
 				026F896D21B3328E009C66A6 /* LevelRunner.swift in Sources */,
+				C5FDC73921F6611C0045AAA8 /* Question.swift in Sources */,
 				106DA72321F5679300704477 /* QuizViewController.swift in Sources */,
 				10879C6A21B3063B001D7F0B /* IntroLevelViewController.swift in Sources */,
 				B187219521BC49D1007862FA /* CadeucesViewController.swift in Sources */,
