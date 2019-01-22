@@ -13,7 +13,7 @@ class QuizViewController: UIViewController {
     var textFile: String
     var levelRunner: LevelRunner
     var currentQuestion: Question!
-    var selectedAns: Int
+    var selectedAns: UIButton!
     var correctAns: Int
     var titleLabel: UILabel
     var an1Button: UIButton
@@ -26,7 +26,7 @@ class QuizViewController: UIViewController {
     let submit: String = "SUBMIT"
     
     init(runner: LevelRunner) {
-        selectedAns = 0;
+        selectedAns = nil;
         currentQuestion = nil;
         correctAns = 0;
         levelRunner = runner
@@ -41,7 +41,7 @@ class QuizViewController: UIViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        selectedAns = 0;
+        selectedAns = nil;
         currentQuestion = nil;
         correctAns = 0;
         self.textFile = ""
@@ -64,23 +64,31 @@ class QuizViewController: UIViewController {
         // set up the question title, choices and submit button
         titleLabel.text = currentQuestion.title;
         titleLabel.backgroundColor = UIColor.green
+        
         view.addSubview(titleLabel)
         
         an1Button.setTitle(currentQuestion.choices[0], for: .normal)
         an1Button.backgroundColor = UIColor.red
+        an1Button.tag = 0
+        an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an1Button)
         
         an2Button.setTitle(currentQuestion.choices[1], for: .normal)
         an2Button.backgroundColor = UIColor.red
+        an2Button.tag = 1
+        an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an2Button)
         
         an3Button.setTitle(currentQuestion.choices[2], for: .normal)
         an3Button.backgroundColor = UIColor.red
+        an3Button.tag = 2
+        an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an3Button)
         
         
         submitButton.setTitle(submit, for: .normal)
         submitButton.backgroundColor = UIColor.green
+        submitButton.addTarget(self, action: #selector(submitAns), for:.touchUpInside)
         view.addSubview(submitButton)
 
         
@@ -96,6 +104,24 @@ class QuizViewController: UIViewController {
 //        view.bringSubviewToFront(continueButton)
     }
     
+    //if submit btn is clicked
+    @objc func submitAns() {
+        if (selectedAns == nil) {
+            print("Not selected")
+        } else if (selectedAns.tag < 0 || selectedAns.tag > 2) {
+            print("Not valid answer")
+        } else if (correctAns == selectedAns.tag) {
+            //todo: change color to green
+        } else {
+            //todo: change color to red and redo
+        }
+        
+    }
+    //to set the selected ans idx to the one chosen
+    @objc func setSelectedAns(selected: UIButton) {
+        selectedAns = selected
+    }
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         let centerHorizontal: CGFloat = screenSize.width / 2 -  screenSize.width / 6
@@ -109,6 +135,7 @@ class QuizViewController: UIViewController {
         
     }
     
+  
     func readTextFile() {
         if let filepath = Bundle.main.path(forResource: textFile, ofType: "txt") {
             do {
