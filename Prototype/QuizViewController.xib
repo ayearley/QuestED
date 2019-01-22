@@ -19,9 +19,23 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightbg" translatesAutoresizingMaskIntoConstraints="NO" id="zVz-wt-fmV">
+                    <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zVz-wt-fmV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PtN-uB-Xrc"/>
+                <constraint firstItem="zVz-wt-fmV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="bJs-YJ-4Uc"/>
+                <constraint firstAttribute="bottom" secondItem="zVz-wt-fmV" secondAttribute="bottom" id="efh-qo-uL1"/>
+                <constraint firstAttribute="trailing" secondItem="zVz-wt-fmV" secondAttribute="trailing" id="pVZ-HY-BXH"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="140.625" y="47.826086956521742"/>
         </view>
     </objects>
+    <resources>
+        <image name="lightbg" width="915" height="516"/>
+    </resources>
 </document>
