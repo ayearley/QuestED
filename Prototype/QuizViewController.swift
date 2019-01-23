@@ -12,22 +12,41 @@ class QuizViewController: UIViewController {
     
     var textFile: String
     var levelRunner: LevelRunner
-    var currentQuestion: Question!
+    
+    //stores each question object
+    var question1: Question!
+    var question2: Question!
+    var question3: Question!
+    
+    //stores the current selected answer
     var selectedAns: UIButton!
+    
+    //stores correct answer for each question
+    var q1Ans: Int
+    var q2Ans: Int
+    var q3Ans: Int
     var correctAns: Int
     var titleLabel: UILabel
     var an1Button: UIButton
     var an2Button: UIButton
     var an3Button: UIButton
     var submitButton: UIButton
+    var currentQuestion: Int
     
     let screenSize = UIScreen.main.bounds
     let kVerticalSpacer: CGFloat = 16;
     let submit: String = "SUBMIT"
     
+    //initializes private variables
     init(runner: LevelRunner) {
         selectedAns = nil;
-        currentQuestion = nil;
+        currentQuestion = 1;
+        question1 = nil;
+        question2 = nil;
+        question3 = nil;
+        q1Ans = 0;
+        q2Ans = 0;
+        q3Ans = 0;
         correctAns = 0;
         levelRunner = runner
         textFile = runner.levelText
@@ -40,9 +59,16 @@ class QuizViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
+    //initializes private variables
     required init?(coder aDecoder: NSCoder) {
         selectedAns = nil;
-        currentQuestion = nil;
+        currentQuestion = 1;
+        question1 = nil;
+        question2 = nil;
+        question3 = nil;
+        q1Ans = 0;
+        q2Ans = 0;
+        q3Ans = 0;
         correctAns = 0;
         self.textFile = ""
         self.levelRunner = LevelRunner(textIn: self.textFile)
@@ -54,34 +80,36 @@ class QuizViewController: UIViewController {
         super.init(coder: aDecoder)
     }
     
-    
+    //automatically loads question 1 onto the screen from the question1 object
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        currentQuestion = 1
         
         // Do any additional setup after loading the view.
         readTextFile()
         
         // set up the question title, choices and submit button
-        titleLabel.text = currentQuestion.title;
+        titleLabel.text = question1.title;
         titleLabel.backgroundColor = UIColor.green
         
         view.addSubview(titleLabel)
         
-        an1Button.setTitle(currentQuestion.choices[0], for: .normal)
+        an1Button.setTitle(question1.choices[0], for: .normal)
         an1Button.backgroundColor = UIColor.red
-        an1Button.tag = 0
+        an1Button.tag = 1
         an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an1Button)
         
-        an2Button.setTitle(currentQuestion.choices[1], for: .normal)
+        an2Button.setTitle(question1.choices[1], for: .normal)
         an2Button.backgroundColor = UIColor.red
-        an2Button.tag = 1
+        an2Button.tag = 2
         an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an2Button)
         
-        an3Button.setTitle(currentQuestion.choices[2], for: .normal)
+        an3Button.setTitle(question1.choices[2], for: .normal)
         an3Button.backgroundColor = UIColor.red
-        an3Button.tag = 2
+        an3Button.tag = 3
         an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an3Button)
         
@@ -91,6 +119,7 @@ class QuizViewController: UIViewController {
         submitButton.addTarget(self, action: #selector(submitAns), for:.touchUpInside)
         view.addSubview(submitButton)
 
+        correctAns = q1Ans
         
         //let image = UIImage(named: "no_image-128.png")
         //self.view.setBackgroundImage(image, for: UIControlState.normal)
@@ -104,15 +133,109 @@ class QuizViewController: UIViewController {
 //        view.bringSubviewToFront(continueButton)
     }
     
+    
+    //method that loads question 2 screen from the question2 object
+    func loadQuestion2(){
+        super.viewDidLoad()
+        
+        currentQuestion = 2
+        // Do any additional setup after loading the view.
+        readTextFile()
+        
+        // set up the question title, choices and submit button
+        titleLabel.text = question2.title;
+        titleLabel.backgroundColor = UIColor.green
+        
+        view.addSubview(titleLabel)
+        
+        an1Button.setTitle(question2.choices[0], for: .normal)
+        an1Button.backgroundColor = UIColor.red
+        an1Button.tag = 1
+        an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
+        view.addSubview(an1Button)
+        
+        an2Button.setTitle(question2.choices[1], for: .normal)
+        an2Button.backgroundColor = UIColor.red
+        an2Button.tag = 2
+        an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
+        view.addSubview(an2Button)
+        
+        an3Button.setTitle(question2.choices[2], for: .normal)
+        an3Button.backgroundColor = UIColor.red
+        an3Button.tag = 3
+        an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
+        view.addSubview(an3Button)
+        
+        
+        submitButton.setTitle(submit, for: .normal)
+        submitButton.backgroundColor = UIColor.green
+        submitButton.addTarget(self, action: #selector(submitAns), for:.touchUpInside)
+        view.addSubview(submitButton)
+        
+        correctAns = q2Ans
+    }
+    
+    
+    //method that loads question 3 screen from the question3 object
+    func loadQuestion3(){
+        super.viewDidLoad()
+        
+        currentQuestion = 3
+        
+        // Do any additional setup after loading the view.
+        readTextFile()
+        
+        // set up the question title, choices and submit button
+        titleLabel.text = question3.title;
+        titleLabel.backgroundColor = UIColor.green
+        
+        view.addSubview(titleLabel)
+        
+        an1Button.setTitle(question3.choices[0], for: .normal)
+        an1Button.backgroundColor = UIColor.red
+        an1Button.tag = 1
+        an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
+        view.addSubview(an1Button)
+        
+        an2Button.setTitle(question3.choices[1], for: .normal)
+        an2Button.backgroundColor = UIColor.red
+        an2Button.tag = 2
+        an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
+        view.addSubview(an2Button)
+        
+        an3Button.setTitle(question3.choices[2], for: .normal)
+        an3Button.backgroundColor = UIColor.red
+        an3Button.tag = 3
+        an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
+        view.addSubview(an3Button)
+        
+        
+        submitButton.setTitle(submit, for: .normal)
+        submitButton.backgroundColor = UIColor.green
+        submitButton.addTarget(self, action: #selector(submitAns), for:.touchUpInside)
+        view.addSubview(submitButton)
+        
+        correctAns = q3Ans
+    }
+    
     //if submit btn is clicked
     @objc func submitAns() {
         if (selectedAns == nil) {
             print("Not selected")
-        } else if (selectedAns.tag < 0 || selectedAns.tag > 2) {
-            print("Not valid answer")
         } else if (correctAns == selectedAns.tag) {
             //todo: change color to green
+            print("correct")
+            if(currentQuestion == 1){
+                loadQuestion2()
+            }
+            else if(currentQuestion == 2){
+                loadQuestion3()
+            }
+            else if(currentQuestion == 3){
+                self.levelRunner.map()
+            }
         } else {
+            print("wrong-o")
             //todo: change color to red and redo
         }
         
@@ -141,11 +264,30 @@ class QuizViewController: UIViewController {
             do {
                 let contents = try String(contentsOfFile: filepath)
                 
-                let quizRange = contents.range(of: "*QUIZ*:\n")
-                let endQuizRange = contents.range(of: "*END*")
+                //This was my attempt to make a loop that keeps loading question in a loop
+                /*
+                do {
+                    // Read an entire text file into an NSString.
+                    let contents = try NSString(contentsOfFile: filepath,
+                                                encoding: String.Encoding.ascii.rawValue)
+                    
+                    //array of question objects
+                    Question[] qarray
+                    
+                    //current question being built
+                    var buildingQ: Question
+                    
+                    // Print all lines.
+                    contents.enumerateLines({ (line, stop) -> () in
+                        if line.contains("q:"){
+                            buildingQ = new Question(title: line)
+                        }
+                        if(line.contains("a:"))
+                        print("Line = \(line)")
+                    })
+                } */
                 
-                let quizText = contents[quizRange!.upperBound..<endQuizRange!.lowerBound]
-                
+                //Goes through the text file and creates 3 question objects
                 let questionRange = contents.range(of: "q1:")
                 let endQuestionRange = contents.range(of: "a1:")
                 
@@ -155,32 +297,94 @@ class QuizViewController: UIViewController {
                 let enda1Range = contents.range(of: "a2:")
                 
                 let a1Text = contents[a1Range!.upperBound..<enda1Range!.lowerBound]
+                print(a1Text)
                 if(a1Text.contains("*")){
-                    correctAns = 1;
+                    q1Ans = 1;
                 }
                 
                 let a2Range = contents.range(of: "a2:")
                 let enda2Range = contents.range(of: "a3:")
                 
                 let a2Text = contents[a2Range!.upperBound..<enda2Range!.lowerBound]
+                print(a2Text)
                 if(a2Text.contains("*")){
-                    correctAns = 2;
+                    q1Ans = 2;
                 }
                 
                 let a3Range = contents.range(of: "a3:")
-                let enda3Range = contents.range(of: "*END*")
+                let enda3Range = contents.range(of: "q2:")
                 
                 let a3Text = contents[a3Range!.upperBound..<enda3Range!.lowerBound]
+                print(a3Text)
                 if(a3Text.contains("*")){
-                    correctAns = 3;
+                    q1Ans = 3;
                 }
                 
-                currentQuestion = Question(title: String(questionText), choices: [String(a1Text), String(a2Text), String(a3Text)], correctAns: correctAns)
+                question1 = Question(title: String(questionText), choices: [String(a1Text), String(a2Text), String(a3Text)], correctAns: q1Ans)
                 
-                print(questionText)
-                print(a1Text)
-                print(a2Text)
-                print(a3Text)
+                //question 2 building
+                let questionRange2 = contents.range(of: "q2:")
+                let endQuestionRange2 = contents.range(of: "a12:")
+                
+                let questionText2 = contents[questionRange2!.upperBound..<endQuestionRange2!.lowerBound]
+                
+                let a1Range2 = contents.range(of: "a12:")
+                let enda1Range2 = contents.range(of: "a22:")
+                
+                let a1Text2 = contents[a1Range2!.upperBound..<enda1Range2!.lowerBound]
+                if(a1Text2.contains("*")){
+                    q2Ans = 1;
+                }
+                
+                let a2Range2 = contents.range(of: "a22:")
+                let enda2Range2 = contents.range(of: "a32:")
+                
+                let a2Text2 = contents[a2Range2!.upperBound..<enda2Range2!.lowerBound]
+                if(a2Text2.contains("*")){
+                    q2Ans = 2;
+                }
+                
+                let a3Range2 = contents.range(of: "a32:")
+                let enda3Range2 = contents.range(of: "q3:")
+                
+                let a3Text2 = contents[a3Range2!.upperBound..<enda3Range2!.lowerBound]
+                if(a3Text2.contains("*")){
+                    q2Ans = 3;
+                }
+                
+                question2 = Question(title: String(questionText2), choices: [String(a1Text2), String(a2Text2), String(a3Text2)], correctAns: q2Ans)
+                
+                //question 3 building
+                let questionRange3 = contents.range(of: "q3:")
+                let endQuestionRange3 = contents.range(of: "a13:")
+                
+                let questionText3 = contents[questionRange3!.upperBound..<endQuestionRange3!.lowerBound]
+                
+                let a1Range3 = contents.range(of: "a13:")
+                let enda1Range3 = contents.range(of: "a23:")
+                
+                let a1Text3 = contents[a1Range3!.upperBound..<enda1Range3!.lowerBound]
+                if(a1Text3.contains("*")){
+                    q3Ans = 1;
+                }
+                
+                let a2Range3 = contents.range(of: "a23:")
+                let enda2Range3 = contents.range(of: "a33:")
+                
+                let a2Text3 = contents[a2Range3!.upperBound..<enda2Range3!.lowerBound]
+                if(a2Text3.contains("*")){
+                    q3Ans = 2;
+                }
+                
+                let a3Range3 = contents.range(of: "a33:")
+                let enda3Range3 = contents.range(of: "*END*")
+                
+                let a3Text3 = contents[a3Range3!.upperBound..<enda3Range3!.lowerBound]
+                if(a3Text3.contains("*")){
+                    q3Ans = 3;
+                }
+                
+                question3 = Question(title: String(questionText3), choices: [String(a1Text3), String(a2Text3), String(a3Text3)], correctAns: q3Ans)
                 
                 //quizLabel.text = String(quizText)
             } catch {

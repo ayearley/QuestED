@@ -12,9 +12,18 @@ You may have have felt crummy before you went to your doctor. These are what doc
 
 
 *QUIZ*:
-q1: example question
-a1: example answer1
-a2: example answer2*
-a3: example answer3
+q1: Who is best friend
+a1: Bruce
+a2: Darty Joe
+a3: Yimmy Butler*
 
+q2: example question2
+a12: example answer1
+a22: example answer2*
+a32: example answer3
+
+q3: example question3
+a13: example answer1
+a23: example answer2
+a33: example answer3*
 *END*
