@@ -96,19 +96,19 @@ class QuizViewController: UIViewController {
         view.addSubview(titleLabel)
         
         an1Button.setTitle(question1.choices[0], for: .normal)
-        an1Button.backgroundColor = UIColor.red
+        an1Button.backgroundColor = UIColor.gray
         an1Button.tag = 1
         an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an1Button)
         
         an2Button.setTitle(question1.choices[1], for: .normal)
-        an2Button.backgroundColor = UIColor.red
+        an2Button.backgroundColor = UIColor.gray
         an2Button.tag = 2
         an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an2Button)
         
         an3Button.setTitle(question1.choices[2], for: .normal)
-        an3Button.backgroundColor = UIColor.red
+        an3Button.backgroundColor = UIColor.gray
         an3Button.tag = 3
         an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an3Button)
@@ -149,19 +149,19 @@ class QuizViewController: UIViewController {
         view.addSubview(titleLabel)
         
         an1Button.setTitle(question2.choices[0], for: .normal)
-        an1Button.backgroundColor = UIColor.red
+        an1Button.backgroundColor = UIColor.gray
         an1Button.tag = 1
         an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an1Button)
         
         an2Button.setTitle(question2.choices[1], for: .normal)
-        an2Button.backgroundColor = UIColor.red
+        an2Button.backgroundColor = UIColor.gray
         an2Button.tag = 2
         an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an2Button)
         
         an3Button.setTitle(question2.choices[2], for: .normal)
-        an3Button.backgroundColor = UIColor.red
+        an3Button.backgroundColor = UIColor.gray
         an3Button.tag = 3
         an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an3Button)
@@ -192,19 +192,19 @@ class QuizViewController: UIViewController {
         view.addSubview(titleLabel)
         
         an1Button.setTitle(question3.choices[0], for: .normal)
-        an1Button.backgroundColor = UIColor.red
+        an1Button.backgroundColor = UIColor.gray
         an1Button.tag = 1
         an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an1Button)
         
         an2Button.setTitle(question3.choices[1], for: .normal)
-        an2Button.backgroundColor = UIColor.red
+        an2Button.backgroundColor = UIColor.gray
         an2Button.tag = 2
         an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an2Button)
         
         an3Button.setTitle(question3.choices[2], for: .normal)
-        an3Button.backgroundColor = UIColor.red
+        an3Button.backgroundColor = UIColor.gray
         an3Button.tag = 3
         an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an3Button)
@@ -242,7 +242,11 @@ class QuizViewController: UIViewController {
     }
     //to set the selected ans idx to the one chosen
     @objc func setSelectedAns(selected: UIButton) {
+        if(selectedAns != nil){
+            selectedAns.backgroundColor = UIColor.gray
+        }
         selectedAns = selected
+        selectedAns.backgroundColor = UIColor.lightGray
     }
 
     override func viewDidLayoutSubviews() {
