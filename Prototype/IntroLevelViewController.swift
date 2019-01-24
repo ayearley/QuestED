@@ -60,7 +60,7 @@ class IntroLevelViewController: UIViewController {
     
     @objc func buttonPressed(sender: UIButton){
         // print("that was easy")
-        self.levelRunner.cadeuces()
+        self.levelRunner.quiz()
     }
     
     func readTextFile() {
