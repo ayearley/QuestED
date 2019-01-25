@@ -35,7 +35,7 @@
 		10975B8621A9B54200C1F573 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10975B8421A9B54200C1F573 /* MapViewController.swift */; };
 		10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8521A9B54200C1F573 /* MapViewController.xib */; };
 		10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E8675221F64F0000D1D69E /* QuizViewController.xib */; };
-		10E8675721F6638E00D1D69E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E8675621F6638E00D1D69E /* Question.swift */; };
+		10E8675E21FA8C4100D1D69E /* Question2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E8675D21FA8C4100D1D69E /* Question2.swift */; };
 		B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7221B2FDC7001FBA42 /* README.txt */; };
 		B10A0A7521B30C2E001FBA42 /* QuestED Video.mov in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */; };
 		B10A0A7721B31415001FBA42 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7621B31262001FBA42 /* level1.txt */; };
@@ -97,7 +97,7 @@
 		10975B8421A9B54200C1F573 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		10975B8521A9B54200C1F573 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		10E8675221F64F0000D1D69E /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
-		10E8675621F6638E00D1D69E /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = ../../../Desktop/Question.swift; sourceTree = "<group>"; };
+		10E8675D21FA8C4100D1D69E /* Question2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question2.swift; sourceTree = "<group>"; };
 		B10A0A7221B2FDC7001FBA42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "QuestED Video.mov"; sourceTree = "<group>"; };
 		B10A0A7621B31262001FBA42 /* level1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
@@ -184,7 +184,6 @@
 				1044E5B821EBF421003EEC1A /* level4.txt */,
 				1044E5C121EBF48E003EEC1A /* level5.txt */,
 				1044E5C021EBF48E003EEC1A /* level6.txt */,
-				10E8675621F6638E00D1D69E /* Question.swift */,
 				1044E5BA21EBF48E003EEC1A /* level7.txt */,
 				1044E5BD21EBF48E003EEC1A /* level8.txt */,
 				1044E5BC21EBF48E003EEC1A /* level9.txt */,
@@ -198,6 +197,7 @@
 				026F896C21B3328E009C66A6 /* LevelRunner.swift */,
 				106DA72221F5679300704477 /* QuizViewController.swift */,
 				10E8675221F64F0000D1D69E /* QuizViewController.xib */,
+				10E8675D21FA8C4100D1D69E /* Question2.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -288,6 +288,7 @@
 				TargetAttributes = {
 					10975B4E21A9AB0700C1F573 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					10975B6221A9AB0800C1F573 = {
 						CreatedOnToolsVersion = 10.1;
@@ -376,9 +377,9 @@
 				10975B8221A9B12700C1F573 /* IntroViewController.swift in Sources */,
 				10975B5521A9AB0700C1F573 /* ViewController.swift in Sources */,
 				026F896D21B3328E009C66A6 /* LevelRunner.swift in Sources */,
-				10E8675721F6638E00D1D69E /* Question.swift in Sources */,
 				106DA72321F5679300704477 /* QuizViewController.swift in Sources */,
 				10879C6A21B3063B001D7F0B /* IntroLevelViewController.swift in Sources */,
+				10E8675E21FA8C4100D1D69E /* Question2.swift in Sources */,
 				B187219521BC49D1007862FA /* CadeucesViewController.swift in Sources */,
 				10975B5321A9AB0700C1F573 /* AppDelegate.swift in Sources */,
 				10975B8621A9B54200C1F573 /* MapViewController.swift in Sources */,
@@ -556,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73NL2BF857;
 				INFOPLIST_FILE = Prototype/Info.plist;
@@ -565,6 +567,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = QuestED.Prototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -574,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73NL2BF857;
 				INFOPLIST_FILE = Prototype/Info.plist;
