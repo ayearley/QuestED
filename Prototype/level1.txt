@@ -1,15 +1,7 @@
 *INTRO*:
 Unfortunately, the beloved people of our lands haven’t been feeling like themselves. There have been reports that our kingdom's citizens can’t do the things they used to love to do the same way anymore. One villager used to train dragons so that they could transport people from the different lands of the kingdoms. One villager used to train everyday so that he could be a strong warrior to protect the castle of the king and queen. School children haven’t been able to attend the academy so that they can follow their dreams of one day being a knight, a dragon trainer, a spell caster, or anything else that they want to do. While we don’t like to see our people feeling less than 100%, I don’t want you to be scared or sad but rather let’s learn more so that we can help everyone to feel better.
 
-
-
 **Doctor will Introduce Himself Here*
-
-
-
-*CADEUCES*:
-You may have have felt crummy before you went to your doctor. These are what doctors refer to as symptoms. Symptoms are usually physical or mental changes to your body and health that you notice to be different from how you would normally feel. Telling doctors about all the symptoms you have when you have them is really important because it will help the doctor to diagnose you with an illness or help make treatment decisions and medical decisions throughout your treatment. When you first came to your doctor you may have experienced symptoms including pain in your bones, being really tired, not being hungry, fevers, and belly pain. These feelings are really normal, and let’s explain why you are feeling this way.
-
 
 *QUIZ*:
 q1: Who is best friend
@@ -26,4 +18,5 @@ q3: example question3
 a13: example answer1
 a23: example answer2
 a33: example answer3*
+
 *END*

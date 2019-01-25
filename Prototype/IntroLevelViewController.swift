@@ -22,8 +22,10 @@ class IntroLevelViewController: UIViewController {
     
     var textFile: String
     var levelRunner: LevelRunner
+    var quiz: Bool
     
     init(runner: LevelRunner) {
+        self.quiz = false;
         levelRunner = runner
         textFile = runner.levelText
         print("Text file: \(textFile)")
@@ -31,6 +33,7 @@ class IntroLevelViewController: UIViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
+        self.quiz = false;
         self.textFile = ""
         self.levelRunner = LevelRunner(textIn: self.textFile)
         super.init(coder: aDecoder)
@@ -60,7 +63,15 @@ class IntroLevelViewController: UIViewController {
     
     @objc func buttonPressed(sender: UIButton){
         // print("that was easy")
-        self.levelRunner.quiz()
+        if(quiz){
+            self.levelRunner.quiz()
+        } else {
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[((UIApplication.shared.delegate as! AppDelegate).currentLevel - 1)] = 2
+            if ((UIApplication.shared.delegate as! AppDelegate).currentLevel != 20) {
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[(UIApplication.shared.delegate as! AppDelegate).currentLevel] = 1
+            }
+            self.levelRunner.map()
+        }
     }
     
     func readTextFile() {
@@ -69,9 +80,14 @@ class IntroLevelViewController: UIViewController {
                 let contents = try String(contentsOfFile: filepath)
                 
                 let introRange = contents.range(of: "*INTRO*:\n")
-                let cadeucesRange = contents.range(of: "*CADEUCES*:\n")
+                let endRange = contents.range(of: "*END*")
                 
-                let introText = contents[introRange!.upperBound..<cadeucesRange!.lowerBound]
+                let introText = contents[introRange!.upperBound..<endRange!.lowerBound]
+                if(introText.contains("*QUIZ*:")){
+                    quiz = true;
+                    let endRange = contents.range(of: "*QUIZ*:")
+                    let introText = contents[introRange!.upperBound..<endRange!.lowerBound]
+                }
                 
                 print(introText)
                 

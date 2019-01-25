@@ -232,6 +232,11 @@ class QuizViewController: UIViewController {
                 loadQuestion3()
             }
             else if(currentQuestion == 3){
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[((UIApplication.shared.delegate as! AppDelegate).currentLevel - 1)] = 2
+                
+                if ((UIApplication.shared.delegate as! AppDelegate).currentLevel != 20) {
+                    (UIApplication.shared.delegate as! AppDelegate).levelStatus[(UIApplication.shared.delegate as! AppDelegate).currentLevel] = 1
+                }
                 self.levelRunner.map()
             }
         } else {
