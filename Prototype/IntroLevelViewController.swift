@@ -82,11 +82,11 @@ class IntroLevelViewController: UIViewController {
                 let introRange = contents.range(of: "*INTRO*:\n")
                 let endRange = contents.range(of: "*END*")
                 
-                let introText = contents[introRange!.upperBound..<endRange!.lowerBound]
+                var introText = contents[introRange!.upperBound..<endRange!.lowerBound]
                 if(introText.contains("*QUIZ*:")){
                     quiz = true;
                     let endRange = contents.range(of: "*QUIZ*:")
-                    let introText = contents[introRange!.upperBound..<endRange!.lowerBound]
+                    introText = contents[introRange!.upperBound..<endRange!.lowerBound]
                 }
                 
                 print(introText)

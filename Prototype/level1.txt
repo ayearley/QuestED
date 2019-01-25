@@ -6,8 +6,8 @@ Unfortunately, the beloved people of our lands haven’t been feeling like thems
 *QUIZ*:
 q1: Who is best friend
 a1: Bruce
-a2: Darty Joe
-a3: Yimmy Butler*
+a2: Darty Joe*
+a3: Yimmy Butler
 
 q2: example question2
 a12: example answer1
