@@ -1,3 +1,7 @@
+*PRE-INTRO*:
+Royal Doctor: “You performed admirably at the Radiation River. We are getting closer to Count Leukemia’s lair - I can feel it! But first we must visit the Transplant Tundra.”
+
+
 *INTRO*:
 “The entire Tundra has been infected by Leukemia’s minions but we can save the land by planting a cure: bone marrow. In this game, you must get the bone marrow to the bottom of the screen in order to cure the village. ”
 
