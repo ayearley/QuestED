@@ -29,7 +29,11 @@ class MapViewController: UIViewController {
     var doctorImage: UIImageView = UIImageView()
     var doctorLabel: UILabel = UILabel()
     var state = 0
-    
+    var preIntroText: String = ""
+    var levelNumber = 0
+    var totalLines = 0
+    var currentLine = 0
+    var lines: [String] = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,8 +54,6 @@ class MapViewController: UIViewController {
         
         createDoctor()
         
-        
-        readTextFile();
     }
 
     //This method creates a level button with the tag, x location, y location, and status as parameters
@@ -79,23 +81,32 @@ class MapViewController: UIViewController {
         
         doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.22, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
         doctorLabel.backgroundColor = UIColor.white
+        doctorLabel.numberOfLines = 0
         view.addSubview(doctorLabel)
         doctorLabel.isHidden = true
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        switch state {
-        case 0:
-            doctorImage.isHidden = false
-            doctorLabel.isHidden = false
-        case 1:
-            doctorImage.isHidden = true
-            doctorLabel.isHidden = true
-        default:
-            doctorImage.isHidden = doctorImage.isHidden
+        if (state == 2) {
+            currentLine += 4
+            
+            if (doctorLabel.isTruncated) {
+                var newText: String = ""
+                
+                for  i in currentLine..<totalLines {
+                    newText += lines[i]
+                }
+                
+                doctorLabel.text = newText
+            } else {
+                state = 3
+            }
         }
         
-        state += 1
+        if (state == 3) {
+            var levelRunner = LevelRunner(textIn: "level\(levelNumber)")
+            levelRunner.intro()
+        }
     }
     
     /*func addBackground() {
@@ -117,23 +128,36 @@ class MapViewController: UIViewController {
         // print("that was easy")
         print(sender.tag)
         (UIApplication.shared.delegate as! AppDelegate).currentLevel = sender.tag
-        var levelRunner = LevelRunner(textIn: "level\(sender.tag)")
-        levelRunner.intro()
+        
+        state = 1
+        
+        // Disable all level buttons here
+        
+        if (state == 1) {
+            levelNumber = sender.tag
+            readTextFile()
+            
+            doctorImage.isHidden = false
+            doctorLabel.isHidden = false
+            
+            doctorLabel.text = preIntroText
+            
+            lines = getLinesArrayOfString(in: doctorLabel)
+            
+            totalLines = lines.count
+            
+            state = 2
+        }
     }
     
     func readTextFile() {
-        if let filepath = Bundle.main.path(forResource: "example", ofType: "txt") {
+        if let filepath = Bundle.main.path(forResource: "level\(levelNumber)", ofType: "txt") {
             do {
                 let contents = try String(contentsOfFile: filepath)
                 
-                let introRange = contents.range(of: "*INTRO*:\n")
-                let cadeucesRange = contents.range(of: "*CADEUCES*:\n")
-                
-                let introText = contents[introRange!.upperBound..<cadeucesRange!.lowerBound]
-                
-                print(introText)
-                
-                // introLabel.text = String(introText)
+                let preIntroRange = contents.range(of: "*PRE-INTRO*\n")
+                let endPreIntroRange = contents.range(of: "*INTRO*")
+                preIntroText = String(contents[preIntroRange!.upperBound..<endPreIntroRange!.lowerBound])                
             } catch {
                 debugPrint("contents of text file could not be loaded")
             }
@@ -155,5 +179,62 @@ class MapViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func countLabelLines(label: UILabel) -> Int {
+        // Call self.layoutIfNeeded() if your view uses auto layout
+        let myText = label.text! as NSString
+        
+        let rect = CGSize(width: label.bounds.width, height: CGFloat.greatestFiniteMagnitude)
+        let labelSize = myText.boundingRect(with: rect, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: label.font], context: nil)
+        
+        return Int(ceil(CGFloat(labelSize.height) / label.font.lineHeight))
+    }
+    
+    func getLinesArrayOfString(in label: UILabel) -> [String] {
+        
+        /// An empty string's array
+        var linesArray = [String]()
+        
+        guard let text = label.text, let font = label.font else {return linesArray}
+        
+        let rect = label.frame
+        
+        let myFont: CTFont = CTFontCreateWithName(font.fontName as CFString, font.pointSize, nil)
+        let attStr = NSMutableAttributedString(string: text)
+        attStr.addAttribute(kCTFontAttributeName as NSAttributedString.Key, value: myFont, range: NSRange(location: 0, length: attStr.length))
+        
+        let frameSetter: CTFramesetter = CTFramesetterCreateWithAttributedString(attStr as CFAttributedString)
+        let path: CGMutablePath = CGMutablePath()
+        path.addRect(CGRect(x: 0, y: 0, width: rect.size.width, height: 100000), transform: .identity)
+        
+        let frame: CTFrame = CTFramesetterCreateFrame(frameSetter, CFRangeMake(0, 0), path, nil)
+        guard let lines = CTFrameGetLines(frame) as? [Any] else {return linesArray}
+        
+        for line in lines {
+            let lineRef = line as! CTLine
+            let lineRange: CFRange = CTLineGetStringRange(lineRef)
+            let range = NSRange(location: lineRange.location, length: lineRange.length)
+            let lineString: String = (text as NSString).substring(with: range)
+            linesArray.append(lineString)
+        }
+        return linesArray
+    }
+}
 
+extension UILabel {
+    
+    var isTruncated: Bool {
+        
+        guard let labelText = text else {
+            return false
+        }
+        
+        let labelTextSize = (labelText as NSString).boundingRect(
+            with: CGSize(width: frame.size.width, height: .greatestFiniteMagnitude),
+            options: .usesLineFragmentOrigin,
+            attributes: [.font: font],
+            context: nil).size
+        
+        return labelTextSize.height > bounds.size.height
+    }
 }
