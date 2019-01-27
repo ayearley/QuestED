@@ -31,6 +31,7 @@ class QuizViewController: UIViewController {
     var an2Button: UIButton
     var an3Button: UIButton
     var submitButton: UIButton
+    var nextButton: UIButton
     var currentQuestion: Int
     
     let screenSize = UIScreen.main.bounds
@@ -44,10 +45,10 @@ class QuizViewController: UIViewController {
         question1 = nil;
         question2 = nil;
         question3 = nil;
-        q1Ans = 0;
-        q2Ans = 0;
-        q3Ans = 0;
-        correctAns = 0;
+        q1Ans = -1;
+        q2Ans = -1;
+        q3Ans = -1;
+        correctAns = -1; //set to -1 to tell if correctAns is not populated correctly
         levelRunner = runner
         textFile = runner.levelText
         titleLabel = UILabel()
@@ -55,6 +56,7 @@ class QuizViewController: UIViewController {
         an2Button = UIButton()
         an3Button = UIButton()
         submitButton = UIButton()
+        nextButton = UIButton()
         print("Text file: \(textFile)")
         super.init(nibName: nil, bundle: nil)
     }
@@ -66,10 +68,10 @@ class QuizViewController: UIViewController {
         question1 = nil;
         question2 = nil;
         question3 = nil;
-        q1Ans = 0;
-        q2Ans = 0;
-        q3Ans = 0;
-        correctAns = 0;
+        q1Ans = -1;
+        q2Ans = -1;
+        q3Ans = -1;
+        correctAns = -1;
         self.textFile = ""
         self.levelRunner = LevelRunner(textIn: self.textFile)
         titleLabel = UILabel()
@@ -77,6 +79,7 @@ class QuizViewController: UIViewController {
         an2Button = UIButton()
         an3Button = UIButton()
         submitButton = UIButton()
+        nextButton = UIButton()
         super.init(coder: aDecoder)
     }
     
@@ -116,7 +119,7 @@ class QuizViewController: UIViewController {
         
         submitButton.setTitle(submit, for: .normal)
         submitButton.backgroundColor = UIColor.green
-        submitButton.addTarget(self, action: #selector(submitAns), for:.touchUpInside)
+        submitButton.addTarget(self, action: #selector(submitAns(selected:)), for:.touchUpInside)
         view.addSubview(submitButton)
 
         correctAns = q1Ans
@@ -169,9 +172,10 @@ class QuizViewController: UIViewController {
         
         submitButton.setTitle(submit, for: .normal)
         submitButton.backgroundColor = UIColor.green
-        submitButton.addTarget(self, action: #selector(submitAns), for:.touchUpInside)
+        submitButton.addTarget(self, action: #selector(submitAns(selected:)), for:.touchUpInside)
         view.addSubview(submitButton)
-        
+        nextButton.isHidden = true
+
         correctAns = q2Ans
     }
     
@@ -212,39 +216,67 @@ class QuizViewController: UIViewController {
         
         submitButton.setTitle(submit, for: .normal)
         submitButton.backgroundColor = UIColor.green
-        submitButton.addTarget(self, action: #selector(submitAns), for:.touchUpInside)
+        submitButton.addTarget(self, action: #selector(submitAns(selected:)), for:.touchUpInside)
         view.addSubview(submitButton)
-        
+        nextButton.isHidden = true
+
         correctAns = q3Ans
     }
     
     //if submit btn is clicked
-    @objc func submitAns() {
+    @objc func submitAns(selected: UIButton) {
         if (selectedAns == nil) {
-            print("Not selected")
+            let alert = UIAlertController(title: "",message: "Nothing is selected. Please select!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert,animated: true, completion: nil)
+
+            print("Nothing is selected. Please select!")
         } else if (correctAns == selectedAns.tag) {
-            //todo: change color to green
+            //change color to green and pops up next button
+            selectedAns.backgroundColor = UIColor.green
+            nextButton.isHidden = false
+            nextButton.setTitle("Next", for: .normal)
+            nextButton.backgroundColor = UIColor.green
+            //nextButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.60, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
+            nextButton.addTarget(self, action: #selector(toNextQuestion), for:.touchUpInside)
+            view.addSubview(nextButton)
             print("correct")
-            if(currentQuestion == 1){
-                loadQuestion2()
-            }
-            else if(currentQuestion == 2){
-                loadQuestion3()
-            }
-            else if(currentQuestion == 3){
-                (UIApplication.shared.delegate as! AppDelegate).levelStatus[((UIApplication.shared.delegate as! AppDelegate).currentLevel - 1)] = 2
-                
-                if ((UIApplication.shared.delegate as! AppDelegate).currentLevel != 20) {
-                    (UIApplication.shared.delegate as! AppDelegate).levelStatus[(UIApplication.shared.delegate as! AppDelegate).currentLevel] = 1
-                }
-                self.levelRunner.map()
-            }
         } else {
             print("wrong-o")
-            //todo: change color to red and redo
+            //change color to red and redo
+            selectedAns.backgroundColor = UIColor.red
+            let alert = UIAlertController(title: "", message: "The answer is incorrect. Please choose again. ", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: clearWrongAns))
+            self.present(alert, animated: true, completion: nil)
+
         }
-        
     }
+    
+    @objc func clearWrongAns(alert: UIAlertAction) {
+        //clear current selection
+        selectedAns.backgroundColor = UIColor.gray
+        selectedAns = nil
+    }
+    
+    @objc func toNextQuestion() {
+        if(currentQuestion == 1){
+            loadQuestion2()
+        }
+        else if(currentQuestion == 2){
+            loadQuestion3()
+        }
+        else if(currentQuestion == 3){
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[((UIApplication.shared.delegate as! AppDelegate).currentLevel - 1)] = 2
+            
+            if ((UIApplication.shared.delegate as! AppDelegate).currentLevel != 20) {
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[(UIApplication.shared.delegate as! AppDelegate).currentLevel] = 1
+            }
+            let alert = UIAlertController(title: "", message: "Yay. You successfully passed the quiz!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Return to map.", style: .default, handler: {action in self.levelRunner.map()}))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
     //to set the selected ans idx to the one chosen
     @objc func setSelectedAns(selected: UIButton) {
         if(selectedAns != nil){
@@ -264,7 +296,7 @@ class QuizViewController: UIViewController {
         an2Button.frame = CGRect(x: centerHorizontal, y: an1Button.frame.maxY + kVerticalSpacer, width: screenSize.width / 3, height: 60);
         an3Button.frame = CGRect(x: centerHorizontal, y: an2Button.frame.maxY + kVerticalSpacer, width: screenSize.width / 3, height: 60);
         submitButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
-        
+        nextButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.60, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
     }
     
   
