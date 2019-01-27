@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 class IntroLevelViewController: UIViewController {
 
@@ -23,11 +24,17 @@ class IntroLevelViewController: UIViewController {
     var textFile: String
     var levelRunner: LevelRunner
     var quiz: Bool
+    var videoName: String
+    
+    var doctorImage: UIImageView = UIImageView()
+    var doctorLabel: UILabel = UILabel()
+    var state = 0
     
     init(runner: LevelRunner) {
         self.quiz = false;
         levelRunner = runner
         textFile = runner.levelText
+        self.videoName = ""
         print("Text file: \(textFile)")
         super.init(nibName: nil, bundle: nil)
     }
@@ -35,6 +42,7 @@ class IntroLevelViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         self.quiz = false;
         self.textFile = ""
+        self.videoName = ""
         self.levelRunner = LevelRunner(textIn: self.textFile)
         super.init(coder: aDecoder)
     }
@@ -43,6 +51,8 @@ class IntroLevelViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        createDoctor()
+        
         readTextFile()
         
         let buttonLevel1 = UIButton(type: .custom)
@@ -62,6 +72,20 @@ class IntroLevelViewController: UIViewController {
     }
     
     @objc func buttonPressed(sender: UIButton){
+        
+        //plays video from level file
+        guard let path = Bundle.main.path(forResource: videoName, ofType: "mp4") else {
+            debugPrint( "\(videoName).mp4 not found")
+            return
+        }
+        
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true, completion: {
+            player.play()
+        })
+        
         // print("that was easy")
         if(quiz){
             self.levelRunner.quiz()
@@ -74,13 +98,40 @@ class IntroLevelViewController: UIViewController {
         }
     }
     
+    func createDoctor() {
+        doctorImage = UIImageView(image: UIImage(imageLiteralResourceName: "doctor.png"))
+        doctorImage.frame = CGRect(x: Double(screenSize.width) * 0.1, y: Double(screenSize.height * 0.4), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
+        view.addSubview(doctorImage)
+        doctorImage.isHidden = true
+        
+        doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.22, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
+        doctorLabel.backgroundColor = UIColor.white
+        view.addSubview(doctorLabel)
+        doctorLabel.isHidden = true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        switch state {
+        case 0:
+            doctorImage.isHidden = false
+            doctorLabel.isHidden = false
+        case 1:
+            doctorImage.isHidden = true
+            doctorLabel.isHidden = true
+        default:
+            doctorImage.isHidden = doctorImage.isHidden
+        }
+        
+        state += 1
+    }
+    
     func readTextFile() {
         if let filepath = Bundle.main.path(forResource: textFile, ofType: "txt") {
             do {
                 let contents = try String(contentsOfFile: filepath)
                 
                 let introRange = contents.range(of: "*INTRO*:\n")
-                let endRange = contents.range(of: "*END*")
+                let endRange = contents.range(of: "*VIDEO*")
                 
                 var introText = contents[introRange!.upperBound..<endRange!.lowerBound]
                 if(introText.contains("*QUIZ*:")){
@@ -92,9 +143,17 @@ class IntroLevelViewController: UIViewController {
                 print(introText)
                 
                 introLabel.text = String(introText)
+                
+                let videoRange = contents.range(of: "*VIDEO*: ")
+                let endVideoRange = contents.range(of: "*END*")
+
+                videoName = String(contents[videoRange!.upperBound..<endVideoRange!.lowerBound])
+                videoName = String(videoName.filter { !" \n".contains($0) })
+                
             } catch {
                 debugPrint("contents of text file could not be loaded")
             }
+            
         } else {
             debugPrint("text file not found")
         }
