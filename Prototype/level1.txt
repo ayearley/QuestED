@@ -24,4 +24,6 @@ a13: example answer1
 a23: example answer2
 a33: example answer3*
 
+*VIDEO*: symptoms
+
 *END*
