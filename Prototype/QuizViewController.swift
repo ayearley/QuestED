@@ -32,7 +32,9 @@ class QuizViewController: UIViewController {
     var an3Button: UIButton
     var submitButton: UIButton
     var nextButton: UIButton
+    var wrongButton: UIButton
     var currentQuestion: Int
+    var progress: UIImageView
     
     let screenSize = UIScreen.main.bounds
     let kVerticalSpacer: CGFloat = 16;
@@ -57,6 +59,8 @@ class QuizViewController: UIViewController {
         an3Button = UIButton()
         submitButton = UIButton()
         nextButton = UIButton()
+        wrongButton = UIButton()
+        progress = UIImageView()
         print("Text file: \(textFile)")
         super.init(nibName: nil, bundle: nil)
     }
@@ -80,6 +84,8 @@ class QuizViewController: UIViewController {
         an3Button = UIButton()
         submitButton = UIButton()
         nextButton = UIButton()
+        wrongButton = UIButton()
+        progress = UIImageView()
         super.init(coder: aDecoder)
     }
     
@@ -92,10 +98,12 @@ class QuizViewController: UIViewController {
         // Do any additional setup after loading the view.
         readTextFile()
         
-        // set up the question title, choices and submit button
+        // set up the progress bar, question title, choices and submit button
+        progress.image = UIImage(named: "progress-bar.png")
+        view.addSubview(progress)
+
         titleLabel.text = question1.title;
-        titleLabel.backgroundColor = UIColor.green
-        
+        //titleLabel.backgroundColor = UIColor.green
         view.addSubview(titleLabel)
         
         an1Button.setTitle(question1.choices[0], for: .normal)
@@ -117,8 +125,7 @@ class QuizViewController: UIViewController {
         view.addSubview(an3Button)
         
         
-        submitButton.setTitle(submit, for: .normal)
-        submitButton.backgroundColor = UIColor.green
+        submitButton.setImage(UIImage(named:"check.png"), for: .normal)
         submitButton.addTarget(self, action: #selector(submitAns(selected:)), for:.touchUpInside)
         view.addSubview(submitButton)
 
@@ -146,8 +153,10 @@ class QuizViewController: UIViewController {
         readTextFile()
         
         // set up the question title, choices and submit button
+        progress.image = UIImage(named: "progress-bar-1_3.png")
+
         titleLabel.text = question2.title;
-        titleLabel.backgroundColor = UIColor.green
+        //titleLabel.backgroundColor = UIColor.green
         
         view.addSubview(titleLabel)
         
@@ -170,12 +179,12 @@ class QuizViewController: UIViewController {
         view.addSubview(an3Button)
         
         
-        submitButton.setTitle(submit, for: .normal)
-        submitButton.backgroundColor = UIColor.green
+        submitButton.setImage(UIImage(named:"check.png"), for: .normal)
         submitButton.addTarget(self, action: #selector(submitAns(selected:)), for:.touchUpInside)
         view.addSubview(submitButton)
         nextButton.isHidden = true
-
+        submitButton.isHidden = false
+        wrongButton.isHidden = true
         correctAns = q2Ans
     }
     
@@ -190,8 +199,9 @@ class QuizViewController: UIViewController {
         readTextFile()
         
         // set up the question title, choices and submit button
+        progress.image = UIImage(named: "progress-bar-2_3.png")
         titleLabel.text = question3.title;
-        titleLabel.backgroundColor = UIColor.green
+        //titleLabel.backgroundColor = UIColor.green
         
         view.addSubview(titleLabel)
         
@@ -214,12 +224,12 @@ class QuizViewController: UIViewController {
         view.addSubview(an3Button)
         
         
-        submitButton.setTitle(submit, for: .normal)
-        submitButton.backgroundColor = UIColor.green
+        submitButton.setImage(UIImage(named:"check.png"), for: .normal)
         submitButton.addTarget(self, action: #selector(submitAns(selected:)), for:.touchUpInside)
         view.addSubview(submitButton)
         nextButton.isHidden = true
-
+        submitButton.isHidden = false
+        wrongButton.isHidden = true
         correctAns = q3Ans
     }
     
@@ -234,10 +244,9 @@ class QuizViewController: UIViewController {
         } else if (correctAns == selectedAns.tag) {
             //change color to green and pops up next button
             selectedAns.backgroundColor = UIColor.green
+            submitButton.isHidden = true
             nextButton.isHidden = false
-            nextButton.setTitle("Next", for: .normal)
-            nextButton.backgroundColor = UIColor.green
-            //nextButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.60, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
+            nextButton.setImage(UIImage(named: "next.png"), for: .normal)
             nextButton.addTarget(self, action: #selector(toNextQuestion), for:.touchUpInside)
             view.addSubview(nextButton)
             print("correct")
@@ -245,10 +254,9 @@ class QuizViewController: UIViewController {
             print("wrong-o")
             //change color to red and redo
             selectedAns.backgroundColor = UIColor.red
-            let alert = UIAlertController(title: "", message: "The answer is incorrect. Please choose again. ", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: clearWrongAns))
-            self.present(alert, animated: true, completion: nil)
-
+            wrongButton.isHidden = false
+            wrongButton.setImage(UIImage(named: "wrong.png"), for: .normal)
+            view.addSubview(wrongButton)
         }
     }
     
@@ -279,6 +287,8 @@ class QuizViewController: UIViewController {
     
     //to set the selected ans idx to the one chosen
     @objc func setSelectedAns(selected: UIButton) {
+        wrongButton.isHidden = true
+        submitButton.isHidden = false
         if(selectedAns != nil){
             selectedAns.backgroundColor = UIColor.gray
         }
@@ -289,14 +299,14 @@ class QuizViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         let centerHorizontal: CGFloat = screenSize.width / 2 -  screenSize.width / 6
-
-        titleLabel.frame = CGRect(x: 16, y: 16, width: screenSize.width - 16 * 2, height: 80);
-        
+        progress.frame = CGRect(x: 8, y: 8, width: screenSize.width - 16 * 2, height: 30);
+        titleLabel.frame = CGRect(x: 16, y: 40, width: screenSize.width - 16 * 2, height: 50);
         an1Button.frame = CGRect(x: centerHorizontal, y: titleLabel.frame.maxY + kVerticalSpacer, width: screenSize.width / 3, height: 60);
         an2Button.frame = CGRect(x: centerHorizontal, y: an1Button.frame.maxY + kVerticalSpacer, width: screenSize.width / 3, height: 60);
         an3Button.frame = CGRect(x: centerHorizontal, y: an2Button.frame.maxY + kVerticalSpacer, width: screenSize.width / 3, height: 60);
         submitButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
-        nextButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.60, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
+        nextButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
+        wrongButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
     }
     
   
