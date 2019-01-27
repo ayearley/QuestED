@@ -24,6 +24,10 @@ class IntroLevelViewController: UIViewController {
     var levelRunner: LevelRunner
     var quiz: Bool
     
+    var doctorImage: UIImageView = UIImageView()
+    var doctorLabel: UILabel = UILabel()
+    var state = 0
+    
     init(runner: LevelRunner) {
         self.quiz = false;
         levelRunner = runner
@@ -43,6 +47,8 @@ class IntroLevelViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        createDoctor()
+        
         readTextFile()
         
         let buttonLevel1 = UIButton(type: .custom)
@@ -72,6 +78,33 @@ class IntroLevelViewController: UIViewController {
             }
             self.levelRunner.map()
         }
+    }
+    
+    func createDoctor() {
+        doctorImage = UIImageView(image: UIImage(imageLiteralResourceName: "doctor.png"))
+        doctorImage.frame = CGRect(x: Double(screenSize.width) * 0.1, y: Double(screenSize.height * 0.4), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
+        view.addSubview(doctorImage)
+        doctorImage.isHidden = true
+        
+        doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.22, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
+        doctorLabel.backgroundColor = UIColor.white
+        view.addSubview(doctorLabel)
+        doctorLabel.isHidden = true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        switch state {
+        case 0:
+            doctorImage.isHidden = false
+            doctorLabel.isHidden = false
+        case 1:
+            doctorImage.isHidden = true
+            doctorLabel.isHidden = true
+        default:
+            doctorImage.isHidden = doctorImage.isHidden
+        }
+        
+        state += 1
     }
     
     func readTextFile() {
