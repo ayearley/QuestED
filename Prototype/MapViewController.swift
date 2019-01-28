@@ -155,8 +155,11 @@ class MapViewController: UIViewController {
             do {
                 let contents = try String(contentsOfFile: filepath)
                 
-                let preIntroRange = contents.range(of: "*PRE-INTRO*\n")
+                let preIntroRange = contents.range(of: "*PRE-INTRO*:\n")
                 let endPreIntroRange = contents.range(of: "*INTRO*")
+                
+                // print("Pre: \(preIntroRange), end: \(endPreIntroRange)")
+                
                 preIntroText = String(contents[preIntroRange!.upperBound..<endPreIntroRange!.lowerBound])                
             } catch {
                 debugPrint("contents of text file could not be loaded")
