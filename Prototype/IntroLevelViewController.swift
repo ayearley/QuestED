@@ -25,10 +25,14 @@ class IntroLevelViewController: UIViewController {
     var levelRunner: LevelRunner
     var quiz: Bool
     var videoName: String
+    var continueButton: UIButton = UIButton(type: .custom)
     
     var doctorImage: UIImageView = UIImageView()
     var doctorLabel: UILabel = UILabel()
     var state = 0
+    
+    var nurseImage: UIImageView = UIImageView()
+    var nurseLabel: UILabel = UILabel()
     
     init(runner: LevelRunner) {
         self.quiz = false;
@@ -52,23 +56,14 @@ class IntroLevelViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         createDoctor()
+        createNurse()
         
         readTextFile()
         
-        let buttonLevel1 = UIButton(type: .custom)
-        buttonLevel1.tag = 1
-        buttonLevel1.frame = CGRect(x: Double(screenSize.width)/7.35, y: Double(screenSize.height)/4.3, width: Double(buttonWidth), height: Double(buttonHeight))
-        buttonLevel1.layer.cornerRadius = 0.5*buttonLevel1.bounds.size.width
-        buttonLevel1.clipsToBounds = true
-        buttonLevel1.setImage(UIImage(named:"easyButton.png"), for: .normal)
-        buttonLevel1.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
-        // view.addSubview(buttonLevel1)
-        
-        let continueButton = UIButton(type: .custom)
         continueButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10)
         continueButton.setImage(UIImage(named: "continue.png"), for: .normal)
         continueButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
-        view.addSubview(continueButton)
+        //view.addSubview(continueButton)
     }
     
     @objc func buttonPressed(sender: UIButton){
@@ -110,6 +105,18 @@ class IntroLevelViewController: UIViewController {
         doctorLabel.isHidden = true
     }
     
+    func createNurse() {
+        nurseImage = UIImageView(image: UIImage(imageLiteralResourceName: "horse.jpg"))
+        nurseImage.frame = CGRect(x: Double(screenSize.width) * 0.8, y: Double(screenSize.height * 0.4), width: Double(screenSize.height) * 0.3, height: Double(screenSize.height) * 0.27)
+        view.addSubview(nurseImage)
+        nurseImage.isHidden = true
+        
+        nurseLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.5, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
+        nurseLabel.backgroundColor = UIColor.white
+        view.addSubview(nurseLabel)
+        nurseLabel.isHidden = true
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         switch state {
         case 0:
@@ -118,6 +125,19 @@ class IntroLevelViewController: UIViewController {
         case 1:
             doctorImage.isHidden = true
             doctorLabel.isHidden = true
+            nurseImage.isHidden = false
+            nurseLabel.isHidden = false
+        case 2:
+            doctorImage.isHidden = false
+            doctorLabel.isHidden = false
+            nurseImage.isHidden = true
+            nurseLabel.isHidden = true
+        case 3:
+            doctorImage.isHidden = true
+            doctorLabel.isHidden = true
+        case 4:
+            view.addSubview(continueButton)
+            
         default:
             doctorImage.isHidden = doctorImage.isHidden
         }
@@ -157,6 +177,36 @@ class IntroLevelViewController: UIViewController {
         } else {
             debugPrint("text file not found")
         }
+    }
+    
+    func getLinesArrayOfString(in label: UILabel) -> [String] {
+        
+        /// An empty string's array
+        var linesArray = [String]()
+        
+        guard let text = label.text, let font = label.font else {return linesArray}
+        
+        let rect = label.frame
+        
+        let myFont: CTFont = CTFontCreateWithName(font.fontName as CFString, font.pointSize, nil)
+        let attStr = NSMutableAttributedString(string: text)
+        attStr.addAttribute(kCTFontAttributeName as NSAttributedString.Key, value: myFont, range: NSRange(location: 0, length: attStr.length))
+        
+        let frameSetter: CTFramesetter = CTFramesetterCreateWithAttributedString(attStr as CFAttributedString)
+        let path: CGMutablePath = CGMutablePath()
+        path.addRect(CGRect(x: 0, y: 0, width: rect.size.width, height: 100000), transform: .identity)
+        
+        let frame: CTFrame = CTFramesetterCreateFrame(frameSetter, CFRangeMake(0, 0), path, nil)
+        guard let lines = CTFrameGetLines(frame) as? [Any] else {return linesArray}
+        
+        for line in lines {
+            let lineRef = line as! CTLine
+            let lineRange: CFRange = CTLineGetStringRange(lineRef)
+            let range = NSRange(location: lineRange.location, length: lineRange.length)
+            let lineString: String = (text as NSString).substring(with: range)
+            linesArray.append(lineString)
+        }
+        return linesArray
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
