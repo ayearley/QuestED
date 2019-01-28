@@ -81,7 +81,8 @@ class MapViewController: UIViewController {
         
         doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.22, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
         doctorLabel.backgroundColor = UIColor.white
-        doctorLabel.numberOfLines = 0
+        doctorLabel.numberOfLines = 4
+        doctorLabel.lineBreakMode = .byWordWrapping
         view.addSubview(doctorLabel)
         doctorLabel.isHidden = true
     }
