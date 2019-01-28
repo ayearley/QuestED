@@ -12,7 +12,6 @@
 		100BBE8021FE588F005A1379 /* chemotherapy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7221FE5885005A1379 /* chemotherapy.mp4 */; };
 		100BBE8121FE588F005A1379 /* Nurse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7321FE5885005A1379 /* Nurse.mp4 */; };
 		100BBE8221FE588F005A1379 /* radiation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7421FE5886005A1379 /* radiation.mp4 */; };
-		100BBE8321FE588F005A1379 /* CentralLine.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7521FE5886005A1379 /* CentralLine.mp4 */; };
 		100BBE8421FE588F005A1379 /* cancer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7621FE5888005A1379 /* cancer.mp4 */; };
 		100BBE8521FE588F005A1379 /* Dietician.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7721FE5889005A1379 /* Dietician.mp4 */; };
 		100BBE8621FE588F005A1379 /* pretransplant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7821FE5889005A1379 /* pretransplant.mp4 */; };
@@ -83,7 +82,6 @@
 		100BBE7221FE5885005A1379 /* chemotherapy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chemotherapy.mp4; sourceTree = "<group>"; };
 		100BBE7321FE5885005A1379 /* Nurse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nurse.mp4; sourceTree = "<group>"; };
 		100BBE7421FE5886005A1379 /* radiation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = radiation.mp4; sourceTree = "<group>"; };
-		100BBE7521FE5886005A1379 /* CentralLine.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = CentralLine.mp4; path = ../../../Desktop/Videos/CentralLine.mp4; sourceTree = "<group>"; };
 		100BBE7621FE5888005A1379 /* cancer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cancer.mp4; sourceTree = "<group>"; };
 		100BBE7721FE5889005A1379 /* Dietician.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dietician.mp4; sourceTree = "<group>"; };
 		100BBE7821FE5889005A1379 /* pretransplant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pretransplant.mp4; sourceTree = "<group>"; };
@@ -229,7 +227,6 @@
 				10E8675221F64F0000D1D69E /* QuizViewController.xib */,
 				10E8675D21FA8C4100D1D69E /* Question.swift */,
 				100BBE7621FE5888005A1379 /* cancer.mp4 */,
-				100BBE7521FE5886005A1379 /* CentralLine.mp4 */,
 				100BBE7221FE5885005A1379 /* chemotherapy.mp4 */,
 				100BBE7C21FE588D005A1379 /* Childlifespecialist.mp4 */,
 				100BBE7721FE5889005A1379 /* Dietician.mp4 */,
@@ -376,7 +373,6 @@
 				B10A0A7721B31415001FBA42 /* level1.txt in Resources */,
 				10879C6B21B3063B001D7F0B /* IntroLevelViewController.xib in Resources */,
 				1044E5C321EBF48E003EEC1A /* level7.txt in Resources */,
-				100BBE8321FE588F005A1379 /* CentralLine.mp4 in Resources */,
 				10975B5D21A9AB0800C1F573 /* LaunchScreen.storyboard in Resources */,
 				100BBE8C21FE588F005A1379 /* Physicaltherapist.mp4 in Resources */,
 				10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */,
