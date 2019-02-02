@@ -27,6 +27,7 @@ class MapViewController: UIViewController {
     //var level3y = 545;
     
     var doctorImage: UIImageView = UIImageView()
+    var bubbleImage: UIImageView = UIImageView()
     var doctorLabel: UILabel = UILabel()
     var state = 0
     var preIntroText: String = ""
@@ -75,12 +76,20 @@ class MapViewController: UIViewController {
     
     func createDoctor() {
         doctorImage = UIImageView(image: UIImage(imageLiteralResourceName: "doctor.png"))
-        doctorImage.frame = CGRect(x: Double(screenSize.width) * 0.1, y: Double(screenSize.height * 0.4), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
+        doctorImage.frame = CGRect(x: Double(screenSize.width) * 0.1, y: Double(screenSize.height * 0.2), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
         view.addSubview(doctorImage)
         doctorImage.isHidden = true
         
+        bubbleImage = UIImageView(image: UIImage(imageLiteralResourceName: "speechbubble_map.png"))
+        
         doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.22, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
-        doctorLabel.backgroundColor = UIColor.white
+        
+        bubbleImage.frame = CGRect(x: doctorLabel.frame.minX * 0.9, y: doctorLabel.frame.minY, width: doctorLabel.frame.width * 1.15, height: doctorLabel.frame.height)
+        
+        view.addSubview(bubbleImage)
+        bubbleImage.isHidden = true
+        
+        doctorLabel.backgroundColor = UIColor.clear
         doctorLabel.numberOfLines = 4
         doctorLabel.lineBreakMode = .byWordWrapping
         view.addSubview(doctorLabel)
@@ -143,6 +152,7 @@ class MapViewController: UIViewController {
             readTextFile()
             
             doctorImage.isHidden = false
+            bubbleImage.isHidden = false
             doctorLabel.isHidden = false
             
             doctorLabel.text = preIntroText
@@ -152,6 +162,9 @@ class MapViewController: UIViewController {
             totalLines = lines.count
 
             doctorLabel.text = lines[0] + lines[1] + lines[2] + lines[3]
+            
+            sender.isEnabled = false
+            // Do the above line for other level buttons as well
             
             state = 2
         }
