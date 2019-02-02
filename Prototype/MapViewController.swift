@@ -87,15 +87,19 @@ class MapViewController: UIViewController {
         doctorLabel.isHidden = true
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {        
         if (state == 2) {
             currentLine += 4
             
-            if (doctorLabel.isTruncated) {
+            print("Total lines: \(totalLines)")
+            
+            if (currentLine + 3 < totalLines) {
                 var newText: String = ""
                 
                 for  i in currentLine..<totalLines {
-                    newText += lines[i]
+                    if (i <= currentLine + 3) {
+                        newText += lines[i]
+                    }
                 }
                 
                 doctorLabel.text = newText
@@ -105,7 +109,7 @@ class MapViewController: UIViewController {
         }
         
         if (state == 3) {
-            var levelRunner = LevelRunner(textIn: "level\(levelNumber)")
+            let levelRunner = LevelRunner(textIn: "level\(levelNumber)")
             levelRunner.intro()
         }
     }
@@ -146,6 +150,8 @@ class MapViewController: UIViewController {
             lines = getLinesArrayOfString(in: doctorLabel)
             
             totalLines = lines.count
+
+            doctorLabel.text = lines[0] + lines[1] + lines[2] + lines[3]
             
             state = 2
         }
