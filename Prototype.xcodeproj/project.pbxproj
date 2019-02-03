@@ -53,6 +53,7 @@
 		B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7221B2FDC7001FBA42 /* README.txt */; };
 		B10A0A7521B30C2E001FBA42 /* QuestED Video.mov in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */; };
 		B10A0A7721B31415001FBA42 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7621B31262001FBA42 /* level1.txt */; };
+		B12C73D52207857000590E6B /* speechbubble_large.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C73D42207856F00590E6B /* speechbubble_large.png */; };
 		B17BF499220642C7007CBDED /* speechbubble_map.png in Resources */ = {isa = PBXBuildFile; fileRef = B17BF498220642C6007CBDED /* speechbubble_map.png */; };
 		B187219521BC49D1007862FA /* CadeucesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187219321BC49D1007862FA /* CadeucesViewController.swift */; };
 		B187219621BC49D1007862FA /* CadeucesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B187219421BC49D1007862FA /* CadeucesViewController.xib */; };
@@ -130,6 +131,7 @@
 		B10A0A7221B2FDC7001FBA42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "QuestED Video.mov"; sourceTree = "<group>"; };
 		B10A0A7621B31262001FBA42 /* level1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		B12C73D42207856F00590E6B /* speechbubble_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speechbubble_large.png; sourceTree = "<group>"; };
 		B17BF498220642C6007CBDED /* speechbubble_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speechbubble_map.png; sourceTree = "<group>"; };
 		B187219321BC49D1007862FA /* CadeucesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadeucesViewController.swift; sourceTree = "<group>"; };
 		B187219421BC49D1007862FA /* CadeucesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CadeucesViewController.xib; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				100BBE7B21FE588C005A1379 /* Transplant.mp4 */,
 				100BBE7021FE51FE005A1379 /* CentralLine.mp4 */,
 				B17BF498220642C6007CBDED /* speechbubble_map.png */,
+				B12C73D42207856F00590E6B /* speechbubble_large.png */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				10975B5D21A9AB0800C1F573 /* LaunchScreen.storyboard in Resources */,
 				100BBE8C21FE588F005A1379 /* Physicaltherapist.mp4 in Resources */,
 				10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */,
+				B12C73D52207857000590E6B /* speechbubble_large.png in Resources */,
 				1044E5CD21EBF5D1003EEC1A /* level14.txt in Resources */,
 				1044E5CA21EBF48E003EEC1A /* level5.txt in Resources */,
 				100BBE8621FE588F005A1379 /* pretransplant.mp4 in Resources */,

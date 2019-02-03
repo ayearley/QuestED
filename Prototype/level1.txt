@@ -8,8 +8,8 @@ Unfortunately, the beloved people of our lands haven’t been feeling like thems
 
 doc: doc blurb 1
 nurse: nurse blurb 1
-doc: doc blurb 2
-nurse: nurse blurb 2
+
+*END INTRO*
 
 *QUIZ*:
 q1: Who is best friend
