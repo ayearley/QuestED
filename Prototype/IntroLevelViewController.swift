@@ -23,6 +23,7 @@ class IntroLevelViewController: UIViewController {
     
     var textFile: String
     var levelRunner: LevelRunner
+    var video: Bool
     var quiz: Bool
     var videoName: String
     var continueButton: UIButton = UIButton(type: .custom)
@@ -36,6 +37,7 @@ class IntroLevelViewController: UIViewController {
     
     init(runner: LevelRunner) {
         self.quiz = false;
+        self.video = false;
         levelRunner = runner
         textFile = runner.levelText
         self.videoName = ""
@@ -44,6 +46,7 @@ class IntroLevelViewController: UIViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
+        self.video = false;
         self.quiz = false;
         self.textFile = ""
         self.videoName = ""
@@ -69,18 +72,19 @@ class IntroLevelViewController: UIViewController {
     @objc func buttonPressed(sender: UIButton){
         
         //plays video from level file
-        guard let path = Bundle.main.path(forResource: videoName, ofType: "mp4") else {
-            debugPrint( "\(videoName).mp4 not found")
-            return
+        if(videoName != "none"){
+            guard let path = Bundle.main.path(forResource: videoName, ofType: "mp4") else {
+                debugPrint( "\(videoName).mp4 not found")
+                return
+            }
+            
+            let player = AVPlayer(url: URL(fileURLWithPath: path))
+            let playerController = AVPlayerViewController()
+            playerController.player = player
+            present(playerController, animated: true, completion: {
+                player.play()
+            })
         }
-        
-        let player = AVPlayer(url: URL(fileURLWithPath: path))
-        let playerController = AVPlayerViewController()
-        playerController.player = player
-        present(playerController, animated: true, completion: {
-            player.play()
-        })
-        
         // print("that was easy")
         if(quiz){
             self.levelRunner.quiz()
@@ -166,9 +170,12 @@ class IntroLevelViewController: UIViewController {
                 
                 let videoRange = contents.range(of: "*VIDEO*: ")
                 let endVideoRange = contents.range(of: "*END*")
-
+                
                 videoName = String(contents[videoRange!.upperBound..<endVideoRange!.lowerBound])
+                
                 videoName = String(videoName.filter { !" \n".contains($0) })
+                
+                
                 
             } catch {
                 debugPrint("contents of text file could not be loaded")

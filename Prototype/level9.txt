@@ -1,10 +1,10 @@
 *PRE-INTRO*:
-Royal Doctor: “Goodness, what a journey we have had. The Transplant Tundra has certainly taken a toll on your health. I will take you to recover in the Healing Harbor where I have many supplies and friends. (NAME), but my team and I will help you get enough strength to stop Count Leukemia and save Panacea”
+Goodness, what a journey we have had. The Transplant Tundra has certainly taken a toll on your health. I will take you to recover in the Healing Harbor where I have many supplies and friends. (NAME), but my team and I will help you get enough strength to stop Count Leukemia and save Panacea
 
 
 *INTRO*:
-Royal Doctor: “Let’s go to the Apothecary and ask Nurse Nina for some medicines.
-Nurse Nina: “Hi there NAME. I know you must be feeling very sick right now. It is not uncommon for people leaving the Transplant Tundra to have pain, nausea,and fevers after such a battle against Leukemia’s minions. I am going to give you these medicines to make you feel better. First, I’m going to give you some medications through your Central Line. Make sure you keep taking your vitamins as well throughout your journey - these will be important in keeping you healthy.”
+Royal Doctor: Let’s go to the Apothecary and ask Nurse Nina for some medicines.
+Nurse Nina: Hi there NAME. I know you must be feeling very sick right now. It is not uncommon for people leaving the Transplant Tundra to have pain, nausea,and fevers after such a battle against Leukemia’s minions. I am going to give you these medicines to make you feel better. First, I’m going to give you some medications through your Central Line. Make sure you keep taking your vitamins as well throughout your journey - these will be important in keeping you healthy.
 
 
 
