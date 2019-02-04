@@ -1,3 +1,5 @@
+11 - Physical Therapist
+
 *PRE-INTRO*:
 none listed currently...
 
@@ -14,10 +16,6 @@ doc: doc blurb 1
 
 **Doctor will Introduce Himself Here*
 
-
-
-*CADEUCES*:
-Your physical therapist will help you improve your movement and decrease bodily pain after and during your treatment. You’ll do exercises with them that will make you feel strong again. If you feel stiffness or pain in your joints and muscles, your physical therapist can help you work on gaining getter control over your body.
 
 *VIDEO*: Physicaltherapist
 

@@ -1,3 +1,5 @@
+10 - Dietician
+
 *PRE-INTRO*:
 none listed currently...
 
@@ -15,6 +17,22 @@ doc: doc blurb 1
 
 
 **Doctor will Introduce Himself Here*
+
+*QUIZ*:
+q1: What is a good rule to follow when it comes to your diet?
+a1: Only eat foods in liquid forms (soup, smoothies)
+a2: Anything you might buy at the grocery store in a package and or foods that are well-cooked are fine, but stay away from undercooked, unwashed foods.
+a3: Only eat fresh, raw foods
+
+q2: Pudding, cooked fruits and veggies - Can you eat these?
+a12: No
+a22: Yes
+a32: Maybe
+
+q3: Fresh salsa, grapefruit, berries, raw oats, - can you eat these?
+a13: Yes
+a23: Maybe
+a33: No
 
 *VIDEO*: Dietician
 

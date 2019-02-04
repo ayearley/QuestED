@@ -1,15 +1,32 @@
+6 - Radiation River
+
 *PRE-INTRO*:
 You are looking better (NAME)! I’ve just received news that we are needed in the town by Radiation River.
 
 *INTRO*:
 Count Leukemia’s lieutenant has set up a hidden camp along the riverbank and have camouflaged themselves. We must find his hideout and destroy these evil forces. Let’s go!
 
-
 **Doctor will Introduce Himself Here*
 
 doc: doc blurb 1
 
 *END INTRO*
+
+*QUIZ*:
+q1: What are the two types of radiation?
+a1: Pre and post
+a2: External and Internal
+a3: Blood and bone marrow
+
+q2: What is important to remember while receiving radiation?
+a12: Stay still and don’t wipe the marker off
+a22: Eat a meal before
+a32: Keep your eyes open
+
+q3: What are the signs that I need to watch out for and tell my doctor if I see?
+a13: May make you feel nauseous
+a23: Helps you recover
+a33: All of the above
 
 *VIDEO*: radiation
 

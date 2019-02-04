@@ -1,3 +1,5 @@
+12 - Psychologist
+
 *PRE-INTRO*:
 none listed currently...
 
@@ -12,6 +14,16 @@ doc: doc blurb 1
 
 **Doctor will Introduce Himself Here*
 
+*QUIZ*:
+q1: Why is it important to listen to your emotions?
+a1: Understanding what emotions you are feeling can help doctors give you the best treatment course
+a2: A and C
+a3: A healthy mind is key to a healthy body
+
+q2: Can you brainstorm one example of each of the following coping skills that works for you?
+a12: One  fun thing you like to do
+a22: One way to release tension
+a32: One person you can talk to that you trust
 
 *VIDEO*: Psychosocial1
 

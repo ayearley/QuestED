@@ -1,3 +1,5 @@
+4 - Central Line
+
 *PRE-INTRO*:
 none listed currently...
 
@@ -9,6 +11,22 @@ doc: doc blurb 1
 *END INTRO*
 
 **Doctor will Introduce Himself Here*
+
+*QUIZ*:
+q1: Will my doctor give me medicine so that I sleep when I get my central line?
+a1: Maybe
+a2: Yes
+a3: No
+
+q2: Why do I need a central line?
+a12: So that I can watch my heart rate
+a22: So my doctor can give me medicine that I can’t drink/take as a pill
+a32: So that I can watch my heart rate
+
+q3: What are the signs that I need to watch out for and tell my doctor if I see?
+a13: Itchy Skin
+a23: Cuts
+a33: All of the above
 
 *VIDEO*: CentralLine
 
