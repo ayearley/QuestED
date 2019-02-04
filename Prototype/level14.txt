@@ -4,6 +4,9 @@
 *INTRO*:
 We’ve finally arrived at Count Leukemia’s Lava Lair. Here, we will do our best to bring Leukemia back to the good side and stop him and his minions from doing more harm to the kingdom. In this game, you must whack the cancerous minion cells, but don’t touch the normal cells! Only then can we hope to save the kingdom. Good luck on your final quest, my friend.
 
+doc: doc blurb 1
+
+*END INTRO*
 
 **Doctor will Introduce Himself Here*
 

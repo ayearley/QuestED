@@ -6,6 +6,10 @@ Royal Doctor: You’ve almost regained all of your health! The last stop must wo
 Physial therapist Philippa: Hi there! I’m Philippa, your physical therapist. I have a very special game to help you get your coordination back. Let’s check it out, shall we?
 
 
+doc: doc blurb 1
+
+*END INTRO*
+
 
 
 **Doctor will Introduce Himself Here*

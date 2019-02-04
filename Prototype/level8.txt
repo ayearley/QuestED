@@ -5,7 +5,9 @@ You performed admirably at the Radiation River. We are getting closer to Count L
 *INTRO*:
 The entire Tundra has been infected by Leukemia’s minions but we can save the land by planting a cure: bone marrow. In this game, you must get the bone marrow to the bottom of the screen in order to cure the village.
 
+doc: doc blurb 1
 
+*END INTRO*
 
 **Doctor will Introduce Himself Here*
 

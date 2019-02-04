@@ -4,6 +4,9 @@ None right now...
 *INTRO*:
 NAME, meet another one of my good friends - Charlie the Child Life Speciliast. He’s here to make your time here in Healing Harbor feel fun and normal and help you through the hard times. If you ever have questions on any tests you might have, Charlie is here to help!
 
+doc: doc blurb 1
+
+*END INTRO*
 
 **Doctor will Introduce Himself Here*
 

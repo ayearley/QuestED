@@ -4,7 +4,9 @@ Royal Doctor Voiceover “Let’s begin our journey. First stop - Woodlands of t
 *INTRO*:
 The villagers here have fallen ill, let’s see if we can identify what symptoms they have so that we don’t fall ill ourselves!
 
+doc: doc blurb 1
 
+*END INTRO*
 
 **Doctor will Introduce Himself Here*
 

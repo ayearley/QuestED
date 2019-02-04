@@ -161,7 +161,15 @@ class MapViewController: UIViewController {
             
             totalLines = lines.count
 
-            doctorLabel.text = lines[0] + lines[1] + lines[2] + lines[3]
+            if (lines.count == 3) {
+                doctorLabel.text = lines[0] + lines[1] + lines[2]
+            } else if (lines.count == 2) {
+                doctorLabel.text = lines[0] + lines[1]
+            } else if (lines.count == 1) {
+                doctorLabel.text = lines[0]
+            } else {
+                doctorLabel.text = lines[0] + lines[1] + lines[2] + lines[3]
+            }
             
             sender.isEnabled = false
             // Do the above line for other level buttons as well

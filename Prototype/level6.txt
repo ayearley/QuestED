@@ -7,7 +7,9 @@ Count Leukemia’s lieutenant has set up a hidden camp along the riverbank and h
 
 **Doctor will Introduce Himself Here*
 
+doc: doc blurb 1
 
+*END INTRO*
 
 *VIDEO*: radiation
 

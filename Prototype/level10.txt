@@ -9,8 +9,9 @@ Stay away from foods like: fresh salsa, grapefruit, berries, raw oats, sushi, sa
 In general, you can eat most foods that you might buy at the grocery store in a package and that are well-cooked, but stay away from undercooked, unwashed foods.
 
 
+doc: doc blurb 1
 
-
+*END INTRO*
 
 
 **Doctor will Introduce Himself Here*

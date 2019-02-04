@@ -4,7 +4,9 @@ none listed currently...
 *INTRO*:
 It is time to go into battle, but it is important that we do many physical tests to test your strength. I know that you have the mental strength and physical strength to overcome Count Leukemia, but it is okay to be a worried about having to defend our kingdom against Count Leukemia. This first step of tests is going to be able to tell me if there is anything that I should take special note of to make sure that I give you the best chance of defending our great lands against Count Leukemia. There are a lot of different tests that will prepare you for battle, and I know it can be confusing or overwhelming at times, so ask me questions anytime along this journey of getting you ready to be our hero.
 
+doc: doc blurb 1
 
+*END INTRO*
 
 **Doctor will Introduce Himself Here*
 
