@@ -1,0 +1,32 @@
+1 - Symptoms
+
+*PRE-INTRO*:
+
+Before I can prepare you to defend the Count Leukemia and save our great lands, it is first important that you learn about what has come over our great kingdom so you are best equipped to be our hero
+
+*INTRO*:
+
+*CHARACTER*:
+doctor: doc Unfortunately, the beloved people of our lands haven’t been feeling like themselves. There have been reports that our kingdom's citizens can’t do the things they used to love to do the same way anymore. One villager used to train dragons so that they could transport people from the different lands of the kingdoms. One villager used to train everyday so that he could be a strong warrior to protect the castle of the king and queen. School children haven’t been able to attend the academy so that they can follow their dreams of one day being a knight, a dragon trainer, a spell caster, or anything else that they want to do. While we don’t like to see our people feeling less than 100%, I don’t want you to be scared or sad but rather let’s learn more so that we can help everyone to feel better.
+
+*END INTRO*
+
+*QUIZ*:
+q1: Who is best friend
+a1: Bruce
+a2: Darty Joe*
+a3: Yimmy Butler
+
+q2: example question2
+a12: example answer1
+a22: example answer2*
+a32: example answer3
+
+q3: example question3
+a13: example answer1
+a23: example answer2
+a33: example answer3*
+
+*VIDEO*: symptoms
+
+*END*

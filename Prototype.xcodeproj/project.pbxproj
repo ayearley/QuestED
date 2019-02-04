@@ -171,6 +171,48 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		103BA2242209031600F182F5 /* Level Files */ = {
+			isa = PBXGroup;
+			children = (
+				B10A0A7621B31262001FBA42 /* level1.txt */,
+				B187219721BC4BEB007862FA /* level2.txt */,
+				1044E5BE21EBF48E003EEC1A /* level3.txt */,
+				1044E5B821EBF421003EEC1A /* level4.txt */,
+				1044E5C121EBF48E003EEC1A /* level5.txt */,
+				1044E5C021EBF48E003EEC1A /* level6.txt */,
+				1044E5BA21EBF48E003EEC1A /* level7.txt */,
+				1044E5BD21EBF48E003EEC1A /* level8.txt */,
+				1044E5BC21EBF48E003EEC1A /* level9.txt */,
+				1044E5BB21EBF48E003EEC1A /* level10.txt */,
+				1044E5C221EBF48E003EEC1A /* level11.txt */,
+				1044E5BF21EBF48E003EEC1A /* level12.txt */,
+				1044E5CE21EBF601003EEC1A /* level13.txt */,
+				1044E5CC21EBF5D1003EEC1A /* level14.txt */,
+			);
+			path = "Level Files";
+			sourceTree = "<group>";
+		};
+		103BA2252209038300F182F5 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				100BBE7621FE5888005A1379 /* cancer.mp4 */,
+				100BBE7221FE5885005A1379 /* chemotherapy.mp4 */,
+				100BBE7C21FE588D005A1379 /* Childlifespecialist.mp4 */,
+				100BBE7721FE5889005A1379 /* Dietician.mp4 */,
+				100BBE7321FE5885005A1379 /* Nurse.mp4 */,
+				100BBE7E21FE588E005A1379 /* Physicaltherapist.mp4 */,
+				100BBE7821FE5889005A1379 /* pretransplant.mp4 */,
+				100BBE7F21FE588F005A1379 /* Psychosocial1.mp4 */,
+				100BBE7A21FE588B005A1379 /* Psychosocial2.mp4 */,
+				100BBE7D21FE588E005A1379 /* Psychosocial3.mp4 */,
+				100BBE7421FE5886005A1379 /* radiation.mp4 */,
+				100BBE7921FE588A005A1379 /* symptoms.mp4 */,
+				100BBE7B21FE588C005A1379 /* Transplant.mp4 */,
+				100BBE7021FE51FE005A1379 /* CentralLine.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		10975B4621A9AB0700C1F573 = {
 			isa = PBXGroup;
 			children = (
@@ -210,40 +252,14 @@
 				10975B5B21A9AB0800C1F573 /* LaunchScreen.storyboard */,
 				10975B5E21A9AB0800C1F573 /* Info.plist */,
 				B10A0A7221B2FDC7001FBA42 /* README.txt */,
-				B10A0A7621B31262001FBA42 /* level1.txt */,
-				B187219721BC4BEB007862FA /* level2.txt */,
-				1044E5BE21EBF48E003EEC1A /* level3.txt */,
-				1044E5B821EBF421003EEC1A /* level4.txt */,
-				1044E5C121EBF48E003EEC1A /* level5.txt */,
-				1044E5C021EBF48E003EEC1A /* level6.txt */,
-				1044E5BA21EBF48E003EEC1A /* level7.txt */,
-				1044E5BD21EBF48E003EEC1A /* level8.txt */,
-				1044E5BC21EBF48E003EEC1A /* level9.txt */,
-				1044E5BB21EBF48E003EEC1A /* level10.txt */,
-				1044E5C221EBF48E003EEC1A /* level11.txt */,
-				1044E5BF21EBF48E003EEC1A /* level12.txt */,
-				1044E5CE21EBF601003EEC1A /* level13.txt */,
-				1044E5CC21EBF5D1003EEC1A /* level14.txt */,
+				103BA2242209031600F182F5 /* Level Files */,
 				B1DE2A0E21EEC9EB000D1614 /* levelstatus.txt */,
 				B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */,
 				026F896C21B3328E009C66A6 /* LevelRunner.swift */,
 				106DA72221F5679300704477 /* QuizViewController.swift */,
 				10E8675221F64F0000D1D69E /* QuizViewController.xib */,
 				10E8675D21FA8C4100D1D69E /* Question.swift */,
-				100BBE7621FE5888005A1379 /* cancer.mp4 */,
-				100BBE7221FE5885005A1379 /* chemotherapy.mp4 */,
-				100BBE7C21FE588D005A1379 /* Childlifespecialist.mp4 */,
-				100BBE7721FE5889005A1379 /* Dietician.mp4 */,
-				100BBE7321FE5885005A1379 /* Nurse.mp4 */,
-				100BBE7E21FE588E005A1379 /* Physicaltherapist.mp4 */,
-				100BBE7821FE5889005A1379 /* pretransplant.mp4 */,
-				100BBE7F21FE588F005A1379 /* Psychosocial1.mp4 */,
-				100BBE7A21FE588B005A1379 /* Psychosocial2.mp4 */,
-				100BBE7D21FE588E005A1379 /* Psychosocial3.mp4 */,
-				100BBE7421FE5886005A1379 /* radiation.mp4 */,
-				100BBE7921FE588A005A1379 /* symptoms.mp4 */,
-				100BBE7B21FE588C005A1379 /* Transplant.mp4 */,
-				100BBE7021FE51FE005A1379 /* CentralLine.mp4 */,
+				103BA2252209038300F182F5 /* Videos */,
 				B17BF498220642C6007CBDED /* speechbubble_map.png */,
 				B12C73D42207856F00590E6B /* speechbubble_large.png */,
 			);
