@@ -106,20 +106,23 @@ class QuizViewController: UIViewController {
         //titleLabel.backgroundColor = UIColor.green
         view.addSubview(titleLabel)
         
+        an1Button.setBackgroundImage(UIImage(named: "choice-untapped.png"), for: .normal)
         an1Button.setTitle(question1.choices[0], for: .normal)
-        an1Button.backgroundColor = UIColor.gray
+        an1Button.setTitleColor(UIColor.black, for: .normal)
         an1Button.tag = 1
         an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an1Button)
         
+        an2Button.setBackgroundImage(UIImage(named: "choice-untapped.png"), for: .normal)
         an2Button.setTitle(question1.choices[1], for: .normal)
-        an2Button.backgroundColor = UIColor.gray
+        an2Button.setTitleColor(UIColor.black, for: .normal)
         an2Button.tag = 2
         an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an2Button)
         
+        an3Button.setBackgroundImage(UIImage(named: "choice-untapped.png"), for: .normal)
         an3Button.setTitle(question1.choices[2], for: .normal)
-        an3Button.backgroundColor = UIColor.gray
+        an3Button.setTitleColor(UIColor.black, for: .normal)
         an3Button.tag = 3
         an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an3Button)
@@ -160,20 +163,23 @@ class QuizViewController: UIViewController {
         
         view.addSubview(titleLabel)
         
+        an1Button.setBackgroundImage(UIImage(named: "choice-untapped.png"), for: .normal)
         an1Button.setTitle(question2.choices[0], for: .normal)
-        an1Button.backgroundColor = UIColor.gray
+        an1Button.setTitleColor(UIColor.black, for: .normal)
         an1Button.tag = 1
         an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an1Button)
         
+        an2Button.setBackgroundImage(UIImage(named: "choice-untapped.png"), for: .normal)
         an2Button.setTitle(question2.choices[1], for: .normal)
-        an2Button.backgroundColor = UIColor.gray
+        an2Button.setTitleColor(UIColor.black, for: .normal)
         an2Button.tag = 2
         an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an2Button)
         
+        an3Button.setBackgroundImage(UIImage(named: "choice-untapped.png"), for: .normal)
         an3Button.setTitle(question2.choices[2], for: .normal)
-        an3Button.backgroundColor = UIColor.gray
+        an3Button.setTitleColor(UIColor.black, for: .normal)
         an3Button.tag = 3
         an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an3Button)
@@ -205,20 +211,23 @@ class QuizViewController: UIViewController {
         
         view.addSubview(titleLabel)
         
+        an1Button.setBackgroundImage(UIImage(named: "choice-untapped.png"), for: .normal)
         an1Button.setTitle(question3.choices[0], for: .normal)
-        an1Button.backgroundColor = UIColor.gray
+        an1Button.setTitleColor(UIColor.black, for: .normal)
         an1Button.tag = 1
         an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an1Button)
         
+        an2Button.setBackgroundImage(UIImage(named: "choice-untapped.png"), for: .normal)
         an2Button.setTitle(question3.choices[1], for: .normal)
-        an2Button.backgroundColor = UIColor.gray
+        an2Button.setTitleColor(UIColor.black, for: .normal)
         an2Button.tag = 2
         an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an2Button)
         
+        an3Button.setBackgroundImage(UIImage(named: "choice-untapped.png"), for: .normal)
         an3Button.setTitle(question3.choices[2], for: .normal)
-        an3Button.backgroundColor = UIColor.gray
+        an3Button.setTitleColor(UIColor.black, for: .normal)
         an3Button.tag = 3
         an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an3Button)
@@ -243,7 +252,7 @@ class QuizViewController: UIViewController {
             print("Nothing is selected. Please select!")
         } else if (correctAns == selectedAns.tag) {
             //change color to green and pops up next button
-            selectedAns.backgroundColor = UIColor.green
+            selectedAns.setBackgroundImage(UIImage(named: "choice-right.png"), for: .normal)
             submitButton.isHidden = true
             nextButton.isHidden = false
             nextButton.setImage(UIImage(named: "next.png"), for: .normal)
@@ -253,7 +262,7 @@ class QuizViewController: UIViewController {
         } else {
             print("wrong-o")
             //change color to red and redo
-            selectedAns.backgroundColor = UIColor.red
+            selectedAns.setBackgroundImage(UIImage(named: "choice-wrong.png"), for: .normal)
             wrongButton.isHidden = false
             wrongButton.setImage(UIImage(named: "wrong.png"), for: .normal)
             view.addSubview(wrongButton)
@@ -290,10 +299,10 @@ class QuizViewController: UIViewController {
         wrongButton.isHidden = true
         submitButton.isHidden = false
         if(selectedAns != nil){
-            selectedAns.backgroundColor = UIColor.gray
+            selectedAns.setBackgroundImage(UIImage(named: "choice-untapped.png"), for: .normal)
         }
         selectedAns = selected
-        selectedAns.backgroundColor = UIColor.lightGray
+        selectedAns.setBackgroundImage(UIImage(named: "choice-tapped.png"), for: .normal)
     }
 
     override func viewDidLayoutSubviews() {
