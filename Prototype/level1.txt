@@ -5,7 +5,8 @@
 *INTRO*:
 Unfortunately, the beloved people of our lands haven’t been feeling like themselves. There have been reports that our kingdom's citizens can’t do the things they used to love to do the same way anymore. One villager used to train dragons so that they could transport people from the different lands of the kingdoms. One villager used to train everyday so that he could be a strong warrior to protect the castle of the king and queen. School children haven’t been able to attend the academy so that they can follow their dreams of one day being a knight, a dragon trainer, a spell caster, or anything else that they want to do. While we don’t like to see our people feeling less than 100%, I don’t want you to be scared or sad but rather let’s learn more so that we can help everyone to feel better.
 
-doc: doc blurb 1
+*CHARACTER*:
+doctor: doc blurb 1
 nurse: nurse blurb 1
 
 *END INTRO*

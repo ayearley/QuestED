@@ -34,6 +34,9 @@ class IntroLevelViewController: UIViewController {
     var doctorLines: [String] = [String]()
     var totalDoctorLines = 0
     var currentLineD = 0
+    
+    var char1Name: String
+    var char2Name: String
 
     var state = 0
     var nurseSpeaks: Bool = false
@@ -57,6 +60,9 @@ class IntroLevelViewController: UIViewController {
         print("Text file: \(textFile)")
         introText = ""
         nurseText = ""
+        char1Name = ""
+        char2Name = ""
+
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -68,6 +74,8 @@ class IntroLevelViewController: UIViewController {
         self.levelRunner = LevelRunner(textIn: self.textFile)
         introText = ""
         nurseText = ""
+        char1Name = ""
+        char2Name = ""
         super.init(coder: aDecoder)
     }
     
@@ -75,10 +83,10 @@ class IntroLevelViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        readTextFile()
         createDoctor()
         createNurse()
         
-        readTextFile()
         
         continueButton.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10)
         continueButton.setImage(UIImage(named: "continue.png"), for: .normal)
@@ -115,7 +123,9 @@ class IntroLevelViewController: UIViewController {
     }
     
     func createDoctor() {
-        doctorImage = UIImageView(image: UIImage(imageLiteralResourceName: "doctor.png"))
+        print("character 1 from config file is" + char1Name)
+        doctorImage = UIImageView(image: UIImage(imageLiteralResourceName: "" + char1Name + ".png"))
+        //doctorImage = UIImageView(image: UIImage(imageLiteralResourceName: "doctor.png"))
         doctorImage.frame = CGRect(x: Double(screenSize.width) * 0.1, y: Double(screenSize.height * 0.2), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
         view.addSubview(doctorImage)
         doctorImage.isHidden = true
@@ -143,6 +153,8 @@ class IntroLevelViewController: UIViewController {
         nurseLabel.isHidden = true
         
         nurseImage = UIImageView(image: UIImage(imageLiteralResourceName: "horse.jpg"))
+        //should be replaced with the following once we have the corresponding character picture matching with the config file
+        //nurseImage = UIImageView(image: UIImage(imageLiteralResourceName: "" + char2Name + ".png"))
         nurseImage.frame = CGRect(x: Double(screenSize.width) * 0.8, y: Double(screenSize.height * 0.2), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
         view.addSubview(nurseImage)
         nurseImage.isHidden = true
@@ -167,20 +179,35 @@ class IntroLevelViewController: UIViewController {
         if let filepath = Bundle.main.path(forResource: textFile, ofType: "txt") {
             do {
                 let contents = try String(contentsOfFile: filepath)
-                
-                let doctorRange = contents.range(of: "doc: ")
+                let startRange = contents.range(of: "*CHARACTER*:")
+                //let doctorRange = contents.range(of: "doc: ")
                 let endIntroRange = contents.range(of: "*END INTRO*")
                 
                 // print("Pre: \(preIntroRange), end: \(endPreIntroRange)")
                 
-                introText = String(contents[doctorRange!.upperBound..<endIntroRange!.lowerBound])
+                introText = String(contents[startRange!.upperBound..<endIntroRange!.lowerBound])
+                print(introText)
+                let allCharsInfo = introText.split(separator: "\n")
+                let char1Info = allCharsInfo[0]
+                print(char1Info)
+                char1Name = String(char1Info.split(separator: ":")[0])
+                introText = String(char1Info.split(separator: ":")[1])
                 
-                if (introText.contains("nurse: ")) {
+                //introText = String(contents[doctorRange!.upperBound..<endIntroRange!.lowerBound])
+                
+//                if (introText.contains("nurse: ")) {
+//                    nurseSpeaks = true
+//
+//                    let nurseRange = contents.range(of: "nurse: ")
+//                    //introText = String(contents[doctorRange!.upperBound..<nurseRange!.lowerBound])
+//                    nurseText = String(contents[nurseRange!.upperBound..<endIntroRange!.lowerBound])
+//                }
+                
+                if (allCharsInfo.count > 1) {
                     nurseSpeaks = true
-                    
-                    let nurseRange = contents.range(of: "nurse: ")
-                    introText = String(contents[doctorRange!.upperBound..<nurseRange!.lowerBound])
-                    nurseText = String(contents[nurseRange!.upperBound..<endIntroRange!.lowerBound])
+                    let char2Info = allCharsInfo[1]
+                    char2Name = String(char2Info.split(separator: ":")[0])
+                    nurseText = String(char2Info.split(separator: ":")[1])
                 }
             } catch {
                 debugPrint("contents of text file could not be loaded")
