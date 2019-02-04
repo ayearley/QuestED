@@ -1,12 +1,29 @@
+7 - Chemotherapy Canyon
+
 *PRE-INTRO*:
-Royal Doctor Voiceover “Good work helping the villagers in the Woodlands of the White Blood Cells. Let’s now begin our journey. Now on to chemotherapy Canyon!
+Good work helping the villagers in the Woodlands of the White Blood Cells. Let’s now begin our journey. Now on to chemotherapy Canyon!
 
 
 *INTRO*:
 We’ve heard that Count Leukemia’s minions have assembled and are terrorizing the commoners.  Let’s help free them! In this game, you will spray poison on the minions shaped like cancer cells - make sure you avoid the white blood cell trees. 
 
-
 **Doctor will Introduce Himself Here*
+
+*QUIZ*:
+q1: What is chemotherapy?
+a1: A machine that gives you your medicine
+a2: An anti-cancer drug that stops cancer cells from dividing
+a3: A form of therapy that involves talking about your feelings
+
+q2: What are some common symptoms of chemotherapy?
+a12: Nausea and hair loss
+a22: Both A and C
+a32: Mouth sores and loss of appetite
+
+q3: How often will you receive chemotherapy?
+a13: Every hour
+a23: Everyday
+a33: On a schedule, it varies from patient to patient
 
 *VIDEO*: chemotherapy
 

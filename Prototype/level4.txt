@@ -1,12 +1,28 @@
+4 - Central Line
+
 *PRE-INTRO*:
 none listed currently...
 
 *INTRO*:
 It is important that we monitor your health during this journey. We will do this using one of my inventions, a Central Line. As you proceed through the kingdom, this magical tube will deliver health boosters and medicines directly to your heart during each level. Don’t worry, I’ll give you this potion to make you sleep before I put it in place so you won’t feel a thing...
 
-
-
 **Doctor will Introduce Himself Here*
+
+*QUIZ*:
+q1: Will my doctor give me medicine so that I sleep when I get my central line?
+a1: Maybe
+a2: Yes
+a3: No
+
+q2: Why do I need a central line?
+a12: So that I can watch my heart rate
+a22: So my doctor can give me medicine that I can’t drink/take as a pill
+a32: So that I can watch my heart rate
+
+q3: What are the signs that I need to watch out for and tell my doctor if I see?
+a13: Itchy Skin
+a23: Cuts
+a33: All of the above
 
 *VIDEO*: CentralLine
 
