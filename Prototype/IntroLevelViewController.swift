@@ -134,7 +134,7 @@ class IntroLevelViewController: UIViewController {
         
         doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.22, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
         
-        bubbleImage.frame = CGRect(x: doctorLabel.frame.minX * 0.9, y: doctorLabel.frame.minY, width: doctorLabel.frame.width * 1.15, height: doctorLabel.frame.height)
+        bubbleImage.frame = CGRect(x: doctorLabel.frame.minX * 0.9, y: doctorLabel.frame.minY, width: doctorLabel.frame.width * 2.0, height: doctorLabel.frame.height * 2.0)
         
         view.addSubview(bubbleImage)
         bubbleImage.isHidden = true
@@ -152,7 +152,7 @@ class IntroLevelViewController: UIViewController {
         view.addSubview(nurseLabel)
         nurseLabel.isHidden = true
         
-        nurseImage = UIImageView(image: UIImage(imageLiteralResourceName: "horse.jpg"))
+        nurseImage = UIImageView(image: UIImage(imageLiteralResourceName: "nurse.png"))
         //should be replaced with the following once we have the corresponding character picture matching with the config file
         //nurseImage = UIImageView(image: UIImage(imageLiteralResourceName: "" + char2Name + ".png"))
         nurseImage.frame = CGRect(x: Double(screenSize.width) * 0.8, y: Double(screenSize.height * 0.2), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
