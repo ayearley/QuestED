@@ -4,14 +4,11 @@
 Let’s begin our journey. First stop - Woodlands of the White Blood Cells where we can see where everything started to go wrong. Villagers are reporting various symptoms. Let’s investigate!
 
 *INTRO*:
-The villagers here have fallen ill, let’s see if we can identify what symptoms they have so that we don’t fall ill ourselves!
 
-doc: doc blurb 1
+doc: doc The villagers here have fallen ill, let’s see if we can identify what symptoms they have so that we don’t fall ill ourselves!
 
 *END INTRO*
 
-**Doctor will Introduce Himself Here*
-
-*VIDEO*: symptoms
+*VIDEO*: none
 
 *END*

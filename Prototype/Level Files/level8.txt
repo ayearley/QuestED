@@ -4,9 +4,8 @@
 Excellent job saving the villagers in the Chemotherapy Canyon! Unfortunately, you did not escape unscathed. The poison that we sprayed on Count Leukemia’s minions in Chemotherapy Canyon has left you feeling very nauseous and with mouth and stomach sores. I will give you some medicine for the pain through your central line. You performed admirably at the Radiation River. We are getting closer to Count Leukemia’s lair - I can feel it! But first we must visit the Transplant Tundra.
 
 *INTRO*:
-The entire Tundra has been infected by Leukemia’s minions but we can save the land by planting a cure: bone marrow. In this game, you must get the bone marrow to the bottom of the screen in order to cure the village.
 
-doc: doc blurb 1
+doc: doc The entire Tundra has been infected by Leukemia’s minions but we can save the land by planting a cure: bone marrow. In this game, you must get the bone marrow to the bottom of the screen in order to cure the village.
 
 *END INTRO*
 

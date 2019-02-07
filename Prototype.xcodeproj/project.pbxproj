@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		026F896D21B3328E009C66A6 /* LevelRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F896C21B3328E009C66A6 /* LevelRunner.swift */; };
 		100BBE7121FE51FE005A1379 /* CentralLine.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7021FE51FE005A1379 /* CentralLine.mp4 */; };
-		100BBE8021FE588F005A1379 /* chemotherapy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7221FE5885005A1379 /* chemotherapy.mp4 */; };
 		100BBE8121FE588F005A1379 /* Nurse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7321FE5885005A1379 /* Nurse.mp4 */; };
 		100BBE8221FE588F005A1379 /* radiation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7421FE5886005A1379 /* radiation.mp4 */; };
 		100BBE8421FE588F005A1379 /* cancer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7621FE5888005A1379 /* cancer.mp4 */; };
 		100BBE8521FE588F005A1379 /* Dietician.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7721FE5889005A1379 /* Dietician.mp4 */; };
 		100BBE8621FE588F005A1379 /* pretransplant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7821FE5889005A1379 /* pretransplant.mp4 */; };
-		100BBE8721FE588F005A1379 /* symptoms.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7921FE588A005A1379 /* symptoms.mp4 */; };
 		100BBE8821FE588F005A1379 /* Psychosocial2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7A21FE588B005A1379 /* Psychosocial2.mp4 */; };
 		100BBE8921FE588F005A1379 /* Transplant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7B21FE588C005A1379 /* Transplant.mp4 */; };
 		100BBE8A21FE588F005A1379 /* Childlifespecialist.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7C21FE588D005A1379 /* Childlifespecialist.mp4 */; };
@@ -48,6 +46,8 @@
 		10975B8321A9B12700C1F573 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8121A9B12700C1F573 /* IntroViewController.xib */; };
 		10975B8621A9B54200C1F573 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10975B8421A9B54200C1F573 /* MapViewController.swift */; };
 		10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8521A9B54200C1F573 /* MapViewController.xib */; };
+		10C64431220BCD03001125A4 /* chemotherapy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10C64430220BCD03001125A4 /* chemotherapy.mp4 */; };
+		10C64433220BCD2E001125A4 /* symptoms.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10C64432220BCD2E001125A4 /* symptoms.mp4 */; };
 		10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E8675221F64F0000D1D69E /* QuizViewController.xib */; };
 		10E8675E21FA8C4100D1D69E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E8675D21FA8C4100D1D69E /* Question.swift */; };
 		B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7221B2FDC7001FBA42 /* README.txt */; };
@@ -81,13 +81,11 @@
 /* Begin PBXFileReference section */
 		026F896C21B3328E009C66A6 /* LevelRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelRunner.swift; sourceTree = "<group>"; };
 		100BBE7021FE51FE005A1379 /* CentralLine.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CentralLine.mp4; sourceTree = "<group>"; };
-		100BBE7221FE5885005A1379 /* chemotherapy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chemotherapy.mp4; sourceTree = "<group>"; };
 		100BBE7321FE5885005A1379 /* Nurse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nurse.mp4; sourceTree = "<group>"; };
 		100BBE7421FE5886005A1379 /* radiation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = radiation.mp4; sourceTree = "<group>"; };
 		100BBE7621FE5888005A1379 /* cancer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cancer.mp4; sourceTree = "<group>"; };
 		100BBE7721FE5889005A1379 /* Dietician.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dietician.mp4; sourceTree = "<group>"; };
 		100BBE7821FE5889005A1379 /* pretransplant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pretransplant.mp4; sourceTree = "<group>"; };
-		100BBE7921FE588A005A1379 /* symptoms.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = symptoms.mp4; sourceTree = "<group>"; };
 		100BBE7A21FE588B005A1379 /* Psychosocial2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Psychosocial2.mp4; sourceTree = "<group>"; };
 		100BBE7B21FE588C005A1379 /* Transplant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Transplant.mp4; sourceTree = "<group>"; };
 		100BBE7C21FE588D005A1379 /* Childlifespecialist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Childlifespecialist.mp4; sourceTree = "<group>"; };
@@ -126,6 +124,8 @@
 		10975B8121A9B12700C1F573 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		10975B8421A9B54200C1F573 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		10975B8521A9B54200C1F573 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		10C64430220BCD03001125A4 /* chemotherapy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chemotherapy.mp4; sourceTree = "<group>"; };
+		10C64432220BCD2E001125A4 /* symptoms.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = symptoms.mp4; sourceTree = "<group>"; };
 		10E8675221F64F0000D1D69E /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 		10E8675D21FA8C4100D1D69E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		B10A0A7221B2FDC7001FBA42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
@@ -195,8 +195,9 @@
 		103BA2252209038300F182F5 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				10C64432220BCD2E001125A4 /* symptoms.mp4 */,
+				10C64430220BCD03001125A4 /* chemotherapy.mp4 */,
 				100BBE7621FE5888005A1379 /* cancer.mp4 */,
-				100BBE7221FE5885005A1379 /* chemotherapy.mp4 */,
 				100BBE7C21FE588D005A1379 /* Childlifespecialist.mp4 */,
 				100BBE7721FE5889005A1379 /* Dietician.mp4 */,
 				100BBE7321FE5885005A1379 /* Nurse.mp4 */,
@@ -206,7 +207,6 @@
 				100BBE7A21FE588B005A1379 /* Psychosocial2.mp4 */,
 				100BBE7D21FE588E005A1379 /* Psychosocial3.mp4 */,
 				100BBE7421FE5886005A1379 /* radiation.mp4 */,
-				100BBE7921FE588A005A1379 /* symptoms.mp4 */,
 				100BBE7B21FE588C005A1379 /* Transplant.mp4 */,
 				100BBE7021FE51FE005A1379 /* CentralLine.mp4 */,
 			);
@@ -390,7 +390,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B187219821BC4C34007862FA /* level2.txt in Resources */,
-				100BBE8021FE588F005A1379 /* chemotherapy.mp4 in Resources */,
 				100BBE8421FE588F005A1379 /* cancer.mp4 in Resources */,
 				B10A0A7721B31415001FBA42 /* level1.txt in Resources */,
 				10879C6B21B3063B001D7F0B /* IntroLevelViewController.xib in Resources */,
@@ -402,9 +401,9 @@
 				1044E5CD21EBF5D1003EEC1A /* level14.txt in Resources */,
 				1044E5CA21EBF48E003EEC1A /* level5.txt in Resources */,
 				100BBE8621FE588F005A1379 /* pretransplant.mp4 in Resources */,
+				10C64431220BCD03001125A4 /* chemotherapy.mp4 in Resources */,
 				100BBE8921FE588F005A1379 /* Transplant.mp4 in Resources */,
 				10975B5A21A9AB0800C1F573 /* Assets.xcassets in Resources */,
-				100BBE8721FE588F005A1379 /* symptoms.mp4 in Resources */,
 				1044E5C921EBF48E003EEC1A /* level6.txt in Resources */,
 				B1DE2A0F21EEC9EB000D1614 /* levelstatus.txt in Resources */,
 				100BBE8D21FE588F005A1379 /* Psychosocial1.mp4 in Resources */,
@@ -418,6 +417,7 @@
 				1044E5B921EBF421003EEC1A /* level4.txt in Resources */,
 				10975B5821A9AB0700C1F573 /* Main.storyboard in Resources */,
 				100BBE8521FE588F005A1379 /* Dietician.mp4 in Resources */,
+				10C64433220BCD2E001125A4 /* symptoms.mp4 in Resources */,
 				1044E5CB21EBF48E003EEC1A /* level11.txt in Resources */,
 				100BBE7121FE51FE005A1379 /* CentralLine.mp4 in Resources */,
 				1044E5C521EBF48E003EEC1A /* level9.txt in Resources */,

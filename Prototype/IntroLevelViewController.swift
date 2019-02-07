@@ -209,6 +209,15 @@ class IntroLevelViewController: UIViewController {
                     char2Name = String(char2Info.split(separator: ":")[0])
                     nurseText = String(char2Info.split(separator: ":")[1])
                 }
+                
+                //loads video name
+                let videoRange = contents.range(of: "*VIDEO*: ")
+                let endVideoRange = contents.range(of: "*END*")
+                
+                videoName = String(contents[videoRange!.upperBound..<endVideoRange!.lowerBound])
+                
+                videoName = String(videoName.filter { !" \n".contains($0) })
+                
             } catch {
                 debugPrint("contents of text file could not be loaded")
             }
