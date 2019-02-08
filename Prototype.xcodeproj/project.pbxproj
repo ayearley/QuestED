@@ -58,6 +58,8 @@
 		B187219521BC49D1007862FA /* CadeucesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187219321BC49D1007862FA /* CadeucesViewController.swift */; };
 		B187219621BC49D1007862FA /* CadeucesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B187219421BC49D1007862FA /* CadeucesViewController.xib */; };
 		B187219821BC4C34007862FA /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = B187219721BC4BEB007862FA /* level2.txt */; };
+		B1AE6809220E10F900B84A8E /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AE6807220E10F900B84A8E /* NameViewController.swift */; };
+		B1AE680A220E10F900B84A8E /* NameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1AE6808220E10F900B84A8E /* NameViewController.xib */; };
 		B1DE2A0F21EEC9EB000D1614 /* levelstatus.txt in Resources */ = {isa = PBXBuildFile; fileRef = B1DE2A0E21EEC9EB000D1614 /* levelstatus.txt */; };
 		C545596A220D2B1B004EDDA2 /* EndingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5455968220D2B1B004EDDA2 /* EndingViewController.swift */; };
 		C545596B220D2B1B004EDDA2 /* EndingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5455969220D2B1B004EDDA2 /* EndingViewController.xib */; };
@@ -138,6 +140,8 @@
 		B187219321BC49D1007862FA /* CadeucesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadeucesViewController.swift; sourceTree = "<group>"; };
 		B187219421BC49D1007862FA /* CadeucesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CadeucesViewController.xib; sourceTree = "<group>"; };
 		B187219721BC4BEB007862FA /* level2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
+		B1AE6807220E10F900B84A8E /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		B1AE6808220E10F900B84A8E /* NameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NameViewController.xib; sourceTree = "<group>"; };
 		B1DE2A0E21EEC9EB000D1614 /* levelstatus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = levelstatus.txt; sourceTree = "<group>"; };
 		C5455968220D2B1B004EDDA2 /* EndingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingViewController.swift; sourceTree = "<group>"; };
 		C5455969220D2B1B004EDDA2 /* EndingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EndingViewController.xib; sourceTree = "<group>"; };
@@ -251,6 +255,8 @@
 				10879C6921B3063B001D7F0B /* IntroLevelViewController.xib */,
 				B187219321BC49D1007862FA /* CadeucesViewController.swift */,
 				B187219421BC49D1007862FA /* CadeucesViewController.xib */,
+				B1AE6807220E10F900B84A8E /* NameViewController.swift */,
+				B1AE6808220E10F900B84A8E /* NameViewController.xib */,
 				10975B5621A9AB0700C1F573 /* Main.storyboard */,
 				10975B5921A9AB0800C1F573 /* Assets.xcassets */,
 				10975B5B21A9AB0800C1F573 /* LaunchScreen.storyboard */,
@@ -395,6 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1AE680A220E10F900B84A8E /* NameViewController.xib in Resources */,
 				B187219821BC4C34007862FA /* level2.txt in Resources */,
 				100BBE8421FE588F005A1379 /* cancer.mp4 in Resources */,
 				B10A0A7721B31415001FBA42 /* level1.txt in Resources */,
@@ -467,6 +474,7 @@
 				106DA72321F5679300704477 /* QuizViewController.swift in Sources */,
 				10879C6A21B3063B001D7F0B /* IntroLevelViewController.swift in Sources */,
 				C545596A220D2B1B004EDDA2 /* EndingViewController.swift in Sources */,
+				B1AE6809220E10F900B84A8E /* NameViewController.swift in Sources */,
 				10E8675E21FA8C4100D1D69E /* Question.swift in Sources */,
 				B187219521BC49D1007862FA /* CadeucesViewController.swift in Sources */,
 				10975B5321A9AB0700C1F573 /* AppDelegate.swift in Sources */,

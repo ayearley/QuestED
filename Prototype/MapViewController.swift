@@ -189,7 +189,8 @@ class MapViewController: UIViewController {
                 
                 // print("Pre: \(preIntroRange), end: \(endPreIntroRange)")
                 
-                preIntroText = String(contents[preIntroRange!.upperBound..<endPreIntroRange!.lowerBound])                
+                preIntroText = String(contents[preIntroRange!.upperBound..<endPreIntroRange!.lowerBound])
+                preIntroText = insertName(string: preIntroText)
             } catch {
                 debugPrint("contents of text file could not be loaded")
             }
@@ -251,6 +252,10 @@ class MapViewController: UIViewController {
         }
         return linesArray
     }
+    
+    func insertName(string: String) -> String {
+        return string.replacingOccurrences(of: "(NAME)", with: (UIApplication.shared.delegate as! AppDelegate).name)
+    }
 }
 
 extension UILabel {
@@ -269,4 +274,5 @@ extension UILabel {
         
         return labelTextSize.height > bounds.size.height
     }
+    
 }

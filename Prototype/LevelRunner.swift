@@ -54,4 +54,9 @@ class LevelRunner {
     func ending() {
         (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(EndingViewController(runner: self), animated: true)
     }
+    
+    func name() {
+        (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(NameViewController(), animated: true)
+
+    }
 }

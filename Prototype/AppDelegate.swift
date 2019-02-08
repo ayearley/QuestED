@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var levelStatus = [Int]()
     var currentLevel = 0
+    var name: String = ""
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
