@@ -5,7 +5,7 @@ You are looking better (NAME)! I’ve just received news that we are needed in t
 
 *INTRO*:
 
-doc: doc Count Leukemia’s lieutenant has set up a hidden camp along the riverbank and have camouflaged themselves. We must find his hideout and destroy these evil forces. Let’s go!
+doctor: doc Count Leukemia’s lieutenant has set up a hidden camp along the riverbank and have camouflaged themselves. We must find his hideout and destroy these evil forces. Let’s go!
 
 *END INTRO*
 

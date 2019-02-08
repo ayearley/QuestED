@@ -5,7 +5,7 @@ Let’s begin our journey. First stop - Woodlands of the White Blood Cells where
 
 *INTRO*:
 
-doc: doc The villagers here have fallen ill, let’s see if we can identify what symptoms they have so that we don’t fall ill ourselves!
+doctor: doc The villagers here have fallen ill, let’s see if we can identify what symptoms they have so that we don’t fall ill ourselves!
 
 *END INTRO*
 

@@ -5,7 +5,7 @@ Excellent job saving the villagers in the Chemotherapy Canyon! Unfortunately, yo
 
 *INTRO*:
 
-doc: doc The entire Tundra has been infected by Leukemia’s minions but we can save the land by planting a cure: bone marrow. In this game, you must get the bone marrow to the bottom of the screen in order to cure the village.
+doctor: doc The entire Tundra has been infected by Leukemia’s minions but we can save the land by planting a cure: bone marrow. In this game, you must get the bone marrow to the bottom of the screen in order to cure the village.
 
 *END INTRO*
 

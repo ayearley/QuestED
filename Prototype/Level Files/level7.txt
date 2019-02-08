@@ -6,7 +6,7 @@ Good work helping the villagers in the Woodlands of the White Blood Cells. Let�
 
 *INTRO*:
 
-doc: doc We’ve heard that Count Leukemia’s minions have assembled and are terrorizing the commoners.  Let’s help free them! In this game, you will spray poison on the minions shaped like cancer cells - make sure you avoid the white blood cell trees. 
+doctor: doc We’ve heard that Count Leukemia’s minions have assembled and are terrorizing the commoners.  Let’s help free them! In this game, you will spray poison on the minions shaped like cancer cells - make sure you avoid the white blood cell trees. 
 
 *END INTRO*
 
