@@ -50,4 +50,8 @@ class LevelRunner {
     func map() {
         (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(MapViewController(), animated: true)
     }
+    
+    func ending() {
+        (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(EndingViewController(runner: self), animated: true)
+    }
 }

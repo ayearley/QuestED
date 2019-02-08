@@ -120,6 +120,11 @@ class IntroLevelViewController: UIViewController {
             }
             self.levelRunner.map()
         }
+        //if game reaches the end, launch ending screen
+        
+        if (levelRunner.levelText == "level14") {
+            self.levelRunner.ending()
+        }
     }
     
     func createDoctor() {

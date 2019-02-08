@@ -59,6 +59,8 @@
 		B187219621BC49D1007862FA /* CadeucesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B187219421BC49D1007862FA /* CadeucesViewController.xib */; };
 		B187219821BC4C34007862FA /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = B187219721BC4BEB007862FA /* level2.txt */; };
 		B1DE2A0F21EEC9EB000D1614 /* levelstatus.txt in Resources */ = {isa = PBXBuildFile; fileRef = B1DE2A0E21EEC9EB000D1614 /* levelstatus.txt */; };
+		C545596A220D2B1B004EDDA2 /* EndingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5455968220D2B1B004EDDA2 /* EndingViewController.swift */; };
+		C545596B220D2B1B004EDDA2 /* EndingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5455969220D2B1B004EDDA2 /* EndingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,8 @@
 		B187219421BC49D1007862FA /* CadeucesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CadeucesViewController.xib; sourceTree = "<group>"; };
 		B187219721BC4BEB007862FA /* level2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 		B1DE2A0E21EEC9EB000D1614 /* levelstatus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = levelstatus.txt; sourceTree = "<group>"; };
+		C5455968220D2B1B004EDDA2 /* EndingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingViewController.swift; sourceTree = "<group>"; };
+		C5455969220D2B1B004EDDA2 /* EndingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EndingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +266,8 @@
 				103BA2252209038300F182F5 /* Videos */,
 				B17BF498220642C6007CBDED /* speechbubble_map.png */,
 				B12C73D42207856F00590E6B /* speechbubble_large.png */,
+				C5455968220D2B1B004EDDA2 /* EndingViewController.swift */,
+				C5455969220D2B1B004EDDA2 /* EndingViewController.xib */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 				B12C73D52207857000590E6B /* speechbubble_large.png in Resources */,
 				1044E5CD21EBF5D1003EEC1A /* level14.txt in Resources */,
 				1044E5CA21EBF48E003EEC1A /* level5.txt in Resources */,
+				C545596B220D2B1B004EDDA2 /* EndingViewController.xib in Resources */,
 				100BBE8621FE588F005A1379 /* pretransplant.mp4 in Resources */,
 				10C64431220BCD03001125A4 /* chemotherapy.mp4 in Resources */,
 				100BBE8921FE588F005A1379 /* Transplant.mp4 in Resources */,
@@ -459,6 +466,7 @@
 				026F896D21B3328E009C66A6 /* LevelRunner.swift in Sources */,
 				106DA72321F5679300704477 /* QuizViewController.swift in Sources */,
 				10879C6A21B3063B001D7F0B /* IntroLevelViewController.swift in Sources */,
+				C545596A220D2B1B004EDDA2 /* EndingViewController.swift in Sources */,
 				10E8675E21FA8C4100D1D69E /* Question.swift in Sources */,
 				B187219521BC49D1007862FA /* CadeucesViewController.swift in Sources */,
 				10975B5321A9AB0700C1F573 /* AppDelegate.swift in Sources */,
