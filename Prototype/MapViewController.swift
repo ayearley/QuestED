@@ -12,6 +12,8 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var mapImage: UIImageView!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     let screenSize = UIScreen.main.bounds
    // let screenWidth = screenSize.width
    // let screenHeight = screenSize.height
@@ -39,6 +41,11 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Bundle.main.loadNibNamed("MapViewController", owner: self, options: nil)
+        
+        scrollView.contentSize = CGSize(width: screenSize.width, height: 2000)
+        var mapIm: UIImage = UIImage(named: "map.png")!
+        mapImage.image = mapIm
+        scrollView.addSubview(mapImage)
         
         //Creates the level buttons for the map
         createButton(tag:1, widthRatio:1.75, heightRatio:2.5, completed:
