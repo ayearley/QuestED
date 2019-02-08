@@ -10,8 +10,6 @@ doctor: doc How did Count Leukemia get power you may find yourself asking becaus
 
 *END INTRO*
 
-**Doctor will Introduce Himself Here*
-
 *VIDEO*: cancer
 
 *END*
