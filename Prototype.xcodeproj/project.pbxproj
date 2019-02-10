@@ -48,11 +48,11 @@
 		10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8521A9B54200C1F573 /* MapViewController.xib */; };
 		10C64431220BCD03001125A4 /* chemotherapy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10C64430220BCD03001125A4 /* chemotherapy.mp4 */; };
 		10C64433220BCD2E001125A4 /* symptoms.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10C64432220BCD2E001125A4 /* symptoms.mp4 */; };
+		10E5BE742210BA9B00C044EB /* Intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10E5BE732210BA9B00C044EB /* Intro.mp4 */; };
 		10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E8675221F64F0000D1D69E /* QuizViewController.xib */; };
 		10E8675E21FA8C4100D1D69E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E8675D21FA8C4100D1D69E /* Question.swift */; };
 		10E86766220E400D00D1D69E /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E86765220E400D00D1D69E /* map.png */; };
 		B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7221B2FDC7001FBA42 /* README.txt */; };
-		B10A0A7521B30C2E001FBA42 /* QuestED Video.mov in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */; };
 		B10A0A7721B31415001FBA42 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7621B31262001FBA42 /* level1.txt */; };
 		B12C73D52207857000590E6B /* speechbubble_large.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C73D42207856F00590E6B /* speechbubble_large.png */; };
 		B17BF499220642C7007CBDED /* speechbubble_map.png in Resources */ = {isa = PBXBuildFile; fileRef = B17BF498220642C6007CBDED /* speechbubble_map.png */; };
@@ -131,11 +131,11 @@
 		10975B8521A9B54200C1F573 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		10C64430220BCD03001125A4 /* chemotherapy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chemotherapy.mp4; sourceTree = "<group>"; };
 		10C64432220BCD2E001125A4 /* symptoms.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = symptoms.mp4; sourceTree = "<group>"; };
+		10E5BE732210BA9B00C044EB /* Intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Intro.mp4; sourceTree = "<group>"; };
 		10E8675221F64F0000D1D69E /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 		10E8675D21FA8C4100D1D69E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		10E86765220E400D00D1D69E /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		B10A0A7221B2FDC7001FBA42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "QuestED Video.mov"; sourceTree = "<group>"; };
 		B10A0A7621B31262001FBA42 /* level1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 		B12C73D42207856F00590E6B /* speechbubble_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speechbubble_large.png; sourceTree = "<group>"; };
 		B17BF498220642C6007CBDED /* speechbubble_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speechbubble_map.png; sourceTree = "<group>"; };
@@ -205,6 +205,7 @@
 		103BA2252209038300F182F5 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				10E5BE732210BA9B00C044EB /* Intro.mp4 */,
 				10C64432220BCD2E001125A4 /* symptoms.mp4 */,
 				10C64430220BCD03001125A4 /* chemotherapy.mp4 */,
 				100BBE7621FE5888005A1379 /* cancer.mp4 */,
@@ -267,7 +268,6 @@
 				B10A0A7221B2FDC7001FBA42 /* README.txt */,
 				103BA2242209031600F182F5 /* Level Files */,
 				B1DE2A0E21EEC9EB000D1614 /* levelstatus.txt */,
-				B10A0A7421B30C2E001FBA42 /* QuestED Video.mov */,
 				026F896C21B3328E009C66A6 /* LevelRunner.swift */,
 				106DA72221F5679300704477 /* QuizViewController.swift */,
 				10E8675221F64F0000D1D69E /* QuizViewController.xib */,
@@ -425,9 +425,9 @@
 				1044E5C921EBF48E003EEC1A /* level6.txt in Resources */,
 				B1DE2A0F21EEC9EB000D1614 /* levelstatus.txt in Resources */,
 				100BBE8D21FE588F005A1379 /* Psychosocial1.mp4 in Resources */,
-				B10A0A7521B30C2E001FBA42 /* QuestED Video.mov in Resources */,
 				100BBE8121FE588F005A1379 /* Nurse.mp4 in Resources */,
 				B187219621BC49D1007862FA /* CadeucesViewController.xib in Resources */,
+				10E5BE742210BA9B00C044EB /* Intro.mp4 in Resources */,
 				1044E5C621EBF48E003EEC1A /* level8.txt in Resources */,
 				1044E5CF21EBF601003EEC1A /* level13.txt in Resources */,
 				100BBE8B21FE588F005A1379 /* Psychosocial3.mp4 in Resources */,
