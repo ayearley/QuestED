@@ -24,7 +24,7 @@ class NameViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         (UIApplication.shared.delegate as! AppDelegate).name = nameField.text!
         
-        guard let path = Bundle.main.path(forResource: "QuestED Video", ofType: "mov") else {
+        guard let path = Bundle.main.path(forResource: "Intro", ofType: "mp4") else {
             debugPrint("video.mp4 not found")
             return false
         }

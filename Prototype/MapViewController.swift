@@ -12,6 +12,10 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var mapImage: UIImageView!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var testbutton: UIButton!
+    
     let screenSize = UIScreen.main.bounds
    // let screenWidth = screenSize.width
    // let screenHeight = screenSize.height
@@ -19,12 +23,6 @@ class MapViewController: UIViewController {
     //Load all of these from file instead of hard coding
     var buttonWidth = 50;
     var buttonHeight = 50;
-    //var level1x = 45;
-    //var level1y = 220;
-    //var level2x = 245;
-    //var level2y = 350;
-    //var level3x = 120;
-    //var level3y = 545;
     
     var doctorImage: UIImageView = UIImageView()
     var bubbleImage: UIImageView = UIImageView()
@@ -40,19 +38,25 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         Bundle.main.loadNibNamed("MapViewController", owner: self, options: nil)
         
+ testbutton.setImage(UIImage(named:"easyButtonBlue.png"), for: .normal)
+        scrollView.contentSize = CGSize(width: screenSize.width, height: 1750)
+        scrollView.contentOffset = CGPoint(x: 0, y: 1750)
+        var mapIm: UIImage = UIImage(named: "map.png")!
+        mapImage.image = mapIm
+        scrollView.addSubview(mapImage)
+        
         //Creates the level buttons for the map
-        createButton(tag:1, widthRatio:1.75, heightRatio:2.5, completed:
+        createButton(tag:1, widthRatio:2.8, heightRatio:1.385, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 1 || (UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 2)
-        createButton(tag:2, widthRatio:1.88, heightRatio:1.9, completed:
+        createButton(tag:2, widthRatio:1.735, heightRatio:1.45, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[1] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[1] == 2)
-        createButton(tag:3, widthRatio:2.05, heightRatio:1.65, completed:
+        createButton(tag:3, widthRatio:1.3, heightRatio:2.4, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[2] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[2] == 2)
-        createButton(tag:4, widthRatio:2.28, heightRatio:1.45, completed:
+        createButton(tag:4, widthRatio:1.65, heightRatio:4.5, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 2)
-        createButton(tag:14, widthRatio:2.48, heightRatio:1.25, completed:true)
         
         createDoctor()
         
@@ -73,6 +77,7 @@ class MapViewController: UIViewController {
         }
         buttonLevel.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
         view.addSubview(buttonLevel)
+        buttonLevel.backgroundColor = UIColor.clear
     }
     
     func createDoctor() {
@@ -97,7 +102,8 @@ class MapViewController: UIViewController {
         doctorLabel.isHidden = true
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {        
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         if (state == 2) {
             currentLine += 4
             
@@ -140,8 +146,8 @@ class MapViewController: UIViewController {
     }*/
     
     @objc func buttonPressed(sender: UIButton){
-        // print("that was easy")
-        print(sender.tag)
+    
+        scrollView.isUserInteractionEnabled = false
         (UIApplication.shared.delegate as! AppDelegate).currentLevel = sender.tag
         
         state = 1
