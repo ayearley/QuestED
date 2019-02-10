@@ -52,6 +52,7 @@
 		10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E8675221F64F0000D1D69E /* QuizViewController.xib */; };
 		10E8675E21FA8C4100D1D69E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E8675D21FA8C4100D1D69E /* Question.swift */; };
 		10E867692210BB2D00D1D69E /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E867672210AC9100D1D69E /* map.png */; };
+		10E8676B2210BF1100D1D69E /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E8676A2210BF1000D1D69E /* map.png */; };
 		B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7221B2FDC7001FBA42 /* README.txt */; };
 		B10A0A7721B31415001FBA42 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7621B31262001FBA42 /* level1.txt */; };
 		B12C73D52207857000590E6B /* speechbubble_large.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C73D42207856F00590E6B /* speechbubble_large.png */; };
@@ -135,6 +136,7 @@
 		10E8675221F64F0000D1D69E /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 		10E8675D21FA8C4100D1D69E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		10E867672210AC9100D1D69E /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = ../../Downloads/map.png; sourceTree = "<group>"; };
+		10E8676A2210BF1000D1D69E /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		B10A0A7221B2FDC7001FBA42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		B10A0A7621B31262001FBA42 /* level1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 		B12C73D42207856F00590E6B /* speechbubble_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speechbubble_large.png; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		10975B5121A9AB0700C1F573 /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				10E8676A2210BF1000D1D69E /* map.png */,
 				10975B5221A9AB0700C1F573 /* AppDelegate.swift */,
 				10975B5421A9AB0700C1F573 /* ViewController.swift */,
 				10975B8021A9B12700C1F573 /* IntroViewController.swift */,
@@ -413,6 +416,7 @@
 				1044E5C321EBF48E003EEC1A /* level7.txt in Resources */,
 				10975B5D21A9AB0800C1F573 /* LaunchScreen.storyboard in Resources */,
 				100BBE8C21FE588F005A1379 /* Physicaltherapist.mp4 in Resources */,
+				10E8676B2210BF1100D1D69E /* map.png in Resources */,
 				10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */,
 				B12C73D52207857000590E6B /* speechbubble_large.png in Resources */,
 				1044E5CD21EBF5D1003EEC1A /* level14.txt in Resources */,
