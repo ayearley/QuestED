@@ -51,7 +51,7 @@
 		10E5BE742210BA9B00C044EB /* Intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10E5BE732210BA9B00C044EB /* Intro.mp4 */; };
 		10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E8675221F64F0000D1D69E /* QuizViewController.xib */; };
 		10E8675E21FA8C4100D1D69E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E8675D21FA8C4100D1D69E /* Question.swift */; };
-		10E86766220E400D00D1D69E /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E86765220E400D00D1D69E /* map.png */; };
+		10E867692210BB2D00D1D69E /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E867672210AC9100D1D69E /* map.png */; };
 		B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7221B2FDC7001FBA42 /* README.txt */; };
 		B10A0A7721B31415001FBA42 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7621B31262001FBA42 /* level1.txt */; };
 		B12C73D52207857000590E6B /* speechbubble_large.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C73D42207856F00590E6B /* speechbubble_large.png */; };
@@ -134,7 +134,7 @@
 		10E5BE732210BA9B00C044EB /* Intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Intro.mp4; sourceTree = "<group>"; };
 		10E8675221F64F0000D1D69E /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 		10E8675D21FA8C4100D1D69E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		10E86765220E400D00D1D69E /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		10E867672210AC9100D1D69E /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = ../../Downloads/map.png; sourceTree = "<group>"; };
 		B10A0A7221B2FDC7001FBA42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		B10A0A7621B31262001FBA42 /* level1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 		B12C73D42207856F00590E6B /* speechbubble_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speechbubble_large.png; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 		10975B4621A9AB0700C1F573 = {
 			isa = PBXGroup;
 			children = (
-				10E86765220E400D00D1D69E /* map.png */,
+				10E867672210AC9100D1D69E /* map.png */,
 				027ECDE021B305D00026E34E /* Assets */,
 				10975B5121A9AB0700C1F573 /* Prototype */,
 				10975B6621A9AB0800C1F573 /* PrototypeTests */,
@@ -404,7 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10E86766220E400D00D1D69E /* map.png in Resources */,
+				10E867692210BB2D00D1D69E /* map.png in Resources */,
 				B1AE680A220E10F900B84A8E /* NameViewController.xib in Resources */,
 				B187219821BC4C34007862FA /* level2.txt in Resources */,
 				100BBE8421FE588F005A1379 /* cancer.mp4 in Resources */,
