@@ -187,10 +187,21 @@ class IntroLevelViewController: UIViewController {
                 //let doctorRange = contents.range(of: "doc: ")
                 let endIntroRange = contents.range(of: "*END INTRO*")
                 
+                let finalEndRange = contents.range(of: "*END*")
+                
+                let quizText = String(contents[endIntroRange!.upperBound..<finalEndRange!.lowerBound])
+                
+                if(quizText.contains("*QUIZ*:")) {
+                    quiz = true;
+                } else {
+                }
+                
                 // print("Pre: \(preIntroRange), end: \(endPreIntroRange)")
                 
                 introText = String(contents[startRange!.upperBound..<endIntroRange!.lowerBound])
                 print(introText)
+                
+                
                 let allCharsInfo = introText.split(separator: "\n")
                 let char1Info = allCharsInfo[0]
                 print(char1Info)
@@ -214,9 +225,7 @@ class IntroLevelViewController: UIViewController {
                     nurseText = String(char2Info.split(separator: ":")[1])
                 }
                 
-                if(introText.contains("*QUIZ*:")) {
-                    quiz = true;
-                }
+                
                 
                 //loads video name
                 let videoRange = contents.range(of: "*VIDEO*: ")
