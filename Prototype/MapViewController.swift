@@ -141,7 +141,7 @@ class MapViewController: UIViewController {
             
             print("Total lines: \(totalLines)")
             
-            if (currentLine + 3 < totalLines) {
+            if (currentLine + 1 < totalLines) {
                 var newText: String = ""
                 
                 for  i in currentLine..<totalLines {
@@ -151,6 +151,7 @@ class MapViewController: UIViewController {
                 }
                 
                 doctorLabel.text = newText
+                
             } else {
                 state = 3
             }
@@ -198,8 +199,14 @@ class MapViewController: UIViewController {
             
             lines = getLinesArrayOfString(in: doctorLabel)
             
+            var i: Int = 0
+            
             totalLines = lines.count
-
+            
+            for j in i..<totalLines {
+                print("Line \(j): \(lines[j])")
+            }
+            
             if (lines.count == 3) {
                 doctorLabel.text = lines[0] + lines[1] + lines[2]
             } else if (lines.count == 2) {
