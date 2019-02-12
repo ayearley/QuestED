@@ -9,10 +9,18 @@
 import UIKit
 
 class EndingViewController: UIViewController {
-    var titleLabel: UILabel
     var mapButton: UIButton
     let screenSize = UIScreen.main.bounds
     //var levelRunner: LevelRunner
+    
+    var bgImage: UIImageView = UIImageView()
+    
+    var state = 0
+    var levelNumber = 0
+    var totalLines = 0
+    var currentLine = 0
+    var lines: [String] = [String]()
+    var currentOffset = 0
     
     var doctorImage: UIImageView = UIImageView()
     var doctorLabel: UILabel = UILabel()
@@ -23,13 +31,11 @@ class EndingViewController: UIViewController {
 
     init(runner: LevelRunner) {
         //levelRunner = runner
-        titleLabel = UILabel()
         mapButton = UIButton()
         super.init(nibName: nil, bundle: nil)
 
     }
     required init?(coder aDecoder: NSCoder) {
-        titleLabel = UILabel()
         mapButton = UIButton()
         //self.levelRunner = LevelRunner(textIn: self.textFile)
 
@@ -42,12 +48,17 @@ class EndingViewController: UIViewController {
         (UIApplication.shared.delegate as! AppDelegate).navController = self.navigationController
         
         Bundle.main.loadNibNamed("EndingViewController", owner: self, options: nil)
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "introbg.png")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "lightbg.png")!)
+        
+        var bgIm: UIImage = UIImage(named: "lightbg.png")!
+        bgImage.image = bgIm
+        view.addSubview(bgImage)
         createDoctor()
         readTextFile()
-        titleLabel.text = "Congratulations! You completed the game.YAY"
-        titleLabel.textColor = UIColor.black
-        view.addSubview(titleLabel)
+        
+        //
+        
+        //
         
         mapButton.setTitle("Back to Map", for: .normal)
         mapButton.addTarget(self, action: #selector(backToMap(selected:)), for:.touchUpInside)
@@ -63,7 +74,6 @@ class EndingViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         let screenSize = UIScreen.main.bounds
-        titleLabel.frame = CGRect(x: 280, y: 320, width: screenSize.width - 16 * 2, height: 80);
         mapButton.frame = CGRect(x: Double(screenSize.width) * 0.725, y: Double(screenSize.height) * 0.85, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
     }
     
@@ -76,6 +86,31 @@ class EndingViewController: UIViewController {
             do {
                 let contents = try String(contentsOfFile: filepath)
                 doctorLabel.text = contents
+                
+                lines = getLinesArrayOfString(in: doctorLabel)
+                
+                var i: Int = 0
+                
+                totalLines = lines.count
+                
+                for j in i..<totalLines {
+                    print("Line \(j): \(lines[j])")
+                }
+                
+                if (lines.count == 3) {
+                    doctorLabel.text = lines[0] + lines[1] + lines[2]
+                } else if (lines.count == 2) {
+                    doctorLabel.text = lines[0] + lines[1]
+                } else if (lines.count == 1) {
+                    doctorLabel.text = lines[0]
+                } else {
+                    doctorLabel.text = lines[0] + lines[1] + lines[2] + lines[3]
+                }
+                
+                // Do the above line for other level buttons as well
+                
+                state = 2
+                
             } catch {
                 debugPrint("contents of text file could not be loaded")
             }
@@ -115,5 +150,98 @@ class EndingViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func countLabelLines(label: UILabel) -> Int {
+        // Call self.layoutIfNeeded() if your view uses auto layout
+        let myText = label.text! as NSString
+        
+        let rect = CGSize(width: label.bounds.width, height: CGFloat.greatestFiniteMagnitude)
+        let labelSize = myText.boundingRect(with: rect, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: label.font], context: nil)
+        
+        return Int(ceil(CGFloat(labelSize.height) / label.font.lineHeight))
+    }
+    
+    func getLinesArrayOfString(in label: UILabel) -> [String] {
+        
+        /// An empty string's array
+        var linesArray = [String]()
+        
+        guard let text = label.text, let font = label.font else {return linesArray}
+        
+        let rect = label.frame
+        
+        let myFont: CTFont = CTFontCreateWithName(font.fontName as CFString, font.pointSize, nil)
+        let attStr = NSMutableAttributedString(string: text)
+        attStr.addAttribute(kCTFontAttributeName as NSAttributedString.Key, value: myFont, range: NSRange(location: 0, length: attStr.length))
+        
+        let frameSetter: CTFramesetter = CTFramesetterCreateWithAttributedString(attStr as CFAttributedString)
+        let path: CGMutablePath = CGMutablePath()
+        path.addRect(CGRect(x: 0, y: 0, width: rect.size.width, height: 100000), transform: .identity)
+        
+        let frame: CTFrame = CTFramesetterCreateFrame(frameSetter, CFRangeMake(0, 0), path, nil)
+        guard let lines = CTFrameGetLines(frame) as? [Any] else {return linesArray}
+        
+        for line in lines {
+            let lineRef = line as! CTLine
+            let lineRange: CFRange = CTLineGetStringRange(lineRef)
+            let range = NSRange(location: lineRange.location, length: lineRange.length)
+            let lineString: String = (text as NSString).substring(with: range)
+            linesArray.append(lineString)
+        }
+        return linesArray
+    }
+    
+    func insertName(string: String) -> String {
+        return string.replacingOccurrences(of: "(NAME)", with: (UIApplication.shared.delegate as! AppDelegate).name)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        if (state == 2) {
+            currentLine += 4
+            
+            print("Total lines: \(totalLines)")
+            
+            if (currentLine + 1 < totalLines) {
+                var newText: String = ""
+                
+                for  i in currentLine..<totalLines {
+                    if (i <= currentLine + 3) {
+                        newText += lines[i]
+                    }
+                }
+                
+                doctorLabel.text = newText
+                
+            } else {
+                state = 3
+            }
+        }
+        
+        if (state == 3) {
+            
+        }
+    }
 
 }
+/*
+extension UILabel {
+    
+    var isTruncated: Bool {
+        
+        guard let labelText = text else {
+            return false
+        }
+        
+        let labelTextSize = (labelText as NSString).boundingRect(
+            with: CGSize(width: frame.size.width, height: .greatestFiniteMagnitude),
+            options: .usesLineFragmentOrigin,
+            attributes: [.font: font],
+            context: nil).size
+        
+        return labelTextSize.height > bounds.size.height
+    }
+    
+} */
+
+
