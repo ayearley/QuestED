@@ -60,7 +60,7 @@ class MapViewController: UIViewController {
         createButton(tag:5, widthRatio:2.79, heightRatio:0.315, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[4] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[4] == 2)
-        createButton(tag:6, widthRatio:1.81, heightRatio:0.35, completed:
+        createButton(tag:6, widthRatio:1.83, heightRatio:0.354, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[5] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[5] == 2)
         createButton(tag:7, widthRatio:1.29, heightRatio:0.385, completed:
