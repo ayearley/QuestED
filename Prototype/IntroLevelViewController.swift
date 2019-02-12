@@ -274,7 +274,7 @@ class IntroLevelViewController: UIViewController {
             currentLineD += 4
             
             
-            if (currentLineD + 3 < totalDoctorLines) {
+            if (currentLineD + 1 < totalDoctorLines) {
                 var newText: String = ""
                 
                 for  i in currentLineD..<totalDoctorLines {
