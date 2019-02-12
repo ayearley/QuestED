@@ -4,7 +4,7 @@
 Now that your body is fit enough, I must ensure that your mind is healthy as well. This journey has been long and difficult and only when both our mind and body are at their bests can we truly be successful against Count Leukemia. The psychologists here in the Healing Harbor can help you develop the right tools to understand the many thoughts and emotions you may have.
 
 *INTRO*:
-
+*CHARACTER*:
 doctor: doc Now that your body is fit enough, I must ensure that your mind is healthy as well. This journey has been long and difficult, but mental health is just as important as physical health. Only when both our mind and body are at their bests can we truly be successful against Count Leukemia. The psychologists here in the Healing Harbor can help you develop the right tools to understand the many thoughts and emotions you may have.
 
 *END INTRO*
@@ -19,6 +19,11 @@ q2: Can you brainstorm one example of each of the following coping skills that w
 a12: One  fun thing you like to do
 a22: One way to release tension
 a32: One person you can talk to that you trust
+
+q3: Why do I have to get cancer treatment?
+a13: Because doctors want me to feel bad
+a23: To miss a lot of school
+a33: To feel better in the long run
 
 *VIDEO*: Psychosocial1
 
