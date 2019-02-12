@@ -41,7 +41,7 @@ class MapViewController: UIViewController {
  testbutton.setImage(UIImage(named:"easyButtonBlue.png"), for: .normal)
         scrollView.contentSize = CGSize(width: screenSize.width, height: 1750)
         scrollView.contentOffset = CGPoint(x: 0, y: 1750)
-        var mapIm: UIImage = UIImage(named: "map.png")!
+        var mapIm: UIImage = UIImage(named: "map_new.png")!
         mapImage.image = mapIm
         scrollView.addSubview(mapImage)
         
