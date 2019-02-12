@@ -158,6 +158,9 @@ class IntroLevelViewController: UIViewController {
         
         //nurseImage = UIImageView(image: UIImage(imageLiteralResourceName: "nurse.png"))
         //should be replaced with the following once we have the corresponding character picture matching with the config file
+        if(char2Name == ""){
+            return
+        }
         nurseImage = UIImageView(image: UIImage(imageLiteralResourceName: "" + char2Name + ".png"))
         nurseImage.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height * 0.6), width: Double(screenSize.height) * 0.3, height: Double(screenSize.height) * 0.27)
         view.addSubview(nurseImage)
