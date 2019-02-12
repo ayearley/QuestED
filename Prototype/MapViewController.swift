@@ -196,7 +196,7 @@ class MapViewController: UIViewController {
             doctorLabel.text = preIntroText
             
             lines = getLinesArrayOfString(in: doctorLabel)
-            
+                        
             totalLines = lines.count
 
             if (lines.count == 3) {
