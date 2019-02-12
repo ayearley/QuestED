@@ -16,9 +16,9 @@ a2: A and C*
 a3: A healthy mind = a healthy body
 
 q2: Can you brainstorm one example of each of the following coping skills that works for you?
-a12: One  fun thing you like to do
+a12: One  fun thing you like to do*
 a22: One way to release tension*
-a32: One person you can talk to
+a32: One person you can talk to*
 
 q3: Why do I have to get cancer treatment?
 a13: the doctors want me to feel bad
