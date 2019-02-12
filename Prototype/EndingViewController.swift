@@ -51,7 +51,8 @@ class EndingViewController: UIViewController {
         
         mapButton.setTitle("Back to Map", for: .normal)
         mapButton.addTarget(self, action: #selector(backToMap(selected:)), for:.touchUpInside)
-        mapButton.setTitleColor(UIColor.black, for: .normal)
+        mapButton.setTitleColor(UIColor.white, for: .normal)
+        mapButton.backgroundColor = UIColor.black
         view.addSubview(mapButton)
     }
     
