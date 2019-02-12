@@ -46,17 +46,47 @@ class MapViewController: UIViewController {
         scrollView.addSubview(mapImage)
         
         //Creates the level buttons for the map
-        createButton(tag:1, widthRatio:2.8, heightRatio:1.385, completed:
+        createButton(tag:1, widthRatio:2.8, heightRatio:0.249, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 1 || (UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 2)
-        createButton(tag:2, widthRatio:1.735, heightRatio:1.45, completed:
+        createButton(tag:2, widthRatio:1.735, heightRatio:0.255, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[1] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[1] == 2)
-        createButton(tag:3, widthRatio:1.3, heightRatio:2.4, completed:
+        createButton(tag:3, widthRatio:1.3, heightRatio:0.271, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[2] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[2] == 2)
-        createButton(tag:4, widthRatio:1.65, heightRatio:4.5, completed:
+        createButton(tag:4, widthRatio:1.65, heightRatio:0.29, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 2)
+        createButton(tag:5, widthRatio:2.79, heightRatio:0.315, completed:
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[4] == 1 ||
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[4] == 2)
+        createButton(tag:6, widthRatio:1.83, heightRatio:0.354, completed:
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[5] == 1 ||
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[5] == 2)
+        createButton(tag:7, widthRatio:1.29, heightRatio:0.385, completed:
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[6] == 1 ||
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[6] == 2)
+        createButton(tag:8, widthRatio:1.86, heightRatio:0.42, completed:
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[7] == 1 ||
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[7] == 2)
+        createButton(tag:9, widthRatio:3, heightRatio:0.75, completed:
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[8] == 1 ||
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[8] == 2)
+        createButton(tag:10, widthRatio:1.93, heightRatio:1, completed:
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[9] == 1 ||
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[9] == 2)
+        createButton(tag:11, widthRatio:1.32, heightRatio:1.1, completed:
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[10] == 1 ||
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[10] == 2)
+        createButton(tag:12, widthRatio:1.98, heightRatio:1.5, completed:
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[11] == 1 ||
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[11] == 2)
+        createButton(tag:13, widthRatio:3.88, heightRatio:1.9, completed:
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[12] == 1 ||
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[12] == 2)
+        createButton(tag:14, widthRatio:2.78, heightRatio:4.3, completed:
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 1 ||
+                (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 2)
         
         createDoctor()
         
@@ -76,7 +106,7 @@ class MapViewController: UIViewController {
             buttonLevel.isEnabled = false;
         }
         buttonLevel.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
-        view.addSubview(buttonLevel)
+        scrollView.addSubview(buttonLevel)
         buttonLevel.backgroundColor = UIColor.clear
     }
     
