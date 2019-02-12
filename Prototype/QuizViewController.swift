@@ -77,7 +77,7 @@ class QuizViewController: UIViewController {
         q3Ans = -1;
         correctAns = -1;
         self.textFile = ""
-        self.levelRunner = LevelRunner(textIn: self.textFile)
+        self.levelRunner = LevelRunner(textIn: self.textFile, offsetIn: 0)
         titleLabel = UILabel()
         an1Button = UIButton()
         an2Button = UIButton()

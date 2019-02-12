@@ -13,9 +13,11 @@ class LevelRunner {
     
     //instantiated with a text file for intro, cadeuces, and game
     var levelText: String
+    var offset: Int
     
-    init(textIn: String){
+    init(textIn: String, offsetIn: Int){
         levelText = textIn
+        offset = offsetIn
         
         print(levelText)
         
@@ -48,7 +50,7 @@ class LevelRunner {
     }
     
     func map() {
-        (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(MapViewController(), animated: true)
+        (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(MapViewController(offsetIn: offset), animated: true)
     }
     
     func ending() {

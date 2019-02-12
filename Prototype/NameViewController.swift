@@ -60,7 +60,7 @@ class NameViewController: UIViewController, UITextFieldDelegate {
             player.play()
         })
         
-        self.navigationController?.pushViewController(MapViewController(), animated: true)
+        self.navigationController?.pushViewController(MapViewController(offsetIn: 1750), animated: true)
     }
 
     /*
