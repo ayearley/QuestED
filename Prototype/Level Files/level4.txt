@@ -19,7 +19,7 @@ a3: No
 q2: Why do I need a central line?
 a12: So that I can watch my heart rate
 a22: So my doctor can give me medicine that I can’t drink/take as a pill*
-a32: So that I can watch my heart rate
+a32: So that I don't need to eat
 
 q3: What are the signs that I need to watch out for and tell my doctor if I see?
 a13: Itchy Skin
