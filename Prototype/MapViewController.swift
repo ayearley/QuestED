@@ -141,7 +141,7 @@ class MapViewController: UIViewController {
             
             print("Total lines: \(totalLines)")
             
-            if (currentLine + 1 < totalLines) {
+            if (currentLine <= totalLines) {
                 var newText: String = ""
                 
                 for  i in currentLine..<totalLines {
