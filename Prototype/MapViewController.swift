@@ -113,12 +113,13 @@ class MapViewController: UIViewController {
                 var newText: String = ""
                 
                 for  i in currentLine..<totalLines {
-                    if (i <= currentLine + 3) {
+                    if (i <= currentLine + 4) {
                         newText += lines[i]
                     }
                 }
                 
                 doctorLabel.text = newText
+                
             } else {
                 state = 3
             }
