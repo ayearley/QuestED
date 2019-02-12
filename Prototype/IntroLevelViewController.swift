@@ -210,6 +210,7 @@ class IntroLevelViewController: UIViewController {
                 print(char1Info)
                 char1Name = String(char1Info.split(separator: ":")[0])
                 introText = String(char1Info.split(separator: ":")[1])
+                introText = introText.trimmingCharacters(in: .whitespacesAndNewlines)
                 
                 //introText = String(contents[doctorRange!.upperBound..<endIntroRange!.lowerBound])
                 
@@ -226,6 +227,7 @@ class IntroLevelViewController: UIViewController {
                     let char2Info = allCharsInfo[1]
                     char2Name = String(char2Info.split(separator: ":")[0])
                     nurseText = String(char2Info.split(separator: ":")[1])
+                    nurseText = nurseText.trimmingCharacters(in: .whitespacesAndNewlines)
                 }
                 
                 
@@ -277,7 +279,7 @@ class IntroLevelViewController: UIViewController {
             currentLineD += 4
             
             
-            if (currentLineD <= totalDoctorLines) {
+            if (currentLineD < totalDoctorLines) {
                 var newText: String = ""
                 
                 for  i in currentLineD..<totalDoctorLines {

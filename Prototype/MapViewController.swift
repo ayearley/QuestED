@@ -9,7 +9,7 @@
 import UIKit
 
 class MapViewController: UIViewController {
-
+    
     @IBOutlet weak var mapImage: UIImageView!
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -17,8 +17,8 @@ class MapViewController: UIViewController {
     @IBOutlet weak var testbutton: UIButton!
     
     let screenSize = UIScreen.main.bounds
-   // let screenWidth = screenSize.width
-   // let screenHeight = screenSize.height
+    // let screenWidth = screenSize.width
+    // let screenHeight = screenSize.height
     
     //Load all of these from file instead of hard coding
     var buttonWidth = 75;
@@ -48,7 +48,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         Bundle.main.loadNibNamed("MapViewController", owner: self, options: nil)
         
- testbutton.setImage(UIImage(named:"easyButtonBlue.png"), for: .normal)
+        testbutton.setImage(UIImage(named:"easyButtonBlue.png"), for: .normal)
         scrollView.contentSize = CGSize(width: screenSize.width, height: 1750)
         scrollView.contentOffset = CGPoint(x: 0, y: currentOffset)
         var mapIm: UIImage = UIImage(named: "map_new.png")!
@@ -101,7 +101,7 @@ class MapViewController: UIViewController {
         createDoctor()
         
     }
-
+    
     //This method creates a level button with the tag, x location, y location, and status as parameters
     func createButton(tag:Int, widthRatio:Double, heightRatio:Double, completed:Bool){
         let buttonLevel = UIButton(type: .custom)
@@ -117,6 +117,7 @@ class MapViewController: UIViewController {
             //buttonLevel.setImage(UIImage(named:"easyButton.png"), for: .normal)
             buttonLevel.isEnabled = false;
         }
+        
         buttonLevel.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
         scrollView.addSubview(buttonLevel)
         buttonLevel.backgroundColor = UIColor.clear
@@ -151,7 +152,9 @@ class MapViewController: UIViewController {
             
             print("Total lines: \(totalLines)")
             
-            if (currentLine <= totalLines) {
+            print("Current line: \(currentLine)")
+            
+            if (currentLine < totalLines) {
                 var newText: String = ""
                 
                 for  i in currentLine..<totalLines {
@@ -174,22 +177,22 @@ class MapViewController: UIViewController {
     }
     
     /*func addBackground() {
-        // screen width and height:
-        let width = screenSize.width
-        let height = screenSize.height
-        
-        let imageViewBackground = UIImage(frame: CGRect(0, 0, width, height))
-        imageViewBackground.image = UIImage(named: "YOUR IMAGE NAME GOES HERE")
-        
-        // you can change the content mode:
-        imageViewBackground.contentMode = UIViewContentMode.scaleAspectFill
-        
-        self.addSubview(imageViewBackground)
-        self.sendSubviewToBack(imageViewBackground)
-    }*/
+     // screen width and height:
+     let width = screenSize.width
+     let height = screenSize.height
+     
+     let imageViewBackground = UIImage(frame: CGRect(0, 0, width, height))
+     imageViewBackground.image = UIImage(named: "YOUR IMAGE NAME GOES HERE")
+     
+     // you can change the content mode:
+     imageViewBackground.contentMode = UIViewContentMode.scaleAspectFill
+     
+     self.addSubview(imageViewBackground)
+     self.sendSubviewToBack(imageViewBackground)
+     }*/
     
     @objc func buttonPressed(sender: UIButton){
-    
+        
         scrollView.isUserInteractionEnabled = false
         (UIApplication.shared.delegate as! AppDelegate).currentLevel = sender.tag
         
@@ -246,6 +249,7 @@ class MapViewController: UIViewController {
                 
                 preIntroText = String(contents[preIntroRange!.upperBound..<endPreIntroRange!.lowerBound])
                 preIntroText = insertName(string: preIntroText)
+                preIntroText = preIntroText.trimmingCharacters(in: .whitespacesAndNewlines)
             } catch {
                 debugPrint("contents of text file could not be loaded")
             }
@@ -259,14 +263,14 @@ class MapViewController: UIViewController {
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
     
     func countLabelLines(label: UILabel) -> Int {
         // Call self.layoutIfNeeded() if your view uses auto layout
