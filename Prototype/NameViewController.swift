@@ -21,7 +21,11 @@ class NameViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    @IBAction func goToNext(_ sender: Any) {
+        submitName()
+    }
+    
+    /*func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         (UIApplication.shared.delegate as! AppDelegate).name = nameField.text!
         
         guard let path = Bundle.main.path(forResource: "Intro", ofType: "mp4") else {
@@ -39,6 +43,24 @@ class NameViewController: UIViewController, UITextFieldDelegate {
         self.navigationController?.pushViewController(MapViewController(), animated: true)
         
         return false
+    }*/
+    
+    func submitName() {
+        (UIApplication.shared.delegate as! AppDelegate).name = nameField.text!
+        
+        guard let path = Bundle.main.path(forResource: "Intro", ofType: "mp4") else {
+            debugPrint("video.mp4 not found")
+            return
+        }
+        
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true, completion: {
+            player.play()
+        })
+        
+        self.navigationController?.pushViewController(MapViewController(), animated: true)
     }
 
     /*
