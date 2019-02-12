@@ -11,7 +11,15 @@ import UIKit
 class EndingViewController: UIViewController {
     var titleLabel: UILabel
     var mapButton: UIButton
+    let screenSize = UIScreen.main.bounds
     //var levelRunner: LevelRunner
+    
+    var doctorImage: UIImageView = UIImageView()
+    var doctorLabel: UILabel = UILabel()
+    var bubbleImage: UIImageView = UIImageView()
+    var doctorLines: [String] = [String]()
+    var totalDoctorLines = 0
+    var currentLineD = 0
 
     init(runner: LevelRunner) {
         //levelRunner = runner
@@ -35,7 +43,8 @@ class EndingViewController: UIViewController {
         
         Bundle.main.loadNibNamed("EndingViewController", owner: self, options: nil)
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "introbg.png")!)
-
+        createDoctor()
+        readTextFile()
         titleLabel.text = "Congratulations! You completed the game.YAY"
         titleLabel.textColor = UIColor.black
         view.addSubview(titleLabel)
@@ -60,6 +69,42 @@ class EndingViewController: UIViewController {
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .landscape
     }
+    
+    func readTextFile() {
+        if let filepath = Bundle.main.path(forResource: "ending", ofType: "txt") {
+            do {
+                let contents = try String(contentsOfFile: filepath)
+                doctorLabel.text = contents
+            } catch {
+                debugPrint("contents of text file could not be loaded")
+            }
+        } else {
+            debugPrint("text file not found")
+        }
+    }
+    
+    func createDoctor() {
+        doctorImage = UIImageView(image: UIImage(imageLiteralResourceName: "doctor.png"))
+        doctorImage.frame = CGRect(x: Double(screenSize.width) * 0.1, y: Double(screenSize.height * 0.2), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
+        view.addSubview(doctorImage)
+        //doctorImage.isHidden = true
+        
+        bubbleImage = UIImageView(image: UIImage(imageLiteralResourceName: "speechbubble_map.png"))
+        
+        doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.22, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
+        
+        bubbleImage.frame = CGRect(x: doctorLabel.frame.minX * 0.9, y: doctorLabel.frame.minY, width: doctorLabel.frame.width * 1.15, height: doctorLabel.frame.height)
+        
+        view.addSubview(bubbleImage)
+        //bubbleImage.isHidden = true
+        
+        doctorLabel.backgroundColor = UIColor.clear
+        doctorLabel.numberOfLines = 4
+        doctorLabel.lineBreakMode = .byWordWrapping
+        view.addSubview(doctorLabel)
+        //doctorLabel.isHidden = true
+    }
+    
     /*
     // MARK: - Navigation
 
