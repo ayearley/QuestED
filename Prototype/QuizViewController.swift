@@ -77,7 +77,7 @@ class QuizViewController: UIViewController {
         q3Ans = -1;
         correctAns = -1;
         self.textFile = ""
-        self.levelRunner = LevelRunner(textIn: self.textFile)
+        self.levelRunner = LevelRunner(textIn: self.textFile, offsetIn: 0)
         titleLabel = UILabel()
         an1Button = UIButton()
         an2Button = UIButton()
@@ -356,27 +356,30 @@ class QuizViewController: UIViewController {
                 let a1Range = contents.range(of: "a1:")
                 let enda1Range = contents.range(of: "a2:")
                 
-                let a1Text = contents[a1Range!.upperBound..<enda1Range!.lowerBound]
+                var a1Text = String(contents[a1Range!.upperBound..<enda1Range!.lowerBound])
                 print(a1Text)
                 if(a1Text.contains("*")){
+                    a1Text = a1Text.replacingOccurrences(of: "*", with: "")
                     q1Ans = 1;
                 }
                 
                 let a2Range = contents.range(of: "a2:")
                 let enda2Range = contents.range(of: "a3:")
                 
-                let a2Text = contents[a2Range!.upperBound..<enda2Range!.lowerBound]
+                var a2Text = String(contents[a2Range!.upperBound..<enda2Range!.lowerBound])
                 print(a2Text)
                 if(a2Text.contains("*")){
+                    a2Text = a2Text.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q1Ans = 2;
                 }
                 
                 let a3Range = contents.range(of: "a3:")
                 let enda3Range = contents.range(of: "q2:")
                 
-                let a3Text = contents[a3Range!.upperBound..<enda3Range!.lowerBound]
+                var a3Text = String(contents[a3Range!.upperBound..<enda3Range!.lowerBound])
                 print(a3Text)
                 if(a3Text.contains("*")){
+                    a3Text = a3Text.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q1Ans = 3;
                 }
                 
@@ -391,24 +394,27 @@ class QuizViewController: UIViewController {
                 let a1Range2 = contents.range(of: "a12:")
                 let enda1Range2 = contents.range(of: "a22:")
                 
-                let a1Text2 = contents[a1Range2!.upperBound..<enda1Range2!.lowerBound]
+                var a1Text2 = String(contents[a1Range2!.upperBound..<enda1Range2!.lowerBound])
                 if(a1Text2.contains("*")){
+                    a1Text2 = a1Text2.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q2Ans = 1;
                 }
                 
                 let a2Range2 = contents.range(of: "a22:")
                 let enda2Range2 = contents.range(of: "a32:")
                 
-                let a2Text2 = contents[a2Range2!.upperBound..<enda2Range2!.lowerBound]
+                var a2Text2 = String(contents[a2Range2!.upperBound..<enda2Range2!.lowerBound])
                 if(a2Text2.contains("*")){
+                    a2Text2 = a2Text2.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q2Ans = 2;
                 }
                 
                 let a3Range2 = contents.range(of: "a32:")
                 let enda3Range2 = contents.range(of: "q3:")
                 
-                let a3Text2 = contents[a3Range2!.upperBound..<enda3Range2!.lowerBound]
+                var a3Text2 = String(contents[a3Range2!.upperBound..<enda3Range2!.lowerBound])
                 if(a3Text2.contains("*")){
+                    a3Text2 = a3Text2.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q2Ans = 3;
                 }
                 
@@ -423,24 +429,27 @@ class QuizViewController: UIViewController {
                 let a1Range3 = contents.range(of: "a13:")
                 let enda1Range3 = contents.range(of: "a23:")
                 
-                let a1Text3 = contents[a1Range3!.upperBound..<enda1Range3!.lowerBound]
+                var a1Text3 = String(contents[a1Range3!.upperBound..<enda1Range3!.lowerBound])
                 if(a1Text3.contains("*")){
+                    a1Text3 = a1Text3.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q3Ans = 1;
                 }
                 
                 let a2Range3 = contents.range(of: "a23:")
                 let enda2Range3 = contents.range(of: "a33:")
                 
-                let a2Text3 = contents[a2Range3!.upperBound..<enda2Range3!.lowerBound]
+                var a2Text3 = String(contents[a2Range3!.upperBound..<enda2Range3!.lowerBound])
                 if(a2Text3.contains("*")){
+                    a2Text3 = a2Text3.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q3Ans = 2;
                 }
                 
                 let a3Range3 = contents.range(of: "a33:")
                 let enda3Range3 = contents.range(of: "*END*")
                 
-                let a3Text3 = contents[a3Range3!.upperBound..<enda3Range3!.lowerBound]
+                var a3Text3 = String(contents[a3Range3!.upperBound..<enda3Range3!.lowerBound])
                 if(a3Text3.contains("*")){
+                    a3Text3 = a3Text3.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q3Ans = 3;
                 }
                 

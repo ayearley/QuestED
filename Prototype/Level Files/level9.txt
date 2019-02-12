@@ -6,7 +6,7 @@ Goodness, what a journey we have had. The Transplant Tundra has certainly taken 
 *INTRO*:
 *CHARACTER*:
 doctor: Let’s go to the Apothecary and ask Nurse Nina for some medicines.
-nurse: Hi there NAME. I know you must be feeling very sick right now. It is not uncommon for people leaving the Transplant Tundra to have pain, nausea,and fevers after such a battle against Leukemia’s minions. I am going to give you these medicines to make you feel better. First, I’m going to give you some medications through your Central Line. Make sure you keep taking your vitamins as well throughout your journey - these will be important in keeping you healthy.
+nurse: Hi there! I know you must be feeling very sick right now. It is not uncommon for people leaving the Transplant Tundra to have pain, nausea,and fevers after such a battle against Leukemia’s minions. I am going to give you these medicines to make you feel better. First, I’m going to give you some medications through your Central Line. Make sure you keep taking your vitamins as well throughout your journey - these will be important in keeping you healthy.
 
 *END INTRO*
 

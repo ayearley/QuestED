@@ -29,7 +29,7 @@ class CadeucesViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         self.quiz = false;
         self.textFile = ""
-        self.levelRunner = LevelRunner(textIn: self.textFile)
+        self.levelRunner = LevelRunner(textIn: self.textFile, offsetIn: 0)
         super.init(coder: aDecoder)
     }
     

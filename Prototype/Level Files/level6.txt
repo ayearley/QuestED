@@ -13,18 +13,18 @@ doctor: Count Leukemia’s lieutenant has set up a hidden camp along the riverba
 *QUIZ*:
 q1: What are the two types of radiation?
 a1: Pre and post
-a2: External and Internal
+a2: External and Internal*
 a3: Blood and bone marrow
 
 q2: What is important to remember while receiving radiation?
-a12: Stay still and don’t wipe the marker off
+a12: Stay still + don’t wipe the pen off*
 a22: Eat a meal before
 a32: Keep your eyes open
 
 q3: What are the signs that I need to watch out for and tell my doctor if I see?
 a13: May make you feel nauseous
 a23: Helps you recover
-a33: All of the above
+a33: All of the above*
 
 *VIDEO*: radiation
 

@@ -52,10 +52,13 @@
 		10D142F82212633B00E6B62C /* dietician.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142F42212633A00E6B62C /* dietician.png */; };
 		10D142F92212633B00E6B62C /* pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142F52212633A00E6B62C /* pt.png */; };
 		10D142FA2212633B00E6B62C /* psych.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142F62212633B00E6B62C /* psych.png */; };
+		10D142FC2212789500E6B62C /* doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142FB2212789500E6B62C /* doctor.png */; };
+		10D142FE2212827000E6B62C /* childlife.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142FD2212827000E6B62C /* childlife.png */; };
 		10E5BE742210BA9B00C044EB /* Intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10E5BE732210BA9B00C044EB /* Intro.mp4 */; };
 		10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E8675221F64F0000D1D69E /* QuizViewController.xib */; };
 		10E8675E21FA8C4100D1D69E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E8675D21FA8C4100D1D69E /* Question.swift */; };
 		10E867712212649400D1D69E /* map_new.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E867702212649400D1D69E /* map_new.png */; };
+		10E867732212769A00D1D69E /* ending.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10E867722212769A00D1D69E /* ending.txt */; };
 		B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7221B2FDC7001FBA42 /* README.txt */; };
 		B10A0A7721B31415001FBA42 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10A0A7621B31262001FBA42 /* level1.txt */; };
 		B12C73D52207857000590E6B /* speechbubble_large.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C73D42207856F00590E6B /* speechbubble_large.png */; };
@@ -139,10 +142,13 @@
 		10D142F42212633A00E6B62C /* dietician.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dietician.png; sourceTree = "<group>"; };
 		10D142F52212633A00E6B62C /* pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pt.png; sourceTree = "<group>"; };
 		10D142F62212633B00E6B62C /* psych.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = psych.png; sourceTree = "<group>"; };
+		10D142FB2212789500E6B62C /* doctor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctor.png; sourceTree = "<group>"; };
+		10D142FD2212827000E6B62C /* childlife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = childlife.png; sourceTree = "<group>"; };
 		10E5BE732210BA9B00C044EB /* Intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Intro.mp4; sourceTree = "<group>"; };
 		10E8675221F64F0000D1D69E /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 		10E8675D21FA8C4100D1D69E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		10E867702212649400D1D69E /* map_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_new.png; sourceTree = "<group>"; };
+		10E867722212769A00D1D69E /* ending.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ending.txt; sourceTree = "<group>"; };
 		B10A0A7221B2FDC7001FBA42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		B10A0A7621B31262001FBA42 /* level1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 		B12C73D42207856F00590E6B /* speechbubble_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speechbubble_large.png; sourceTree = "<group>"; };
@@ -206,6 +212,7 @@
 				1044E5BF21EBF48E003EEC1A /* level12.txt */,
 				1044E5CE21EBF601003EEC1A /* level13.txt */,
 				1044E5CC21EBF5D1003EEC1A /* level14.txt */,
+				10E867722212769A00D1D69E /* ending.txt */,
 			);
 			path = "Level Files";
 			sourceTree = "<group>";
@@ -271,6 +278,7 @@
 				B1AE6808220E10F900B84A8E /* NameViewController.xib */,
 				10975B5621A9AB0700C1F573 /* Main.storyboard */,
 				10D142F32212633A00E6B62C /* nurse.png */,
+				10D142FB2212789500E6B62C /* doctor.png */,
 				10975B5921A9AB0800C1F573 /* Assets.xcassets */,
 				10D142F62212633B00E6B62C /* psych.png */,
 				10D142F42212633A00E6B62C /* dietician.png */,
@@ -278,6 +286,7 @@
 				10975B5B21A9AB0800C1F573 /* LaunchScreen.storyboard */,
 				10975B5E21A9AB0800C1F573 /* Info.plist */,
 				B10A0A7221B2FDC7001FBA42 /* README.txt */,
+				10D142FD2212827000E6B62C /* childlife.png */,
 				103BA2242209031600F182F5 /* Level Files */,
 				B1DE2A0E21EEC9EB000D1614 /* levelstatus.txt */,
 				026F896C21B3328E009C66A6 /* LevelRunner.swift */,
@@ -432,6 +441,7 @@
 				10E867712212649400D1D69E /* map_new.png in Resources */,
 				100BBE8621FE588F005A1379 /* pretransplant.mp4 in Resources */,
 				10C64431220BCD03001125A4 /* chemotherapy.mp4 in Resources */,
+				10D142FE2212827000E6B62C /* childlife.png in Resources */,
 				100BBE8921FE588F005A1379 /* Transplant.mp4 in Resources */,
 				10975B5A21A9AB0800C1F573 /* Assets.xcassets in Resources */,
 				10D142F72212633B00E6B62C /* nurse.png in Resources */,
@@ -454,6 +464,7 @@
 				10D142FA2212633B00E6B62C /* psych.png in Resources */,
 				100BBE7121FE51FE005A1379 /* CentralLine.mp4 in Resources */,
 				1044E5C521EBF48E003EEC1A /* level9.txt in Resources */,
+				10D142FC2212789500E6B62C /* doctor.png in Resources */,
 				1044E5C421EBF48E003EEC1A /* level10.txt in Resources */,
 				B17BF499220642C7007CBDED /* speechbubble_map.png in Resources */,
 				10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */,
@@ -461,6 +472,7 @@
 				10D142F82212633B00E6B62C /* dietician.png in Resources */,
 				100BBE8821FE588F005A1379 /* Psychosocial2.mp4 in Resources */,
 				1044E5C721EBF48E003EEC1A /* level3.txt in Resources */,
+				10E867732212769A00D1D69E /* ending.txt in Resources */,
 				1044E5C821EBF48E003EEC1A /* level12.txt in Resources */,
 				100BBE8A21FE588F005A1379 /* Childlifespecialist.mp4 in Resources */,
 				10975B8321A9B12700C1F573 /* IntroViewController.xib in Resources */,

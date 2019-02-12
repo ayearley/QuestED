@@ -13,18 +13,18 @@ doctor: Unfortunately, the beloved people of our lands haven’t been feeling li
 *QUIZ*:
 q1: Is it normal to not feel like myself right now?
 a1: No
-a2: Yes
+a2: Yes*
 a3: I don’t know
 
 q2: What should I do if I start to feel badly?
 a12: Keep it to myself
-a22: Tell the doctor
-a32: Ignore my symptoms and pretend I don’t have them
+a22: Tell the doctor*
+a32: Ignore my symptoms
 
 q3: What is a symptom?
-a13: A symptom is a physical change that you notice to be different from how you normally feel
-a23: A symptom is a mental change that you notice to be different from how you normally feel
-a33: All of the above
+a13: a change in physical state
+a23: a change in mental state
+a33: All of the above*
 
 *VIDEO*: symptoms
 

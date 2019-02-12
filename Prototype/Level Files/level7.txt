@@ -13,19 +13,19 @@ doctor: We’ve heard that Count Leukemia’s minions have assembled and are ter
 
 *QUIZ*:
 q1: What is chemotherapy?
-a1: A machine that gives you your medicine
-a2: An anti-cancer drug that stops cancer cells from dividing
-a3: A form of therapy that involves talking about your feelings
+a1: Machine that gives you medicine
+a2: Drug that stops cells from dividing*
+a3: A form of emotional therapy
 
 q2: What are some common symptoms of chemotherapy?
 a12: Nausea and hair loss
-a22: Both A and C
+a22: Both A and C*
 a32: Mouth sores and loss of appetite
 
 q3: How often will you receive chemotherapy?
 a13: Every hour
 a23: Everyday
-a33: On a schedule, it varies from patient to patient
+a33: It varies from patient to patient*
 
 *VIDEO*: chemotherapy
 

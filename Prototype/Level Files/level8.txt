@@ -12,20 +12,20 @@ doctor: The entire Tundra has been infected by Leukemia’s minions but we can s
 **Doctor will Introduce Himself Here*
 
 *QUIZ*:
-q1: What is a blood or bone marrow transplant?
-a1: A therapy that heals the existing damaged cells
-a2: A procedure that swaps out the damaged or malfunctioning blood cells with new, working blood stem cells
-a3: NEEDS REVISION
+q1: What does a blood or bone marrow transplant do?
+a1: Heals existing damaged cells
+a2: Swaps out the damaged blood cells*
+a3: Lessens the symptoms of radiation
 
 q2: How is the transplant made?
-a12: The new cells are put in using your central line
-a22: You undergo a surgery to implant the new cells.
+a12: Using your central line
+a22: A surgery to implant the new cells*
 a32: You eat a pill with new cells
 
 q3: What are some symptoms you might experience during the transplant?
-a13: Itchiness
-a23: Spotty vision
-a33: Nausea and a funny taste in your mouth
+a13: funny taste in your mouth
+a23: Nausea
+a33: All the above*
 
 *VIDEO*: Transplant
 
