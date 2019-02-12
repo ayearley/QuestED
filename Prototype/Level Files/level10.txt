@@ -4,7 +4,7 @@
 That certainly helped bring your health up, but let’s get you something to eat, you are weak after your journey. Let’s go to my friend’s grocery store.
 
 *INTRO*:
-
+*CHARACTER*:
 doctor: doc That certainly helped bring your health up, but let’s get you something to eat, you are weak after your journey. Let’s go to my friend’s grocery store. This is Dietician David. He will help you through a game about what foods you should eat to regain your strength
 nurse: dietician Welcome, (NAME)! The Transplant Tundra has left you feeling weak I’m sure, but I am here to help you. Nutrition is key during this time and even though you may be feeling nauseous, eating and drinking is very important if you can.
 Foods that are good for you to eat include: mac and cheese, puddings, cooked fruits and veggies, cereal, chips, breads, hot dogs, cooked eggs, cooked tofu, popsicles,
