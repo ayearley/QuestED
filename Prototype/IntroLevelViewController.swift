@@ -159,15 +159,15 @@ class IntroLevelViewController: UIViewController {
         nurseImage = UIImageView(image: UIImage(imageLiteralResourceName: "nurse.png"))
         //should be replaced with the following once we have the corresponding character picture matching with the config file
         //nurseImage = UIImageView(image: UIImage(imageLiteralResourceName: "" + char2Name + ".png"))
-        nurseImage.frame = CGRect(x: Double(screenSize.width) * 0.8, y: Double(screenSize.height * 0.2), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
+        nurseImage.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height * 0.7), width: Double(screenSize.height) * 0.3, height: Double(screenSize.height) * 0.27)
         view.addSubview(nurseImage)
         nurseImage.isHidden = true
         
         nurseBubbleImage = UIImageView(image: UIImage(imageLiteralResourceName: "speechbubble_large.png"))
         
-        nurseLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.52, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
+        nurseLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.52, y: Double(screenSize.height) * 0.75, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.15))
         
-        nurseBubbleImage.frame = CGRect(x: nurseLabel.frame.minX * 0.9, y: doctorLabel.frame.minY, width: doctorLabel.frame.width * 1.15, height: doctorLabel.frame.height)
+        nurseBubbleImage.frame = CGRect(x: nurseLabel.frame.minX * 0.9, y: nurseLabel.frame.minY, width: nurseLabel.frame.width * 1.15, height: nurseLabel.frame.height)
         
         view.addSubview(nurseBubbleImage)
         nurseBubbleImage.isHidden = true

@@ -100,7 +100,9 @@ class MapViewController: UIViewController {
         buttonLevel.layer.cornerRadius = 0.5*buttonLevel.bounds.size.width
         buttonLevel.clipsToBounds = true
         if(completed){
-            buttonLevel.setImage(UIImage(named:"easyButtonBlue.png"), for: .normal)
+            //buttonLevel.setImage(UIImage(named:"easyButtonBlue.png"), for: .normal)
+            buttonLevel.layer.borderWidth = 1
+            buttonLevel.layer.borderColor = UIColor.yellow.cgColor
         } else {
             //buttonLevel.setImage(UIImage(named:"easyButton.png"), for: .normal)
             buttonLevel.isEnabled = false;

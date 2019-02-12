@@ -6,11 +6,9 @@ Our journey is going to take a lot out of us. This means that we need to find a 
 *INTRO*:
 
 *CHARACTER*:
-doctor: doc It is important that we monitor your health during this journey. We will do this using one of my inventions, a Central Line. As you proceed through the kingdom, this magical tube will deliver health boosters and medicines directly to your heart during each level. Don’t worry, I’ll give you this potion to make you sleep before I put it in place so you won’t feel a thing...
+doctor: It is important that we monitor your health during this journey. We will do this using one of my inventions, a Central Line. As you proceed through the kingdom, this magical tube will deliver health boosters and medicines directly to your heart during each level. Don’t worry, I’ll give you this potion to make you sleep before I put it in place so you won’t feel a thing...
 
 *END INTRO*
-
-**Doctor will Introduce Himself Here*
 
 *QUIZ*:
 q1: Will my doctor give me medicine so that I sleep when I get my central line?

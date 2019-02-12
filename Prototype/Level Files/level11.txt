@@ -5,7 +5,7 @@ You’ve almost regained all of your health! The last stop must work on your phy
 *INTRO*:
 *CHARACTER*:
 doctor: doc You’ve almost regained all of your health! The last stop must work on your physical strength. This is the kingdom’s most prominent physical therapist who trains all the royal warriors. She will give you the tools so that you are physically fit enough to finally stop Count Leukemia, once and for all.
-nurse: physicaltherapist Hi there! I’m Philippa, your physical therapist. I have a very special game to help you get your coordination back. Let’s check it out, shall we?
+pt: pt Hi there! I’m Philippa, your physical therapist. I have a very special game to help you get your coordination back. Let’s check it out, shall we?
 
 *END INTRO*
 
