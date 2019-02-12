@@ -13,8 +13,8 @@ doctor: We’ve heard that Count Leukemia’s minions have assembled and are ter
 
 *QUIZ*:
 q1: What is chemotherapy?
-a1: A machine that gives you your medicine
-a2: A drug that stops cancer cells from dividing*
+a1: Machine that gives you medicine
+a2: Drug that stops cells from dividing*
 a3: A form of emotional therapy
 
 q2: What are some common symptoms of chemotherapy?
