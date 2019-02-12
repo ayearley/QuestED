@@ -22,8 +22,8 @@ a22: Tell the doctor*
 a32: Ignore my symptoms
 
 q3: What is a symptom?
-a13: a physical change different from how you normally feel
-a23: a mental change different from how you normally feel
+a13: a change in physical state
+a23: a change in mental state
 a33: All of the above*
 
 *VIDEO*: symptoms

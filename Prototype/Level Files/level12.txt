@@ -11,7 +11,7 @@ doctor: Now that your body is fit enough, I must ensure that your mind is health
 
 *QUIZ*:
 q1: Why is it important to listen to your emotions?
-a1: Understanding what emotions you are feeling can help doctors give you the best treatment course
+a1: Understanding your emotions can with treatment
 a2: A and C*
 a3: A healthy mind is key to a healthy body
 
