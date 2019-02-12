@@ -46,7 +46,7 @@ class MapViewController: UIViewController {
         scrollView.addSubview(mapImage)
         
         //Creates the level buttons for the map
-        createButton(tag:1, widthRatio:2.91, heightRatio:0.249, completed:
+        createButton(tag:1, widthRatio:2.93, heightRatio:0.249, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 1 || (UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 2)
         createButton(tag:2, widthRatio:1.735, heightRatio:0.255, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[1] == 1 ||
@@ -54,10 +54,10 @@ class MapViewController: UIViewController {
         createButton(tag:3, widthRatio:1.33, heightRatio:0.271, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[2] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[2] == 2)
-        createButton(tag:4, widthRatio:1.68, heightRatio:0.293, completed:
+        createButton(tag:4, widthRatio:1.7, heightRatio:0.293, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 2)
-        createButton(tag:5, widthRatio:2.88, heightRatio:0.317, completed:
+        createButton(tag:5, widthRatio:2.9, heightRatio:0.317, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[4] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[4] == 2)
         createButton(tag:6, widthRatio:1.92, heightRatio:0.359, completed:
@@ -69,22 +69,22 @@ class MapViewController: UIViewController {
         createButton(tag:8, widthRatio:1.88, heightRatio:0.42, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[7] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[7] == 2)
-        createButton(tag:9, widthRatio:3, heightRatio:0.75, completed:
+        createButton(tag:9, widthRatio:3.04, heightRatio:0.77, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[8] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[8] == 2)
-        createButton(tag:10, widthRatio:1.96, heightRatio:1.1, completed:
+        createButton(tag:10, widthRatio:1.96, heightRatio:1.02, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[9] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[9] == 2)
-        createButton(tag:11, widthRatio:1.35, heightRatio:1.2, completed:
+        createButton(tag:11, widthRatio:1.34, heightRatio:1.2, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[10] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[10] == 2)
-        createButton(tag:12, widthRatio:2.01, heightRatio:1.6, completed:
+        createButton(tag:12, widthRatio:2.08, heightRatio:1.57, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[11] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[11] == 2)
-        createButton(tag:13, widthRatio:3.91, heightRatio:2.05, completed:
+        createButton(tag:13, widthRatio:3.96, heightRatio:2.02, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[12] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[12] == 2)
-        createButton(tag:14, widthRatio:2.81, heightRatio:4.5, completed:
+        createButton(tag:14, widthRatio:2.85, heightRatio:4.8, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 2)
         
@@ -102,7 +102,7 @@ class MapViewController: UIViewController {
         if(completed){
             buttonLevel.setImage(UIImage(named:"easyButtonBlue.png"), for: .normal)
         } else {
-            buttonLevel.setImage(UIImage(named:"easyButton.png"), for: .normal)
+            //buttonLevel.setImage(UIImage(named:"easyButton.png"), for: .normal)
             buttonLevel.isEnabled = false;
         }
         buttonLevel.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
