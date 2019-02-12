@@ -95,7 +95,7 @@ class MapViewController: UIViewController {
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[12] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[12] == 2)
         createButton(tag:14, widthRatio:2.88, heightRatio:5, completed:
-            (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 1 ||
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 0 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 2)
         
         createDoctor()
