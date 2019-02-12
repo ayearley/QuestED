@@ -33,6 +33,16 @@ class MapViewController: UIViewController {
     var totalLines = 0
     var currentLine = 0
     var lines: [String] = [String]()
+    var currentOffset = 0
+    
+    init(offsetIn: Int){
+        currentOffset = offsetIn
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,24 +50,24 @@ class MapViewController: UIViewController {
         
  testbutton.setImage(UIImage(named:"easyButtonBlue.png"), for: .normal)
         scrollView.contentSize = CGSize(width: screenSize.width, height: 1750)
-        scrollView.contentOffset = CGPoint(x: 0, y: 1750)
+        scrollView.contentOffset = CGPoint(x: 0, y: currentOffset)
         var mapIm: UIImage = UIImage(named: "map_new.png")!
         mapImage.image = mapIm
         scrollView.addSubview(mapImage)
         
         //Creates the level buttons for the map
-        createButton(tag:1, widthRatio:2.93, heightRatio:0.249, completed:
+        createButton(tag:1, widthRatio:3, heightRatio:0.25, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 1 || (UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 2)
         createButton(tag:2, widthRatio:1.735, heightRatio:0.255, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[1] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[1] == 2)
-        createButton(tag:3, widthRatio:1.33, heightRatio:0.271, completed:
+        createButton(tag:3, widthRatio:1.33, heightRatio:0.272, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[2] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[2] == 2)
         createButton(tag:4, widthRatio:1.7, heightRatio:0.293, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 2)
-        createButton(tag:5, widthRatio:2.9, heightRatio:0.317, completed:
+        createButton(tag:5, widthRatio:2.91, heightRatio:0.317, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[4] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[4] == 2)
         createButton(tag:6, widthRatio:1.92, heightRatio:0.359, completed:
@@ -66,13 +76,13 @@ class MapViewController: UIViewController {
         createButton(tag:7, widthRatio:1.31, heightRatio:0.389, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[6] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[6] == 2)
-        createButton(tag:8, widthRatio:1.88, heightRatio:0.42, completed:
+        createButton(tag:8, widthRatio:1.89, heightRatio:0.422, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[7] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[7] == 2)
-        createButton(tag:9, widthRatio:3.04, heightRatio:0.77, completed:
+        createButton(tag:9, widthRatio:3.1, heightRatio:0.77, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[8] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[8] == 2)
-        createButton(tag:10, widthRatio:1.96, heightRatio:1.02, completed:
+        createButton(tag:10, widthRatio:1.98, heightRatio:1.02, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[9] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[9] == 2)
         createButton(tag:11, widthRatio:1.34, heightRatio:1.2, completed:
@@ -81,10 +91,10 @@ class MapViewController: UIViewController {
         createButton(tag:12, widthRatio:2.08, heightRatio:1.57, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[11] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[11] == 2)
-        createButton(tag:13, widthRatio:3.96, heightRatio:2.02, completed:
+        createButton(tag:13, widthRatio:4.04, heightRatio:2.02, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[12] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[12] == 2)
-        createButton(tag:14, widthRatio:2.85, heightRatio:4.8, completed:
+        createButton(tag:14, widthRatio:2.88, heightRatio:5, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 2)
         
@@ -158,7 +168,7 @@ class MapViewController: UIViewController {
         }
         
         if (state == 3) {
-            let levelRunner = LevelRunner(textIn: "level\(levelNumber)")
+            let levelRunner = LevelRunner(textIn: "level\(levelNumber)", offsetIn: Int(scrollView.contentOffset.y))
             levelRunner.intro()
         }
     }

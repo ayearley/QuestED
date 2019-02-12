@@ -47,7 +47,7 @@ class EndingViewController: UIViewController {
     }
     
     @objc func backToMap(selected: UIButton) {
-        (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(MapViewController(), animated: true)
+        (UIApplication.shared.delegate as! AppDelegate).navController!.pushViewController(MapViewController(offsetIn: 0), animated: true)
     }
     
     override func viewDidLayoutSubviews() {

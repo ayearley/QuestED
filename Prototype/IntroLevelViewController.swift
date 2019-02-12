@@ -71,7 +71,7 @@ class IntroLevelViewController: UIViewController {
         self.quiz = false;
         self.textFile = ""
         self.videoName = ""
-        self.levelRunner = LevelRunner(textIn: self.textFile)
+        self.levelRunner = LevelRunner(textIn: self.textFile, offsetIn: 0)
         introText = ""
         nurseText = ""
         char1Name = ""
