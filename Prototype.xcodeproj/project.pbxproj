@@ -48,6 +48,10 @@
 		10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8521A9B54200C1F573 /* MapViewController.xib */; };
 		10C64431220BCD03001125A4 /* chemotherapy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10C64430220BCD03001125A4 /* chemotherapy.mp4 */; };
 		10C64433220BCD2E001125A4 /* symptoms.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10C64432220BCD2E001125A4 /* symptoms.mp4 */; };
+		10D142F72212633B00E6B62C /* nurse.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142F32212633A00E6B62C /* nurse.png */; };
+		10D142F82212633B00E6B62C /* dietician.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142F42212633A00E6B62C /* dietician.png */; };
+		10D142F92212633B00E6B62C /* pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142F52212633A00E6B62C /* pt.png */; };
+		10D142FA2212633B00E6B62C /* psych.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142F62212633B00E6B62C /* psych.png */; };
 		10E5BE742210BA9B00C044EB /* Intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10E5BE732210BA9B00C044EB /* Intro.mp4 */; };
 		10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E8675221F64F0000D1D69E /* QuizViewController.xib */; };
 		10E8675E21FA8C4100D1D69E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E8675D21FA8C4100D1D69E /* Question.swift */; };
@@ -131,6 +135,10 @@
 		10975B8521A9B54200C1F573 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		10C64430220BCD03001125A4 /* chemotherapy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chemotherapy.mp4; sourceTree = "<group>"; };
 		10C64432220BCD2E001125A4 /* symptoms.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = symptoms.mp4; sourceTree = "<group>"; };
+		10D142F32212633A00E6B62C /* nurse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nurse.png; sourceTree = "<group>"; };
+		10D142F42212633A00E6B62C /* dietician.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dietician.png; sourceTree = "<group>"; };
+		10D142F52212633A00E6B62C /* pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pt.png; sourceTree = "<group>"; };
+		10D142F62212633B00E6B62C /* psych.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = psych.png; sourceTree = "<group>"; };
 		10E5BE732210BA9B00C044EB /* Intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Intro.mp4; sourceTree = "<group>"; };
 		10E8675221F64F0000D1D69E /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 		10E8675D21FA8C4100D1D69E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -263,6 +271,10 @@
 				B1AE6808220E10F900B84A8E /* NameViewController.xib */,
 				10975B5621A9AB0700C1F573 /* Main.storyboard */,
 				10975B5921A9AB0800C1F573 /* Assets.xcassets */,
+				10D142F42212633A00E6B62C /* dietician.png */,
+				10D142F32212633A00E6B62C /* nurse.png */,
+				10D142F62212633B00E6B62C /* psych.png */,
+				10D142F52212633A00E6B62C /* pt.png */,
 				10975B5B21A9AB0800C1F573 /* LaunchScreen.storyboard */,
 				10975B5E21A9AB0800C1F573 /* Info.plist */,
 				B10A0A7221B2FDC7001FBA42 /* README.txt */,
@@ -422,6 +434,7 @@
 				10C64431220BCD03001125A4 /* chemotherapy.mp4 in Resources */,
 				100BBE8921FE588F005A1379 /* Transplant.mp4 in Resources */,
 				10975B5A21A9AB0800C1F573 /* Assets.xcassets in Resources */,
+				10D142F72212633B00E6B62C /* nurse.png in Resources */,
 				1044E5C921EBF48E003EEC1A /* level6.txt in Resources */,
 				B1DE2A0F21EEC9EB000D1614 /* levelstatus.txt in Resources */,
 				100BBE8D21FE588F005A1379 /* Psychosocial1.mp4 in Resources */,
@@ -436,13 +449,16 @@
 				10975B5821A9AB0700C1F573 /* Main.storyboard in Resources */,
 				100BBE8521FE588F005A1379 /* Dietician.mp4 in Resources */,
 				10C64433220BCD2E001125A4 /* symptoms.mp4 in Resources */,
+				10D142F92212633B00E6B62C /* pt.png in Resources */,
 				1044E5CB21EBF48E003EEC1A /* level11.txt in Resources */,
+				10D142FA2212633B00E6B62C /* psych.png in Resources */,
 				100BBE7121FE51FE005A1379 /* CentralLine.mp4 in Resources */,
 				1044E5C521EBF48E003EEC1A /* level9.txt in Resources */,
 				1044E5C421EBF48E003EEC1A /* level10.txt in Resources */,
 				B17BF499220642C7007CBDED /* speechbubble_map.png in Resources */,
 				10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */,
 				B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */,
+				10D142F82212633B00E6B62C /* dietician.png in Resources */,
 				100BBE8821FE588F005A1379 /* Psychosocial2.mp4 in Resources */,
 				1044E5C721EBF48E003EEC1A /* level3.txt in Resources */,
 				1044E5C821EBF48E003EEC1A /* level12.txt in Resources */,
