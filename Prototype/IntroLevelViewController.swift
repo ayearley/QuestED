@@ -214,6 +214,10 @@ class IntroLevelViewController: UIViewController {
                     nurseText = String(char2Info.split(separator: ":")[1])
                 }
                 
+                if(introText.contains("*QUIZ*:")) {
+                    quiz = true;
+                }
+                
                 //loads video name
                 let videoRange = contents.range(of: "*VIDEO*: ")
                 let endVideoRange = contents.range(of: "*END*")
@@ -347,7 +351,7 @@ class IntroLevelViewController: UIViewController {
                     let endRange = contents.range(of: "*QUIZ*:")
                     introText = contents[introRange!.upperBound..<endRange!.lowerBound]
                 }
-                
+     
                 print(introText)
                 
                 introLabel.text = String(introText)
