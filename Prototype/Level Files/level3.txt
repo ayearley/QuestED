@@ -22,9 +22,9 @@ a22: To examine my bone marrow.*
 a32: To see the fluid in my spinal cord
 
 q3: Which of the following are tests they may do?
-a13: Flu shot, imaging, spinal tap, bone marrow
+a13: Flu shot, imaging, spinal tap
 a23: Dental care, spinal tap
-a33: Bloodwork, imaging, spinal tap, bone marrow biopsy*
+a33: Bloodwork, imaging, bone marrow biopsy*
 
 *VIDEO*: pretransplant
 
