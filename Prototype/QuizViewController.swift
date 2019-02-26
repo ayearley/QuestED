@@ -110,12 +110,16 @@ class QuizViewController: UIViewController {
         an1Button.setTitle(question1.choices[0], for: .normal)
         an1Button.setTitleColor(UIColor.black, for: .normal)
         an1Button.tag = 1
+        an1Button.titleLabel?.numberOfLines = 0
+        an1Button.titleLabel?.textAlignment = .center
         an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an1Button)
         
         an2Button.setBackgroundImage(UIImage(named: "choice-untapped.png"), for: .normal)
         an2Button.setTitle(question1.choices[1], for: .normal)
         an2Button.setTitleColor(UIColor.black, for: .normal)
+        an2Button.titleLabel?.numberOfLines = 0
+        an2Button.titleLabel?.textAlignment = .center
         an2Button.tag = 2
         an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an2Button)
@@ -123,6 +127,8 @@ class QuizViewController: UIViewController {
         an3Button.setBackgroundImage(UIImage(named: "choice-untapped.png"), for: .normal)
         an3Button.setTitle(question1.choices[2], for: .normal)
         an3Button.setTitleColor(UIColor.black, for: .normal)
+        an3Button.titleLabel?.numberOfLines = 0
+        an3Button.titleLabel?.textAlignment = .center
         an3Button.tag = 3
         an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an3Button)
@@ -167,6 +173,8 @@ class QuizViewController: UIViewController {
         an1Button.setTitle(question2.choices[0], for: .normal)
         an1Button.setTitleColor(UIColor.black, for: .normal)
         an1Button.tag = 1
+        an1Button.titleLabel?.numberOfLines = 0
+        an1Button.titleLabel?.textAlignment = .center
         an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an1Button)
         
@@ -174,6 +182,8 @@ class QuizViewController: UIViewController {
         an2Button.setTitle(question2.choices[1], for: .normal)
         an2Button.setTitleColor(UIColor.black, for: .normal)
         an2Button.tag = 2
+        an2Button.titleLabel?.numberOfLines = 0
+        an2Button.titleLabel?.textAlignment = .center
         an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an2Button)
         
@@ -181,6 +191,8 @@ class QuizViewController: UIViewController {
         an3Button.setTitle(question2.choices[2], for: .normal)
         an3Button.setTitleColor(UIColor.black, for: .normal)
         an3Button.tag = 3
+        an3Button.titleLabel?.numberOfLines = 0
+        an3Button.titleLabel?.textAlignment = .center
         an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an3Button)
         
@@ -215,6 +227,8 @@ class QuizViewController: UIViewController {
         an1Button.setTitle(question3.choices[0], for: .normal)
         an1Button.setTitleColor(UIColor.black, for: .normal)
         an1Button.tag = 1
+        an1Button.titleLabel?.numberOfLines = 0
+        an1Button.titleLabel?.textAlignment = .center
         an1Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an1Button)
         
@@ -222,6 +236,8 @@ class QuizViewController: UIViewController {
         an2Button.setTitle(question3.choices[1], for: .normal)
         an2Button.setTitleColor(UIColor.black, for: .normal)
         an2Button.tag = 2
+        an2Button.titleLabel?.numberOfLines = 0
+        an2Button.titleLabel?.textAlignment = .center
         an2Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an2Button)
         
@@ -229,6 +245,8 @@ class QuizViewController: UIViewController {
         an3Button.setTitle(question3.choices[2], for: .normal)
         an3Button.setTitleColor(UIColor.black, for: .normal)
         an3Button.tag = 3
+        an3Button.titleLabel?.numberOfLines = 0
+        an3Button.titleLabel?.textAlignment = .center
         an3Button.addTarget(self, action: #selector(setSelectedAns(selected:)), for:.touchUpInside)
         view.addSubview(an3Button)
         
@@ -310,9 +328,11 @@ class QuizViewController: UIViewController {
         let centerHorizontal: CGFloat = screenSize.width / 2 -  screenSize.width / 6
         progress.frame = CGRect(x: 8, y: 8, width: screenSize.width - 16 * 2, height: 30);
         titleLabel.frame = CGRect(x: 16, y: 40, width: screenSize.width - 16 * 2, height: 50);
-        an1Button.frame = CGRect(x: centerHorizontal, y: titleLabel.frame.maxY + kVerticalSpacer, width: screenSize.width / 3, height: 60);
-        an2Button.frame = CGRect(x: centerHorizontal, y: an1Button.frame.maxY + kVerticalSpacer, width: screenSize.width / 3, height: 60);
-        an3Button.frame = CGRect(x: centerHorizontal, y: an2Button.frame.maxY + kVerticalSpacer, width: screenSize.width / 3, height: 60);
+        let margin: CGFloat = 8.0
+        let buttonWidth = screenSize.width - margin * 2
+        an1Button.frame = CGRect(x: margin, y: titleLabel.frame.maxY + kVerticalSpacer, width: buttonWidth, height: an1Button.titleLabel?.sizeThatFits(screenSize.size).height ?? 20)
+        an2Button.frame = CGRect(x: margin, y: an1Button.frame.maxY + kVerticalSpacer, width: buttonWidth, height: an2Button.titleLabel?.sizeThatFits(screenSize.size).height ?? 20);
+        an3Button.frame = CGRect(x: margin, y: an2Button.frame.maxY + kVerticalSpacer, width: buttonWidth, height: an3Button.titleLabel?.sizeThatFits(screenSize.size).height ?? 20);
         submitButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
         nextButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
         wrongButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
