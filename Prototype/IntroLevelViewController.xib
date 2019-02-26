@@ -31,10 +31,23 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xih-KR-Q8b">
+                    <rect key="frame" x="15" y="15" width="39" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="gMc-Zx-Rfj"/>
+                        <constraint firstAttribute="height" constant="39" id="tZr-wl-uY8"/>
+                    </constraints>
+                    <state key="normal" image="mapicon"/>
+                    <connections>
+                        <action selector="goToMap:" destination="-1" eventType="touchUpInside" id="OH8-0p-1uH"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="xih-KR-Q8b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="AJj-Yc-8JE"/>
                 <constraint firstItem="jpF-z1-jfB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="MFV-f9-P4u"/>
+                <constraint firstItem="xih-KR-Q8b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="UeA-8C-HjL"/>
                 <constraint firstItem="jpF-z1-jfB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="c5a-Eo-0jz"/>
                 <constraint firstItem="jpF-z1-jfB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cpE-oJ-y8t"/>
             </constraints>
@@ -44,5 +57,6 @@
     </objects>
     <resources>
         <image name="lightbg" width="915" height="516"/>
+        <image name="mapicon" width="512" height="512"/>
     </resources>
 </document>
