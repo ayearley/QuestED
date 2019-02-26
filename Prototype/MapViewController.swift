@@ -21,8 +21,8 @@ class MapViewController: UIViewController {
     // let screenHeight = screenSize.height
     
     //Load all of these from file instead of hard coding
-    var buttonWidth = 75;
-    var buttonHeight = 75;
+    var buttonWidth = 150;
+    var buttonHeight = 150;
     
     var doctorImage: UIImageView = UIImageView()
     var bubbleImage: UIImageView = UIImageView()
@@ -49,9 +49,10 @@ class MapViewController: UIViewController {
         Bundle.main.loadNibNamed("MapViewController", owner: self, options: nil)
         
         testbutton.setImage(UIImage(named:"easyButtonBlue.png"), for: .normal)
-        scrollView.contentSize = CGSize(width: screenSize.width, height: 1750)
+        scrollView.contentSize = CGSize(width: screenSize.width, height: screenSize.width*3.05)
         scrollView.contentOffset = CGPoint(x: 0, y: currentOffset)
         var mapIm: UIImage = UIImage(named: "map.png")!
+        mapImage.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.width * 3.08)
         mapImage.image = mapIm
         scrollView.addSubview(mapImage)
         
@@ -95,7 +96,7 @@ class MapViewController: UIViewController {
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[12] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[12] == 2)
         createButton(tag:14, widthRatio:2.88, heightRatio:5, completed:
-            (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 0 ||
+            (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 2)
         
         createDoctor()
@@ -110,11 +111,11 @@ class MapViewController: UIViewController {
         buttonLevel.layer.cornerRadius = 0.5*buttonLevel.bounds.size.width
         buttonLevel.clipsToBounds = true
         if(completed){
-            //buttonLevel.setImage(UIImage(named:"easyButtonBlue.png"), for: .normal)
-            buttonLevel.layer.borderWidth = 1
-            buttonLevel.layer.borderColor = UIColor.yellow.cgColor
+            buttonLevel.setImage(UIImage(named:"bluesign1.png"), for: .normal)
+            //buttonLevel.layer.borderWidth = 1
+            //buttonLevel.layer.borderColor = UIColor.yellow.cgColor
         } else {
-            //buttonLevel.setImage(UIImage(named:"easyButton.png"), for: .normal)
+            buttonLevel.setImage(UIImage(named:"redsign1.png"), for: .normal)
             buttonLevel.isEnabled = false;
         }
         

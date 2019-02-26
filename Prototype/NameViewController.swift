@@ -13,6 +13,8 @@ class NameViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var nameField: UITextField!
     
+    let screenSize = UIScreen.main.bounds
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -60,7 +62,7 @@ class NameViewController: UIViewController, UITextFieldDelegate {
             player.play()
         })
         
-        self.navigationController?.pushViewController(MapViewController(offsetIn: 1750), animated: true)
+        self.navigationController?.pushViewController(MapViewController(offsetIn: Int(screenSize.width*3.08)), animated: true)
     }
 
     /*
