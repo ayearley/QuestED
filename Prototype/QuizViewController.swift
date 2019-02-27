@@ -465,14 +465,15 @@ class QuizViewController: UIViewController {
                 }
                 
                 let a3Range3 = contents.range(of: "a33:")
-                let enda3Range3 = contents.range(of: "*END*")
+                let enda3Range3 = contents.range(of: "*VIDEO*")
                 
                 var a3Text3 = String(contents[a3Range3!.upperBound..<enda3Range3!.lowerBound])
                 if(a3Text3.contains("*")){
                     a3Text3 = a3Text3.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q3Ans = 3;
                 }
-                
+                a3Text3 = a3Text3.trimmingCharacters(in: .whitespacesAndNewlines)
+
                 question3 = Question(title: String(questionText3), choices: [String(a1Text3), String(a2Text3), String(a3Text3)], correctAns: q3Ans)
                 
                 //quizLabel.text = String(quizText)
