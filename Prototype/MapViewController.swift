@@ -57,7 +57,7 @@ class MapViewController: UIViewController {
         scrollView.addSubview(mapImage)
         
         //Creates the level buttons for the map
-        createButton(tag:1, widthRatio:3, heightRatio:0.25, completed:
+        createButton(tag:1, widthRatio:3, heightRatio:0.16, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 1 || (UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 2)
         createButton(tag:2, widthRatio:1.735, heightRatio:0.255, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[1] == 1 ||
