@@ -66,6 +66,10 @@ class IntroLevelViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
+    @IBAction func goToMap(_ sender: Any) {
+        self.levelRunner.map()
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         self.video = false;
         self.quiz = false;
