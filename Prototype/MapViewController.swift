@@ -14,6 +14,8 @@ class MapViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+    var contentView: UIView = UIView()
+    
     @IBOutlet weak var testbutton: UIButton!
     
     let screenSize = UIScreen.main.bounds
@@ -54,52 +56,54 @@ class MapViewController: UIViewController {
         var mapIm: UIImage = UIImage(named: "map.png")!
         mapImage.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.width * 3.08)
         mapImage.image = mapIm
-        scrollView.addSubview(mapImage)
+        contentView.frame = mapImage.frame
+        contentView.addSubview(mapImage)
         
         //Creates the level buttons for the map
-        createButton(tag:1, widthRatio:3, heightRatio:0.16, completed:
+        createButton(tag:1, widthRatio:0.3613, heightRatio:0.9642, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 1 || (UIApplication.shared.delegate as! AppDelegate).levelStatus[0] == 2)
-        createButton(tag:2, widthRatio:1.735, heightRatio:0.255, completed:
+        createButton(tag:2, widthRatio:0.6162, heightRatio:0.9333, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[1] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[1] == 2)
-        createButton(tag:3, widthRatio:1.33, heightRatio:0.272, completed:
+        createButton(tag:3, widthRatio:0.7933, heightRatio:0.8788, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[2] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[2] == 2)
-        createButton(tag:4, widthRatio:1.7, heightRatio:0.293, completed:
+        createButton(tag:4, widthRatio:0.6305, heightRatio:0.8225, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[3] == 2)
-        createButton(tag:5, widthRatio:2.91, heightRatio:0.317, completed:
+        createButton(tag:5, widthRatio:0.3834, heightRatio:0.7690, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[4] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[4] == 2)
-        createButton(tag:6, widthRatio:1.92, heightRatio:0.359, completed:
+        createButton(tag:6, widthRatio:0.5844, heightRatio:0.6853, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[5] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[5] == 2)
-        createButton(tag:7, widthRatio:1.31, heightRatio:0.389, completed:
+        createButton(tag:7, widthRatio:0.8033, heightRatio:0.6430, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[6] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[6] == 2)
-        createButton(tag:8, widthRatio:1.89, heightRatio:0.422, completed:
+        createButton(tag:8, widthRatio:0.5841, heightRatio:0.6008, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[7] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[7] == 2)
-        createButton(tag:9, widthRatio:3.1, heightRatio:0.77, completed:
+        createButton(tag:9, widthRatio:0.3613, heightRatio:0.377, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[8] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[8] == 2)
-        createButton(tag:10, widthRatio:1.98, heightRatio:1.02, completed:
+        createButton(tag:10, widthRatio:0.5453, heightRatio:0.3016, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[9] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[9] == 2)
-        createButton(tag:11, widthRatio:1.34, heightRatio:1.2, completed:
+        createButton(tag:11, widthRatio:0.7878, heightRatio:0.2789, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[10] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[10] == 2)
-        createButton(tag:12, widthRatio:2.08, heightRatio:1.57, completed:
+        createButton(tag:12, widthRatio:0.5180, heightRatio:0.2382, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[11] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[11] == 2)
-        createButton(tag:13, widthRatio:4.04, heightRatio:2.02, completed:
+        createButton(tag:13, widthRatio:0.2913, heightRatio:0.2063, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[12] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[12] == 2)
-        createButton(tag:14, widthRatio:2.88, heightRatio:5, completed:
+        createButton(tag:14, widthRatio:0.3868, heightRatio:0.1446, completed:
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 1 ||
                 (UIApplication.shared.delegate as! AppDelegate).levelStatus[13] == 2)
         
         createDoctor()
+        scrollView.addSubview(contentView)
         
     }
     
@@ -107,20 +111,21 @@ class MapViewController: UIViewController {
     func createButton(tag:Int, widthRatio:Double, heightRatio:Double, completed:Bool){
         let buttonLevel = UIButton(type: .custom)
         buttonLevel.tag = tag
-        buttonLevel.frame = CGRect(x: Double(screenSize.width)/widthRatio, y: Double(screenSize.height)/heightRatio, width: Double(buttonWidth), height: Double(buttonHeight))
+        buttonLevel.frame.size = CGSize(width: Double(buttonWidth), height: Double(buttonHeight))
+        buttonLevel.center = CGPoint(x: Double(screenSize.width)*widthRatio, y: Double(contentView.frame.height)*heightRatio)
         buttonLevel.layer.cornerRadius = 0.5*buttonLevel.bounds.size.width
         buttonLevel.clipsToBounds = true
         if(completed){
-            buttonLevel.setImage(UIImage(named:"bluesign1.png"), for: .normal)
+            buttonLevel.setImage(UIImage(named:"level\(tag)blue.png"), for: .normal)
             //buttonLevel.layer.borderWidth = 1
             //buttonLevel.layer.borderColor = UIColor.yellow.cgColor
         } else {
-            buttonLevel.setImage(UIImage(named:"redsign1.png"), for: .normal)
+            buttonLevel.setImage(UIImage(named:"level\(tag)red.png"), for: .normal)
             buttonLevel.isEnabled = false;
         }
         
         buttonLevel.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
-        scrollView.addSubview(buttonLevel)
+        contentView.addSubview(buttonLevel)
         buttonLevel.backgroundColor = UIColor.clear
     }
     

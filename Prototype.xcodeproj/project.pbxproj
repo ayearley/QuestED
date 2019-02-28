@@ -46,6 +46,34 @@
 		10975B8321A9B12700C1F573 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8121A9B12700C1F573 /* IntroViewController.xib */; };
 		10975B8621A9B54200C1F573 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10975B8421A9B54200C1F573 /* MapViewController.swift */; };
 		10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10975B8521A9B54200C1F573 /* MapViewController.xib */; };
+		10AD886722277E8800B16805 /* level14blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD885922277E8600B16805 /* level14blue.png */; };
+		10AD886822277E8800B16805 /* level6blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD885A22277E8600B16805 /* level6blue.png */; };
+		10AD886922277E8800B16805 /* level5blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD885B22277E8700B16805 /* level5blue.png */; };
+		10AD886A22277E8800B16805 /* level4blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD885C22277E8700B16805 /* level4blue.png */; };
+		10AD886B22277E8800B16805 /* level9blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD885D22277E8700B16805 /* level9blue.png */; };
+		10AD886C22277E8800B16805 /* level1blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD885E22277E8700B16805 /* level1blue.png */; };
+		10AD886D22277E8800B16805 /* level3blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD885F22277E8700B16805 /* level3blue.png */; };
+		10AD886E22277E8800B16805 /* level2blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD886022277E8700B16805 /* level2blue.png */; };
+		10AD886F22277E8800B16805 /* level8blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD886122277E8700B16805 /* level8blue.png */; };
+		10AD887022277E8800B16805 /* level13blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD886222277E8700B16805 /* level13blue.png */; };
+		10AD887122277E8800B16805 /* level7blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD886322277E8800B16805 /* level7blue.png */; };
+		10AD887222277E8800B16805 /* level10blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD886422277E8800B16805 /* level10blue.png */; };
+		10AD887322277E8800B16805 /* level11blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD886522277E8800B16805 /* level11blue.png */; };
+		10AD887422277E8800B16805 /* level12blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD886622277E8800B16805 /* level12blue.png */; };
+		10AD888322277F4700B16805 /* level2red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD887522277F4500B16805 /* level2red.png */; };
+		10AD888422277F4700B16805 /* level13red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD887622277F4600B16805 /* level13red.png */; };
+		10AD888522277F4700B16805 /* level10red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD887722277F4600B16805 /* level10red.png */; };
+		10AD888622277F4700B16805 /* level7red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD887822277F4600B16805 /* level7red.png */; };
+		10AD888722277F4700B16805 /* level5red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD887922277F4600B16805 /* level5red.png */; };
+		10AD888822277F4700B16805 /* level3red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD887A22277F4600B16805 /* level3red.png */; };
+		10AD888922277F4700B16805 /* level1red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD887B22277F4600B16805 /* level1red.png */; };
+		10AD888A22277F4700B16805 /* level9red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD887C22277F4600B16805 /* level9red.png */; };
+		10AD888B22277F4700B16805 /* level6red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD887D22277F4600B16805 /* level6red.png */; };
+		10AD888C22277F4700B16805 /* level12red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD887E22277F4700B16805 /* level12red.png */; };
+		10AD888D22277F4700B16805 /* level14red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD887F22277F4700B16805 /* level14red.png */; };
+		10AD888E22277F4700B16805 /* level11red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD888022277F4700B16805 /* level11red.png */; };
+		10AD888F22277F4700B16805 /* level4red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD888122277F4700B16805 /* level4red.png */; };
+		10AD889022277F4700B16805 /* level8red.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AD888222277F4700B16805 /* level8red.png */; };
 		10C64431220BCD03001125A4 /* chemotherapy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10C64430220BCD03001125A4 /* chemotherapy.mp4 */; };
 		10C64433220BCD2E001125A4 /* symptoms.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10C64432220BCD2E001125A4 /* symptoms.mp4 */; };
 		10D142F72212633B00E6B62C /* nurse.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142F32212633A00E6B62C /* nurse.png */; };
@@ -136,6 +164,34 @@
 		10975B8121A9B12700C1F573 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		10975B8421A9B54200C1F573 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		10975B8521A9B54200C1F573 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		10AD885922277E8600B16805 /* level14blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level14blue.png; sourceTree = "<group>"; };
+		10AD885A22277E8600B16805 /* level6blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level6blue.png; sourceTree = "<group>"; };
+		10AD885B22277E8700B16805 /* level5blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level5blue.png; sourceTree = "<group>"; };
+		10AD885C22277E8700B16805 /* level4blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level4blue.png; sourceTree = "<group>"; };
+		10AD885D22277E8700B16805 /* level9blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level9blue.png; sourceTree = "<group>"; };
+		10AD885E22277E8700B16805 /* level1blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level1blue.png; sourceTree = "<group>"; };
+		10AD885F22277E8700B16805 /* level3blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level3blue.png; sourceTree = "<group>"; };
+		10AD886022277E8700B16805 /* level2blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level2blue.png; sourceTree = "<group>"; };
+		10AD886122277E8700B16805 /* level8blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level8blue.png; sourceTree = "<group>"; };
+		10AD886222277E8700B16805 /* level13blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level13blue.png; sourceTree = "<group>"; };
+		10AD886322277E8800B16805 /* level7blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level7blue.png; sourceTree = "<group>"; };
+		10AD886422277E8800B16805 /* level10blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level10blue.png; sourceTree = "<group>"; };
+		10AD886522277E8800B16805 /* level11blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level11blue.png; sourceTree = "<group>"; };
+		10AD886622277E8800B16805 /* level12blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level12blue.png; sourceTree = "<group>"; };
+		10AD887522277F4500B16805 /* level2red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level2red.png; sourceTree = "<group>"; };
+		10AD887622277F4600B16805 /* level13red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level13red.png; sourceTree = "<group>"; };
+		10AD887722277F4600B16805 /* level10red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level10red.png; sourceTree = "<group>"; };
+		10AD887822277F4600B16805 /* level7red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level7red.png; sourceTree = "<group>"; };
+		10AD887922277F4600B16805 /* level5red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level5red.png; sourceTree = "<group>"; };
+		10AD887A22277F4600B16805 /* level3red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level3red.png; sourceTree = "<group>"; };
+		10AD887B22277F4600B16805 /* level1red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level1red.png; sourceTree = "<group>"; };
+		10AD887C22277F4600B16805 /* level9red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level9red.png; sourceTree = "<group>"; };
+		10AD887D22277F4600B16805 /* level6red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level6red.png; sourceTree = "<group>"; };
+		10AD887E22277F4700B16805 /* level12red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level12red.png; sourceTree = "<group>"; };
+		10AD887F22277F4700B16805 /* level14red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level14red.png; sourceTree = "<group>"; };
+		10AD888022277F4700B16805 /* level11red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level11red.png; sourceTree = "<group>"; };
+		10AD888122277F4700B16805 /* level4red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level4red.png; sourceTree = "<group>"; };
+		10AD888222277F4700B16805 /* level8red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level8red.png; sourceTree = "<group>"; };
 		10C64430220BCD03001125A4 /* chemotherapy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chemotherapy.mp4; sourceTree = "<group>"; };
 		10C64432220BCD2E001125A4 /* symptoms.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = symptoms.mp4; sourceTree = "<group>"; };
 		10D142F32212633A00E6B62C /* nurse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nurse.png; sourceTree = "<group>"; };
@@ -242,6 +298,7 @@
 		10975B4621A9AB0700C1F573 = {
 			isa = PBXGroup;
 			children = (
+				10AD885822277E6E00B16805 /* Level Images */,
 				B178E5292225F8E3009214EB /* mapicon.png */,
 				027ECDE021B305D00026E34E /* Assets */,
 				10975B5121A9AB0700C1F573 /* Prototype */,
@@ -318,6 +375,41 @@
 				10975B7421A9AB0800C1F573 /* Info.plist */,
 			);
 			path = PrototypeUITests;
+			sourceTree = "<group>";
+		};
+		10AD885822277E6E00B16805 /* Level Images */ = {
+			isa = PBXGroup;
+			children = (
+				10AD887B22277F4600B16805 /* level1red.png */,
+				10AD887922277F4600B16805 /* level5red.png */,
+				10AD887522277F4500B16805 /* level2red.png */,
+				10AD887D22277F4600B16805 /* level6red.png */,
+				10AD887A22277F4600B16805 /* level3red.png */,
+				10AD888122277F4700B16805 /* level4red.png */,
+				10AD887822277F4600B16805 /* level7red.png */,
+				10AD888222277F4700B16805 /* level8red.png */,
+				10AD887C22277F4600B16805 /* level9red.png */,
+				10AD887722277F4600B16805 /* level10red.png */,
+				10AD888022277F4700B16805 /* level11red.png */,
+				10AD887E22277F4700B16805 /* level12red.png */,
+				10AD887F22277F4700B16805 /* level14red.png */,
+				10AD887622277F4600B16805 /* level13red.png */,
+				10AD886222277E8700B16805 /* level13blue.png */,
+				10AD885E22277E8700B16805 /* level1blue.png */,
+				10AD886022277E8700B16805 /* level2blue.png */,
+				10AD885F22277E8700B16805 /* level3blue.png */,
+				10AD885C22277E8700B16805 /* level4blue.png */,
+				10AD885B22277E8700B16805 /* level5blue.png */,
+				10AD885A22277E8600B16805 /* level6blue.png */,
+				10AD886322277E8800B16805 /* level7blue.png */,
+				10AD886122277E8700B16805 /* level8blue.png */,
+				10AD885D22277E8700B16805 /* level9blue.png */,
+				10AD886422277E8800B16805 /* level10blue.png */,
+				10AD886522277E8800B16805 /* level11blue.png */,
+				10AD886622277E8800B16805 /* level12blue.png */,
+				10AD885922277E8600B16805 /* level14blue.png */,
+			);
+			path = "Level Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,21 +517,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10AD886E22277E8800B16805 /* level2blue.png in Resources */,
+				10AD888922277F4700B16805 /* level1red.png in Resources */,
+				10AD887322277E8800B16805 /* level11blue.png in Resources */,
 				B178E52A2225F8E3009214EB /* mapicon.png in Resources */,
 				B1AE680A220E10F900B84A8E /* NameViewController.xib in Resources */,
 				B187219821BC4C34007862FA /* level2.txt in Resources */,
+				10AD888E22277F4700B16805 /* level11red.png in Resources */,
 				100BBE8421FE588F005A1379 /* cancer.mp4 in Resources */,
 				B10A0A7721B31415001FBA42 /* level1.txt in Resources */,
 				10879C6B21B3063B001D7F0B /* IntroLevelViewController.xib in Resources */,
+				10AD887122277E8800B16805 /* level7blue.png in Resources */,
+				10AD889022277F4700B16805 /* level8red.png in Resources */,
 				1044E5C321EBF48E003EEC1A /* level7.txt in Resources */,
 				10975B5D21A9AB0800C1F573 /* LaunchScreen.storyboard in Resources */,
 				100BBE8C21FE588F005A1379 /* Physicaltherapist.mp4 in Resources */,
 				10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */,
+				10AD888622277F4700B16805 /* level7red.png in Resources */,
 				B12C73D52207857000590E6B /* speechbubble_large.png in Resources */,
 				1044E5CD21EBF5D1003EEC1A /* level14.txt in Resources */,
 				1044E5CA21EBF48E003EEC1A /* level5.txt in Resources */,
 				C545596B220D2B1B004EDDA2 /* EndingViewController.xib in Resources */,
 				100BBE8621FE588F005A1379 /* pretransplant.mp4 in Resources */,
+				10AD886B22277E8800B16805 /* level9blue.png in Resources */,
 				10C64431220BCD03001125A4 /* chemotherapy.mp4 in Resources */,
 				10D142FE2212827000E6B62C /* childlife.png in Resources */,
 				100BBE8921FE588F005A1379 /* Transplant.mp4 in Resources */,
@@ -447,6 +547,7 @@
 				10D142F72212633B00E6B62C /* nurse.png in Resources */,
 				1044E5C921EBF48E003EEC1A /* level6.txt in Resources */,
 				B1DE2A0F21EEC9EB000D1614 /* levelstatus.txt in Resources */,
+				10AD887222277E8800B16805 /* level10blue.png in Resources */,
 				100BBE8D21FE588F005A1379 /* Psychosocial1.mp4 in Resources */,
 				100BBE8121FE588F005A1379 /* Nurse.mp4 in Resources */,
 				B187219621BC49D1007862FA /* CadeucesViewController.xib in Resources */,
@@ -455,26 +556,45 @@
 				1044E5CF21EBF601003EEC1A /* level13.txt in Resources */,
 				100BBE8B21FE588F005A1379 /* Psychosocial3.mp4 in Resources */,
 				100BBE8221FE588F005A1379 /* radiation.mp4 in Resources */,
+				10AD888722277F4700B16805 /* level5red.png in Resources */,
+				10AD887422277E8800B16805 /* level12blue.png in Resources */,
 				1044E5B921EBF421003EEC1A /* level4.txt in Resources */,
 				10975B5821A9AB0700C1F573 /* Main.storyboard in Resources */,
 				100BBE8521FE588F005A1379 /* Dietician.mp4 in Resources */,
 				10C64433220BCD2E001125A4 /* symptoms.mp4 in Resources */,
 				10D142F92212633B00E6B62C /* pt.png in Resources */,
 				1044E5CB21EBF48E003EEC1A /* level11.txt in Resources */,
+				10AD886C22277E8800B16805 /* level1blue.png in Resources */,
 				10D142FA2212633B00E6B62C /* psych.png in Resources */,
 				100BBE7121FE51FE005A1379 /* CentralLine.mp4 in Resources */,
+				10AD886D22277E8800B16805 /* level3blue.png in Resources */,
 				1044E5C521EBF48E003EEC1A /* level9.txt in Resources */,
 				10D142FC2212789500E6B62C /* doctor.png in Resources */,
 				1044E5C421EBF48E003EEC1A /* level10.txt in Resources */,
+				10AD888D22277F4700B16805 /* level14red.png in Resources */,
+				10AD888322277F4700B16805 /* level2red.png in Resources */,
+				10AD888422277F4700B16805 /* level13red.png in Resources */,
 				B17BF499220642C7007CBDED /* speechbubble_map.png in Resources */,
+				10AD887022277E8800B16805 /* level13blue.png in Resources */,
+				10AD888B22277F4700B16805 /* level6red.png in Resources */,
 				10975B8721A9B54200C1F573 /* MapViewController.xib in Resources */,
+				10AD886722277E8800B16805 /* level14blue.png in Resources */,
 				B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */,
 				10D142F82212633B00E6B62C /* dietician.png in Resources */,
+				10AD888C22277F4700B16805 /* level12red.png in Resources */,
+				10AD888A22277F4700B16805 /* level9red.png in Resources */,
+				10AD888522277F4700B16805 /* level10red.png in Resources */,
+				10AD886922277E8800B16805 /* level5blue.png in Resources */,
 				100BBE8821FE588F005A1379 /* Psychosocial2.mp4 in Resources */,
+				10AD886822277E8800B16805 /* level6blue.png in Resources */,
 				1044E5C721EBF48E003EEC1A /* level3.txt in Resources */,
+				10AD888F22277F4700B16805 /* level4red.png in Resources */,
 				10E867732212769A00D1D69E /* ending.txt in Resources */,
+				10AD888822277F4700B16805 /* level3red.png in Resources */,
+				10AD886A22277E8800B16805 /* level4blue.png in Resources */,
 				1044E5C821EBF48E003EEC1A /* level12.txt in Resources */,
 				100BBE8A21FE588F005A1379 /* Childlifespecialist.mp4 in Resources */,
+				10AD886F22277E8800B16805 /* level8blue.png in Resources */,
 				10975B8321A9B12700C1F573 /* IntroViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
