@@ -325,14 +325,15 @@ class QuizViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        let centerHorizontal: CGFloat = screenSize.width / 2 -  screenSize.width / 6
+        //let centerHorizontal: CGFloat = screenSize.width / 2 -  screenSize.width / 6
         progress.frame = CGRect(x: 8, y: 8, width: screenSize.width - 16 * 2, height: 30);
         titleLabel.frame = CGRect(x: 16, y: 40, width: screenSize.width - 16 * 2, height: 50);
-        let margin: CGFloat = 8.0
+        let margin: CGFloat = 32.0
         let buttonWidth = screenSize.width - margin * 2
-        an1Button.frame = CGRect(x: margin, y: titleLabel.frame.maxY + kVerticalSpacer, width: buttonWidth, height: an1Button.titleLabel?.sizeThatFits(screenSize.size).height ?? 20)
-        an2Button.frame = CGRect(x: margin, y: an1Button.frame.maxY + kVerticalSpacer, width: buttonWidth, height: an2Button.titleLabel?.sizeThatFits(screenSize.size).height ?? 20);
-        an3Button.frame = CGRect(x: margin, y: an2Button.frame.maxY + kVerticalSpacer, width: buttonWidth, height: an3Button.titleLabel?.sizeThatFits(screenSize.size).height ?? 20);
+        let paddV: CGFloat = 32.0
+        an1Button.frame = CGRect(x: margin, y: titleLabel.frame.maxY + kVerticalSpacer, width: buttonWidth, height: (an1Button.titleLabel?.sizeThatFits(CGSize(width:buttonWidth, height:screenSize.height)).height ?? 20)  + paddV)
+        an2Button.frame = CGRect(x: margin, y: an1Button.frame.maxY + kVerticalSpacer, width: buttonWidth, height: (an2Button.titleLabel?.sizeThatFits(CGSize(width:buttonWidth, height:screenSize.height)).height ?? 20)  + paddV);
+        an3Button.frame = CGRect(x: margin, y: an2Button.frame.maxY + kVerticalSpacer, width: buttonWidth, height: (an3Button.titleLabel?.sizeThatFits(CGSize(width:buttonWidth, height:screenSize.height)).height ?? 20)  + paddV);
         submitButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
         nextButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
         wrongButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
@@ -382,6 +383,8 @@ class QuizViewController: UIViewController {
                     a1Text = a1Text.replacingOccurrences(of: "*", with: "")
                     q1Ans = 1;
                 }
+                a1Text = a1Text.trimmingCharacters(in: CharacterSet.newlines)
+
                 
                 let a2Range = contents.range(of: "a2:")
                 let enda2Range = contents.range(of: "a3:")
@@ -392,7 +395,8 @@ class QuizViewController: UIViewController {
                     a2Text = a2Text.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q1Ans = 2;
                 }
-                
+                a2Text = a2Text.trimmingCharacters(in: CharacterSet.newlines)
+
                 let a3Range = contents.range(of: "a3:")
                 let enda3Range = contents.range(of: "q2:")
                 
@@ -402,7 +406,7 @@ class QuizViewController: UIViewController {
                     a3Text = a3Text.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q1Ans = 3;
                 }
-                
+                a3Text = a3Text.trimmingCharacters(in: CharacterSet.newlines)
                 question1 = Question(title: String(questionText), choices: [String(a1Text), String(a2Text), String(a3Text)], correctAns: q1Ans)
                 
                 //question 2 building
@@ -419,7 +423,8 @@ class QuizViewController: UIViewController {
                     a1Text2 = a1Text2.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q2Ans = 1;
                 }
-                
+                a1Text2 = a1Text2.trimmingCharacters(in: CharacterSet.newlines)
+
                 let a2Range2 = contents.range(of: "a22:")
                 let enda2Range2 = contents.range(of: "a32:")
                 
@@ -428,7 +433,8 @@ class QuizViewController: UIViewController {
                     a2Text2 = a2Text2.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q2Ans = 2;
                 }
-                
+                a2Text2 = a2Text2.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+
                 let a3Range2 = contents.range(of: "a32:")
                 let enda3Range2 = contents.range(of: "q3:")
                 
@@ -437,7 +443,7 @@ class QuizViewController: UIViewController {
                     a3Text2 = a3Text2.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q2Ans = 3;
                 }
-                
+                a3Text2 = a3Text2.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
                 question2 = Question(title: String(questionText2), choices: [String(a1Text2), String(a2Text2), String(a3Text2)], correctAns: q2Ans)
                 
                 //question 3 building
@@ -454,6 +460,7 @@ class QuizViewController: UIViewController {
                     a1Text3 = a1Text3.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q3Ans = 1;
                 }
+                a1Text3 = a1Text3.trimmingCharacters(in: CharacterSet.newlines)
                 
                 let a2Range3 = contents.range(of: "a23:")
                 let enda2Range3 = contents.range(of: "a33:")
@@ -463,7 +470,8 @@ class QuizViewController: UIViewController {
                     a2Text3 = a2Text3.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q3Ans = 2;
                 }
-                
+                a2Text3 = a2Text3.trimmingCharacters(in: CharacterSet.newlines)
+
                 let a3Range3 = contents.range(of: "a33:")
                 let enda3Range3 = contents.range(of: "*VIDEO*")
                 
@@ -472,7 +480,10 @@ class QuizViewController: UIViewController {
                     a3Text3 = a3Text3.replacingOccurrences(of: "*", with: "", options: NSString.CompareOptions.literal, range: nil)
                     q3Ans = 3;
                 }
-                a3Text3 = a3Text3.trimmingCharacters(in: .whitespacesAndNewlines)
+                print(a3Text)
+                a3Text3 = a3Text3.trimmingCharacters(in: CharacterSet.newlines)
+                
+                
 
                 question3 = Question(title: String(questionText3), choices: [String(a1Text3), String(a2Text3), String(a3Text3)], correctAns: q3Ans)
                 
