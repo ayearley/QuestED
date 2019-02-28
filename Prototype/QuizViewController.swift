@@ -328,12 +328,12 @@ class QuizViewController: UIViewController {
         //let centerHorizontal: CGFloat = screenSize.width / 2 -  screenSize.width / 6
         progress.frame = CGRect(x: 8, y: 8, width: screenSize.width - 16 * 2, height: 30);
         titleLabel.frame = CGRect(x: 16, y: 40, width: screenSize.width - 16 * 2, height: 50);
-        let margin: CGFloat = 8.0
+        let margin: CGFloat = 32.0
         let buttonWidth = screenSize.width - margin * 2
         let paddV: CGFloat = 32.0
-        an1Button.frame = CGRect(x: margin, y: titleLabel.frame.maxY + kVerticalSpacer, width: buttonWidth - paddV, height: (an1Button.titleLabel?.sizeThatFits(screenSize.size).height ?? 20)  + paddV)
-        an2Button.frame = CGRect(x: margin, y: an1Button.frame.maxY + kVerticalSpacer, width: buttonWidth - paddV, height: (an2Button.titleLabel?.sizeThatFits(screenSize.size).height ?? 20)  + paddV);
-        an3Button.frame = CGRect(x: margin, y: an2Button.frame.maxY + kVerticalSpacer, width: buttonWidth - paddV, height: (an3Button.titleLabel?.sizeThatFits(screenSize.size).height ?? 20)  + paddV);
+        an1Button.frame = CGRect(x: margin, y: titleLabel.frame.maxY + kVerticalSpacer, width: buttonWidth, height: (an1Button.titleLabel?.sizeThatFits(CGSize(width:buttonWidth, height:screenSize.height)).height ?? 20)  + paddV)
+        an2Button.frame = CGRect(x: margin, y: an1Button.frame.maxY + kVerticalSpacer, width: buttonWidth, height: (an2Button.titleLabel?.sizeThatFits(CGSize(width:buttonWidth, height:screenSize.height)).height ?? 20)  + paddV);
+        an3Button.frame = CGRect(x: margin, y: an2Button.frame.maxY + kVerticalSpacer, width: buttonWidth, height: (an3Button.titleLabel?.sizeThatFits(CGSize(width:buttonWidth, height:screenSize.height)).height ?? 20)  + paddV);
         submitButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
         nextButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
         wrongButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
