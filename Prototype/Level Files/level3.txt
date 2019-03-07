@@ -18,7 +18,7 @@ a3: Maybe
 
 q2: Why does my doctor have to do a bone marrow biopsy?
 a12: To see how my heart is doing
-a22: To examine my bone marrow.*
+a22: To examine my bone marrow*
 a32: To see the fluid in my spinal cord
 
 q3: Which of the following are tests they may do?

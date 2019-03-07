@@ -13,13 +13,13 @@
 		100BBE8221FE588F005A1379 /* radiation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7421FE5886005A1379 /* radiation.mp4 */; };
 		100BBE8421FE588F005A1379 /* cancer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7621FE5888005A1379 /* cancer.mp4 */; };
 		100BBE8521FE588F005A1379 /* Dietician.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7721FE5889005A1379 /* Dietician.mp4 */; };
-		100BBE8621FE588F005A1379 /* pretransplant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7821FE5889005A1379 /* pretransplant.mp4 */; };
 		100BBE8821FE588F005A1379 /* Psychosocial2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7A21FE588B005A1379 /* Psychosocial2.mp4 */; };
 		100BBE8921FE588F005A1379 /* Transplant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7B21FE588C005A1379 /* Transplant.mp4 */; };
 		100BBE8A21FE588F005A1379 /* Childlifespecialist.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7C21FE588D005A1379 /* Childlifespecialist.mp4 */; };
 		100BBE8B21FE588F005A1379 /* Psychosocial3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7D21FE588E005A1379 /* Psychosocial3.mp4 */; };
 		100BBE8C21FE588F005A1379 /* Physicaltherapist.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7E21FE588E005A1379 /* Physicaltherapist.mp4 */; };
 		100BBE8D21FE588F005A1379 /* Psychosocial1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 100BBE7F21FE588F005A1379 /* Psychosocial1.mp4 */; };
+		1012DC472230BCE200C18CB2 /* pretransplant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1012DC462230BCE200C18CB2 /* pretransplant.mp4 */; };
 		1044E5B921EBF421003EEC1A /* level4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1044E5B821EBF421003EEC1A /* level4.txt */; };
 		1044E5C321EBF48E003EEC1A /* level7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1044E5BA21EBF48E003EEC1A /* level7.txt */; };
 		1044E5C421EBF48E003EEC1A /* level10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1044E5BB21EBF48E003EEC1A /* level10.txt */; };
@@ -126,13 +126,13 @@
 		100BBE7421FE5886005A1379 /* radiation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = radiation.mp4; sourceTree = "<group>"; };
 		100BBE7621FE5888005A1379 /* cancer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cancer.mp4; sourceTree = "<group>"; };
 		100BBE7721FE5889005A1379 /* Dietician.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dietician.mp4; sourceTree = "<group>"; };
-		100BBE7821FE5889005A1379 /* pretransplant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pretransplant.mp4; sourceTree = "<group>"; };
 		100BBE7A21FE588B005A1379 /* Psychosocial2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Psychosocial2.mp4; sourceTree = "<group>"; };
 		100BBE7B21FE588C005A1379 /* Transplant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Transplant.mp4; sourceTree = "<group>"; };
 		100BBE7C21FE588D005A1379 /* Childlifespecialist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Childlifespecialist.mp4; sourceTree = "<group>"; };
 		100BBE7D21FE588E005A1379 /* Psychosocial3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Psychosocial3.mp4; sourceTree = "<group>"; };
 		100BBE7E21FE588E005A1379 /* Physicaltherapist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physicaltherapist.mp4; sourceTree = "<group>"; };
 		100BBE7F21FE588F005A1379 /* Psychosocial1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Psychosocial1.mp4; sourceTree = "<group>"; };
+		1012DC462230BCE200C18CB2 /* pretransplant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pretransplant.mp4; sourceTree = "<group>"; };
 		1044E5B821EBF421003EEC1A /* level4.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level4.txt; sourceTree = "<group>"; };
 		1044E5BA21EBF48E003EEC1A /* level7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level7.txt; sourceTree = "<group>"; };
 		1044E5BB21EBF48E003EEC1A /* level10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level10.txt; sourceTree = "<group>"; };
@@ -278,6 +278,7 @@
 		103BA2252209038300F182F5 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				1012DC462230BCE200C18CB2 /* pretransplant.mp4 */,
 				1063935E22276E69002D0C20 /* Ending.mp4 */,
 				1063935F22276E6B002D0C20 /* Intro.mp4 */,
 				1063935D22276E68002D0C20 /* symptoms.mp4 */,
@@ -287,7 +288,6 @@
 				100BBE7721FE5889005A1379 /* Dietician.mp4 */,
 				100BBE7321FE5885005A1379 /* Nurse.mp4 */,
 				100BBE7E21FE588E005A1379 /* Physicaltherapist.mp4 */,
-				100BBE7821FE5889005A1379 /* pretransplant.mp4 */,
 				100BBE7F21FE588F005A1379 /* Psychosocial1.mp4 */,
 				100BBE7A21FE588B005A1379 /* Psychosocial2.mp4 */,
 				100BBE7D21FE588E005A1379 /* Psychosocial3.mp4 */,
@@ -532,6 +532,7 @@
 				10879C6B21B3063B001D7F0B /* IntroLevelViewController.xib in Resources */,
 				10AD887122277E8800B16805 /* level7blue.png in Resources */,
 				10AD889022277F4700B16805 /* level8red.png in Resources */,
+				1012DC472230BCE200C18CB2 /* pretransplant.mp4 in Resources */,
 				1044E5C321EBF48E003EEC1A /* level7.txt in Resources */,
 				1063936022276E6B002D0C20 /* symptoms.mp4 in Resources */,
 				10975B5D21A9AB0800C1F573 /* LaunchScreen.storyboard in Resources */,
@@ -542,7 +543,6 @@
 				1044E5CD21EBF5D1003EEC1A /* level14.txt in Resources */,
 				1044E5CA21EBF48E003EEC1A /* level5.txt in Resources */,
 				C545596B220D2B1B004EDDA2 /* EndingViewController.xib in Resources */,
-				100BBE8621FE588F005A1379 /* pretransplant.mp4 in Resources */,
 				10AD886B22277E8800B16805 /* level9blue.png in Resources */,
 				10C64431220BCD03001125A4 /* chemotherapy.mp4 in Resources */,
 				10D142FE2212827000E6B62C /* childlife.png in Resources */,
