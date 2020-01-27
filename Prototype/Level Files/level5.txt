@@ -10,6 +10,7 @@ doctor: The villagers here have fallen ill, let’s see if we can identify what 
 
 *END INTRO*
 
+*QUIZ*:
 q1: If one of the villagers in Panacea were to tell you that they, “feel super hot and super cold all the time” what is this feeling called?
 a1: rash
 a2: Fever*

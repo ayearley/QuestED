@@ -53,7 +53,7 @@ class MapViewController: UIViewController {
         testbutton.setImage(UIImage(named:"easyButtonBlue.png"), for: .normal)
         scrollView.contentSize = CGSize(width: screenSize.width, height: screenSize.width*3.05)
         scrollView.contentOffset = CGPoint(x: 0, y: currentOffset)
-        var mapIm: UIImage = UIImage(named: "map.png")!
+        var mapIm: UIImage = UIImage(named: "map1.png")!
         mapImage.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.width * 3.08)
         mapImage.image = mapIm
         contentView.frame = mapImage.frame
@@ -115,13 +115,15 @@ class MapViewController: UIViewController {
         buttonLevel.center = CGPoint(x: Double(screenSize.width)*widthRatio, y: Double(contentView.frame.height)*heightRatio)
         buttonLevel.layer.cornerRadius = 0.5*buttonLevel.bounds.size.width
         buttonLevel.clipsToBounds = true
+        print("Completed: \(completed)")
+
         if(completed){
-            buttonLevel.setImage(UIImage(named:"level\(tag)blue.png"), for: .normal)
+            buttonLevel.setImage(UIImage(named:"level\(tag)blue1.png"), for: .normal)
             //buttonLevel.layer.borderWidth = 1
             //buttonLevel.layer.borderColor = UIColor.yellow.cgColor
         } else {
-            buttonLevel.setImage(UIImage(named:"level\(tag)red.png"), for: .normal)
-            buttonLevel.isEnabled = false;
+            buttonLevel.setImage(UIImage(named:"level\(tag)red1.png"), for: .normal)
+            //buttonLevel.isEnabled = false; //comment this out to access all levels
         }
         
         buttonLevel.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)
@@ -137,9 +139,9 @@ class MapViewController: UIViewController {
         
         bubbleImage = UIImageView(image: UIImage(imageLiteralResourceName: "speechbubble_map.png"))
         
-        doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.22, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
+        doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.22, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.35, height: Double(screenSize.height) * 0.24))
         
-        bubbleImage.frame = CGRect(x: doctorLabel.frame.minX * 0.9, y: doctorLabel.frame.minY, width: doctorLabel.frame.width * 1.15, height: doctorLabel.frame.height)
+        bubbleImage.frame = CGRect(x: doctorLabel.frame.minX * 0.85, y: doctorLabel.frame.minY, width: doctorLabel.frame.width * 1.13, height: doctorLabel.frame.height)
         
         view.addSubview(bubbleImage)
         bubbleImage.isHidden = true
@@ -303,7 +305,7 @@ class MapViewController: UIViewController {
         
         let frameSetter: CTFramesetter = CTFramesetterCreateWithAttributedString(attStr as CFAttributedString)
         let path: CGMutablePath = CGMutablePath()
-        path.addRect(CGRect(x: 0, y: 0, width: rect.size.width, height: 100000), transform: .identity)
+        path.addRect(CGRect(x: 0, y: 0, width: rect.size.width * 0.90, height: 100000), transform: .identity)
         
         let frame: CTFrame = CTFramesetterCreateFrame(frameSetter, CFRangeMake(0, 0), path, nil)
         guard let lines = CTFrameGetLines(frame) as? [Any] else {return linesArray}

@@ -158,6 +158,10 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         
         currentQuestion = 2
+        
+        //reset selected answer to nil
+        selectedAns = nil;
+        
         // Do any additional setup after loading the view.
         readTextFile()
         
@@ -212,6 +216,9 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         
         currentQuestion = 3
+        
+        //reset selected answer to nil
+        selectedAns = nil;
         
         // Do any additional setup after loading the view.
         readTextFile()
@@ -301,6 +308,9 @@ class QuizViewController: UIViewController {
             loadQuestion3()
         }
         else if(currentQuestion == 3){
+            
+            progress.image = UIImage(named: "progress-bar_3_3.png")
+            
             (UIApplication.shared.delegate as! AppDelegate).levelStatus[((UIApplication.shared.delegate as! AppDelegate).currentLevel - 1)] = 2
             
             if ((UIApplication.shared.delegate as! AppDelegate).currentLevel != 20) {
@@ -334,9 +344,9 @@ class QuizViewController: UIViewController {
         an1Button.frame = CGRect(x: margin, y: titleLabel.frame.maxY + kVerticalSpacer, width: buttonWidth, height: (an1Button.titleLabel?.sizeThatFits(CGSize(width:buttonWidth, height:screenSize.height)).height ?? 20)  + paddV)
         an2Button.frame = CGRect(x: margin, y: an1Button.frame.maxY + kVerticalSpacer, width: buttonWidth, height: (an2Button.titleLabel?.sizeThatFits(CGSize(width:buttonWidth, height:screenSize.height)).height ?? 20)  + paddV);
         an3Button.frame = CGRect(x: margin, y: an2Button.frame.maxY + kVerticalSpacer, width: buttonWidth, height: (an3Button.titleLabel?.sizeThatFits(CGSize(width:buttonWidth, height:screenSize.height)).height ?? 20)  + paddV);
-        submitButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
-        nextButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
-        wrongButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.75, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
+        submitButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.85, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
+        nextButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.85, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
+        wrongButton.frame = CGRect(x: Double(screenSize.width) * 0.825, y: Double(screenSize.height) * 0.85, width: Double(screenSize.height) / 3, height: Double(screenSize.height) / 10);
     }
     
   

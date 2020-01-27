@@ -34,6 +34,7 @@ class IntroViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //Loads information from level file
     func readLevelStatus() {
         if let filepath = Bundle.main.path(forResource: "levelstatus", ofType: "txt") {
             do {
@@ -74,13 +75,14 @@ class IntroViewController: UIViewController {
         readTextFile();
     }
     
+    //loads in text from level file
     func readTextFile() {
         if let filepath = Bundle.main.path(forResource: "example", ofType: "txt") {
             do {
                 let contents = try String(contentsOfFile: filepath)
                 
                 let introRange = contents.range(of: "*INTRO*:\n")
-                let cadeucesRange = contents.range(of: "*CADEUCES*:\n")
+                let cadeucesRange = contents.range(of: "*CADEUCES*:\n") //this probably needs to be changed
                 
                 let introText = contents[introRange!.upperBound..<cadeucesRange!.lowerBound]
                 

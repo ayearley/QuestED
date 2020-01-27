@@ -135,14 +135,14 @@ class IntroLevelViewController: UIViewController {
         print("character 1 from config file is" + char1Name)
         doctorImage = UIImageView(image: UIImage(imageLiteralResourceName: "" + char1Name + ".png"))
         //doctorImage = UIImageView(image: UIImage(imageLiteralResourceName: "doctor.png"))
-        doctorImage.frame = CGRect(x: Double(screenSize.width) * 0.1, y: Double(screenSize.height * 0.2), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
+        doctorImage.frame = CGRect(x: Double(screenSize.width) * 0.08, y: Double(screenSize.height * 0.2), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
         view.addSubview(doctorImage)
         doctorImage.isHidden = true
         
         bubbleImage = UIImageView(image: UIImage(imageLiteralResourceName: "speechbubble_map.png"))
         
-        doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.24, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.50, height: Double(screenSize.height) * 0.24))
-        bubbleImage.frame = CGRect(x: doctorLabel.frame.minX * 0.75, y: doctorLabel.frame.minY*0.7, width: doctorLabel.frame.width * 1.15, height: doctorLabel.frame.height * 2.0)
+        doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.24, y: Double(screenSize.height) * 0.19, width: Double(screenSize.width) * 0.50, height: Double(screenSize.height) * 0.24))
+        bubbleImage.frame = CGRect(x: doctorLabel.frame.minX * 0.75, y: doctorLabel.frame.minY*0.7, width: doctorLabel.frame.width * 1.15, height: doctorLabel.frame.height * 1.5)
         
         view.addSubview(bubbleImage)
         bubbleImage.isHidden = true
@@ -155,7 +155,7 @@ class IntroLevelViewController: UIViewController {
     }
     
     func createNurse() {
-        nurseLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.5, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
+        nurseLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.5, y: Double(screenSize.height) * 0.19, width: Double(screenSize.height) * 0.5, height: Double(screenSize.height) * 0.24))
         nurseLabel.backgroundColor = UIColor.white
         view.addSubview(nurseLabel)
         nurseLabel.isHidden = true
@@ -166,15 +166,15 @@ class IntroLevelViewController: UIViewController {
             return
         }
         nurseImage = UIImageView(image: UIImage(imageLiteralResourceName: "" + char2Name + ".png"))
-        nurseImage.frame = CGRect(x: Double(screenSize.width) * 0.75, y: Double(screenSize.height * 0.6), width: Double(screenSize.height) * 0.3, height: Double(screenSize.height) * 0.27)
+        nurseImage.frame = CGRect(x: Double(screenSize.width) * 0.80, y: Double(screenSize.height * 0.2), width: Double(screenSize.height) * 0.2, height: Double(screenSize.height) * 0.27)
         view.addSubview(nurseImage)
         nurseImage.isHidden = true
         
-        nurseBubbleImage = UIImageView(image: UIImage(imageLiteralResourceName: "speechbubble_large.png"))
+        nurseBubbleImage = UIImageView(image: UIImage(imageLiteralResourceName: "speechbubble_nurse.png"))
         
-        nurseLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.45, y: Double(screenSize.height) * 0.6, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.15))
+        nurseLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.24, y: Double(screenSize.height) * 0.20, width: Double(screenSize.width) * 0.5, height: Double(screenSize.height) * 0.24))
         
-        nurseBubbleImage.frame = CGRect(x: nurseLabel.frame.minX * 0.9, y: nurseLabel.frame.minY, width: nurseLabel.frame.width * 1.4, height: nurseLabel.frame.height)
+        nurseBubbleImage.frame = CGRect(x: doctorLabel.frame.minX * 0.90, y: doctorLabel.frame.minY*0.80, width: doctorLabel.frame.width * 1.15, height: doctorLabel.frame.height * 1.5)//all speech bubbles based on size of doctor
         
         view.addSubview(nurseBubbleImage)
         nurseBubbleImage.isHidden = true
@@ -211,7 +211,6 @@ class IntroLevelViewController: UIViewController {
                 
                 let allCharsInfo = introText.split(separator: "\n")
                 let char1Info = allCharsInfo[0]
-                print(char1Info)
                 char1Name = String(char1Info.split(separator: ":")[0])
                 introText = String(char1Info.split(separator: ":")[1])
                 introText = introText.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -263,7 +262,6 @@ class IntroLevelViewController: UIViewController {
             
             totalDoctorLines = doctorLines.count
             
-            
             if (doctorLines.count == 3) {
                 doctorLabel.text = doctorLines[0] + doctorLines[1] + doctorLines[2]
             } else if (doctorLines.count == 2) {
@@ -294,7 +292,7 @@ class IntroLevelViewController: UIViewController {
                 
                 doctorLabel.text = newText
             } else {
-                
+                print("nurse speaks ", nurseSpeaks)
                 if (!nurseSpeaks) {
                     view.addSubview(continueButton)
                 } else {
@@ -311,7 +309,7 @@ class IntroLevelViewController: UIViewController {
                     } else if (nurseLines.count == 1) {
                         nurseLabel.text = nurseLines[0]
                     } else {
-                        doctorLabel.text = nurseLines[0] + nurseLines[1] + nurseLines[2] + nurseLines[3]
+                        nurseLabel.text = nurseLines[0] + nurseLines[1] + nurseLines[2] + nurseLines[3]
                     }
                     
                     doctorImage.isHidden = true
@@ -328,10 +326,14 @@ class IntroLevelViewController: UIViewController {
         case 2:
             
             currentLineN += 4
+
             
-            
-            if (currentLineN + 3 < totalNurseLines) {
+            if (currentLineN < totalNurseLines) {
                 var newText: String = ""
+                
+                for j in 0..<totalNurseLines {
+                               print("Line \(j): \(nurseLines[j])")
+                           }
                 
                 for  i in currentLineN..<totalNurseLines {
                     if (i <= currentLineN + 3) {
@@ -340,6 +342,7 @@ class IntroLevelViewController: UIViewController {
                 }
                 
                 nurseLabel.text = newText
+                
             } else {
                 
                 if (nurseSpeaks) {
@@ -407,7 +410,7 @@ class IntroLevelViewController: UIViewController {
         
         let frameSetter: CTFramesetter = CTFramesetterCreateWithAttributedString(attStr as CFAttributedString)
         let path: CGMutablePath = CGMutablePath()
-        path.addRect(CGRect(x: 0, y: 0, width: rect.size.width, height: 100000), transform: .identity)
+        path.addRect(CGRect(x: 0, y: 0, width: rect.size.width * 0.88, height: 100000), transform: .identity)
         
         let frame: CTFrame = CTFramesetterCreateFrame(frameSetter, CFRangeMake(0, 0), path, nil)
         guard let lines = CTFrameGetLines(frame) as? [Any] else {return linesArray}
