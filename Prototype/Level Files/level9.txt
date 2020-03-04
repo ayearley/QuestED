@@ -1,16 +1,31 @@
-9 - NURSE
+4 - Central Line
 
 *PRE-INTRO*:
-Goodness, what a journey we have had. The Transplant Tundra has certainly taken a toll on your health. I will take you to recover in the Healing Harbor where I have many supplies and friends. (NAME), but my team and I will help you get enough strength to stop Count Leukemia and save Panacea.
+One of the great travel experts in Panacea has given me a magic pendant that he used to take with him as he traveled many oceans, mountains, deserts, and valleys. I am now going to give it to you. The most important tool you need to have with you this whole time is this magical pendant called a Central Line. In times of trouble, this pendant will help you get a boost - if you’re injured, it will deliver nutrients to your body to make you feel strong again. You must remember to never take it off and keep it close to your heart, for this is where it delivers its power. I can only give this pendant to special warriors like yourself, so let’s better understand this power I am giving you.
 
 *INTRO*:
+
 *CHARACTER*:
-doctor: Let’s go to the Apothecary and ask Nurse Nina for some medicines.
-nurse: Hi there! I know you must be feeling very sick right now. It is not uncommon for people leaving the Transplant Tundra to have pain, nausea,and fevers after such a battle against Leukemia’s minions. I am going to give you these medicines to make you feel better. First, I’m going to give you some medications through your Central Line. Make sure you keep taking your vitamins as well throughout your journey - these will be important in keeping you healthy.
+doctor: It is important that we monitor your health during this journey. We will do this using one of my inventions, a Central Line. As you proceed through the kingdom, this magical tube will deliver health boosters and medicines directly to your heart during each level. Don’t worry, I’ll give you this potion to make you sleep before I put it in place so you won’t feel a thing...
 
 *END INTRO*
 
-*VIDEO*: Nurse
+*QUIZ*:
+q1: Will my doctor give me medicine so that I sleep when I get my central line?
+a1: Maybe
+a2: Yes*
+a3: No
+
+q2: Why do I need a central line?
+a12: So that I can watch my heart rate
+a22: So I can take medicine that isn’t a pill*
+a32: So nurses can measure my appetite
+
+q3: What are the signs that I need to watch out for and tell my doctor or nurse if I see?
+a13: Red or itchy skin
+a23: Pain
+a33: All of the above*
+
+*VIDEO*: Whatisacentralline
 
 *END*
-

@@ -1,20 +1,21 @@
 1 - Symptoms
 
 *PRE-INTRO*:
-Before I can prepare you to defend the Count Leukemia and save our great lands, it is first important that you learn about what happened to our kingdom so you are best equipped to be our hero.
+Before I can prepare you to reverse the spell on Count Leukemia and save the villagers in Panacea, it is important that you learn about what happened to our kingdom so you are best equipped to be our hero.
 
 *INTRO*:
 
 *CHARACTER*:
-doctor: Unfortunately, the beloved people of our lands haven’t been feeling like themselves. We have heard that our citizens are having trouble doing the things they usually love to do. One villager used to train dragons so that they could transport people from the different lands of the kingdoms. One villager used to train everyday so that she could be a strong warrior to protect the castle of the king and queen. School children haven’t been able to attend the academy so that they can follow their dreams of one day being a knight, a dragon trainer, or a spell caster. While we don’t like to see our people this way, I don’t want you to be scared or sad. Instead, let’s learn more so that we can help everyone to feel better.
+doctor: As I said before, the great people of our lands haven’t been feeling like themselves. We have heard that our citizens are having trouble doing the things they usually love to do. One villager that used to train dragons in the Transplant Tundra no longer has the energy to go to the training arena everyday. One villager that used  to practice everyday to be a strong warrior to protect the castle hasn’t been seen on the practice battlegrounds in weeks. We need our dragons to fly high above our village to look out for potential invaders. Right now, the skies of Panacea are not protected, which has the whole kingdom worried. One villager that used to practice everyday to be a strong warrior to protect the castle hasn’t been seen on the practice battlegrounds in weeks. Panacea is normally a peaceful kingdom, but it is important for the army to practice their skills every day in case there is a problem. School children haven’t been able to attend the academy so that they can follow their dreams of one day being a knight, a dragon trainer, or a potion master. Each child at the age of 18 will get to choose a path that interests them the most. They get to go in front of the whole village and declare their trade - a knight, a dragon trainer, a spell caster, or a potion master are a few of the trades that the students choose. It is important for them to go to the academy each day to practice these skills to learn which one they like the most. When the villagers meet Leukemia or his minions, they are no longer able to perform their duties. They feel different from their normal selves. They sometimes feel tired, or feverish, might have pain in their stomach. They stop working in the steel mills, can’t care for the starflies, or work in the Transplant Tundra factories. While we don’t like to see our people this way, I don’t want you to be scared or sad. Instead, let’s learn more so that we can help everyone to feel better.
+
 
 *END INTRO*
 
 *QUIZ*:
-q1: Is it normal to not feel like myself right now?
-a1: No
-a2: Yes*
-a3: I don’t know
+q1: Which of the following are examples of symptoms?
+a1: Pain in your belly
+a2: Fever
+a3: All of the above*
 
 q2: What should I do if I start to feel badly?
 a12: Keep it to myself
@@ -22,10 +23,10 @@ a22: Tell the doctor, nurse, or my parents*
 a32: Ignore my symptoms
 
 q3: What is a symptom?
-a13: a change in how my body feels
-a23: a change in my emotions or how I feel
+a13: A change in how my body feels
+a23: A change in my emotions or how I feel
 a33: All of the above*
 
-*VIDEO*: symptoms
+*VIDEO*: Whataresymptoms
 
 *END*

@@ -1,17 +1,31 @@
-11 - Physical Therapist
+6 - Radiation River
 
 *PRE-INTRO*:
-You’ve almost regained all of your health! The last stop must work on your physical strength. This is the kingdom’s most prominent physical therapist who trains all the royal warriors. She will give you the tools so that you are physically fit enough to finally stop Count Leukemia, once and for all.
-*INTRO*:
+I am so glad we got the bottle we need for our potion. Let’s start collecting our ingredients! We must first capture the light of the starflies at Radiation River, which is where we are now.
 
+*INTRO*:
 *CHARACTER*:
 
-doctor: doc You’ve almost regained all of your health! The last stop must work on your physical strength. This is the kingdom’s most prominent physical therapist who trains all the royal warriors. She will give you the tools so that you are physically fit enough to finally stop Count Leukemia, once and for all.
-pt: Hi there! I’m Philippa, your physical therapist. I have a very special game to help you get your coordination back. Let’s check it out, shall we?
+doctor: What is the story of these starflies at Radiation River you ask? Long ago, before there was fire and electricity to light the night, the people of Panacea would capture these bugs in their lanterns. They called them starflies because of the way they looked like stars in the black night sky. The people soon learned that these bugs were not only sources of light and warmth, but exuded a radiance that could heal people. Ancient doctors would shine the light of a starfly on the sick or hurt spots, and somehow it would heal the wound.
 
 *END INTRO*
 
-*VIDEO*: Physicaltherapist
+*QUIZ*:
+q1: What are the two types of radiation?
+a1: Pre and post
+a2: External and internal*
+a3: Blood and bone marrow
+
+q2: What is important to remember while receiving radiation?
+a12: Stay still, don’t wipe the pen off*
+a22: Eat a meal before
+a32: Keep your eyes open
+
+q3: What are the effects of radiation?
+a13: May cause uncomfortable side effects
+a23: Breaks up the sick spots
+a33: All of the above*
+
+*VIDEO*: whatisradiation
 
 *END*
-

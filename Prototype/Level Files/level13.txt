@@ -1,17 +1,32 @@
-13 - Child Life Specialist
+8 - Transplant Tundra
 
 *PRE-INTRO*:
-Wow, the psychologists really had so much great advice. The last person I want you to meet is another one of my good friends - Charlie the Child Life Specialist. He’s here to make your time here in Healing Harbor feel fun and normal and help you through the hard times. If you ever have questions on any tests you might have, Charlie is here to help!
+Now we are off to the Transplant Tundra. The Tundra was a land ruled by both humans and dragons. This cold, icy land was where the factory would take old dragon bones and turn them into materials to make new dragon eggs. This is the dragon birthing center. As you walk around, you can see many baby dragons being born right now. Training a dragon is hard work. We have to teach it to fly, to blow fire only when we need, and train it on its new job. As you have seen, dragons have many jobs where we come from.
 
 *INTRO*:
 *CHARACTER*:
-
-childlife: Hello! Welcome to my shop, I want to tell you all about how I can help you. My team of child life specialists is here to guide you through this process.
+doctor: The unfortunate part is that the workers here have stopped going to the factory, and now no new dragons are being hatched. For our potion, we need to find the old bones of the most ancient dragon Marro. If we can find these bones, we will be able to add them to our potion, and we will be one step closer to delivering it to the wizard. Are you up for the challenge? The entire Tundra has been infected by Leukemia’s minions but we can save the land by planting a cure - bone marrow. In this game, you must get the bone marrow to the bottom of the screen in order to cure the village.
 
 *END INTRO*
 
-*VIDEO*: Childlifespecialist
+**Doctor will Introduce Himself Here*
+
+*QUIZ*:
+q1: What is a blood or bone marrow transplant?
+a1: A talking therapy that repairs the damaged cells
+a2: A procedure that swaps out the sick blood cells with new, healthy stem cells*
+a3: A medicine that decreases the symptoms of radiation
+
+q2: How is the transplant made?
+a12: You eat a pill with new cells
+a22: You undergo a surgery to implant the new cells*
+a32: The new cells are put in using your central line
+
+q3: What is a symptom you might experience during the transplant?
+a13: Itchiness
+a23: Spotty vision
+a33: A funny taste in your mouth (like creamed corn)*
+
+*VIDEO*: whatistransplantday
 
 *END*
-
-

@@ -1,7 +1,7 @@
 14 - END level
 
 *PRE-INTRO*:
-“Well, my friend, you are finally ready to meet Count Leukemia. You have fought valiantly thus far, and the end of our journey is in sight. Our last stop will be Leukemia’s Lava Lair...
+Well, my friend, you are finally ready to meet Count Leukemia. You have fought valiantly thus far, and the end of our journey is in sight. Our last stop will be Leukemia’s Lava Lair...
 
 *INTRO*:
 *CHARACTER*:
@@ -9,7 +9,7 @@ doctor: We’ve finally arrived at Count Leukemia’s Lava Lair. Here, we will d
 
 *END INTRO*
 
-*VIDEO*: none
+*VIDEO*: endingvideo
 
 *END*
 

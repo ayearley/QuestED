@@ -1,32 +1,32 @@
-8 - Transplant Tundra
+3 - Pretransplant
 
 *PRE-INTRO*:
-Excellent job saving the villagers in the Chemotherapy Canyon! Unfortunately, you did not escape unscathed. The poison that we sprayed on Count Leukemia’s minions in Chemotherapy Canyon has left you feeling very nauseous and with mouth and stomach sores. I will give you some medicine for the pain through your central line. You performed admirably at the Radiation River. We are getting closer to Count Leukemia’s lair - I can feel it! But first we must visit the Transplant Tundra.
+Now that we have met everyone who can help you along this journey, let’s see how we can reverse this spell on Count Leukemia and save Panacea. We will travel to all parts in the kingdom to collect ingredients for a magical potion for the great wizard to use. The wizard who cast this spell on Leukemia when he was a child is the one who must reverse the spell. The wizard has been unable to find all the ingredients for the potion that he needs to make in order for Leukemia to be healed and for the kingdom to go back to normal. You must visit all the lands, and find the right ingredients so that you can give the wizard all the ingredients he needs to make this potion. This will require going through all the different lands of Panacea and meeting all of Panacea’s beloved people.                         Ready to get started?
+
 
 *INTRO*:
+
 *CHARACTER*:
-doctor: The entire Tundra has been infected by Leukemia’s minions but we can save the land by planting a cure - bone marrow. In this game, you must get the bone marrow to the bottom of the screen in order to cure the village.
+doctor: Let’s start in the Capital of Panacea to see how your body is doing to start!  There are a lot of different tests that will prepare you for this journey, and I know it can be confusing or overwhelming at times, so ask me questions anytime as we prepare you. The Capital of Panacea is where the King and Queen live as well as all the other people in our government. As you walk down the streets, you can see everyone busy at work. Right now, we are hosting other villagers at our Town Hall to make a plan on how we are going to get all the ingredients we need for the potion to help Leukemia. Our best map makers, travel experts, and potion makers have all joined forces. They are the ones that have given me the map you see on your homescreen. They have told me exactly what we need to find from each different location, so let’s get to work. If you follow me though, we will go the preparation center which is where we send anyone helping the King and Queen to make sure they are ready for their journey.  There are a lot of different tests that will prepare you for this journey, and I know it can be confusing or overwhelming at times, so ask me questions anytime as we prepare you.
 
 *END INTRO*
 
-**Doctor will Introduce Himself Here*
-
 *QUIZ*:
-q1: What does a blood or bone marrow transplant do?
-a1: Heals existing damaged cells
-a2: Swaps out the damaged blood cells*
-a3: Lessens the symptoms of radiation
+q1: Do I have to remain very still during an X-ray, MRI, or CT scan?
+a1: No
+a2: Yes*
+a3: Maybe
 
-q2: How is the transplant made?
-a12: Using your central line
-a22: A surgery to implant the new cells*
-a32: You eat a pill with new cells
+q2: Why does my doctor have to do a bone marrow biopsy?
+a12: To see how my heart is doing
+a22: To examine my bone marrow*
+a32: To see the fluid in my spinal cord
 
-q3: What are some symptoms you might experience during the transplant?
-a13: funny taste in your mouth
-a23: Nausea
-a33: All the above*
+q3: Which of the following are tests they may do?
+a13: Bloodwork and Imaging
+a23: Spinal tap and bone marrow biopsy
+a33: All of the above*
 
-*VIDEO*: Transplant
+*VIDEO*: pretransplant
 
 *END*

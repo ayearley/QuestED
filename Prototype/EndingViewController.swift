@@ -127,9 +127,8 @@ class EndingViewController: UIViewController {
         
         bubbleImage = UIImageView(image: UIImage(imageLiteralResourceName: "speechbubble_map.png"))
         
-        doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.22, y: Double(screenSize.height) * 0.26, width: Double(screenSize.width) * 0.26, height: Double(screenSize.height) * 0.24))
-        
-        bubbleImage.frame = CGRect(x: doctorLabel.frame.minX * 0.9, y: doctorLabel.frame.minY, width: doctorLabel.frame.width * 1.15, height: doctorLabel.frame.height)
+        doctorLabel = UILabel(frame: CGRect(x: Double(screenSize.width) * 0.24, y: Double(screenSize.height) * 0.19, width: Double(screenSize.width) * 0.50, height: Double(screenSize.height) * 0.24))
+         bubbleImage.frame = CGRect(x: doctorLabel.frame.minX * 0.75, y: doctorLabel.frame.minY*0.7, width: doctorLabel.frame.width * 1.15, height: doctorLabel.frame.height * 1.5)
         
         view.addSubview(bubbleImage)
         //bubbleImage.isHidden = true
@@ -139,6 +138,8 @@ class EndingViewController: UIViewController {
         doctorLabel.lineBreakMode = .byWordWrapping
         view.addSubview(doctorLabel)
         //doctorLabel.isHidden = true
+    
+    
     }
     
     /*

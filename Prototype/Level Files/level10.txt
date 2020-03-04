@@ -1,32 +1,32 @@
-10 - Dietician
+5 - Woodlands of the White Blood Cells
 
 *PRE-INTRO*:
-That certainly helped bring your health up, but let’s get you something to eat, you are weak after your journey. Let’s go to my friend’s grocery store.
+Congratulations! You have passed all the tests you need, and I have given you the royal pendant. I have now transported us to the Woodlands of the White Blood Cells. Welcome! This is the first stop that our team has said we must stop in our journey to collect all the ingredients for the magic potion. The people of the Woodlands are known to be tough, strong people, and often send their children to become warriors to protect Panacea. The weapons made here in the Woodlands are made from white metal that can defend against any attack by outside invaders. As you walk around, you will see different camps of warriors. These warriors have people that are dedicated to protecting us from invaders that come from the ocean, the sky, and over the mountains. Each camp of    people will stay together until they retire. They are a family, and we would not feel nearly as safe if we didn’t have their great work. Not only do they protect us through their amazing fighting skills, but they also make all their own weapons. This is a huge job as it requires them to go up into our mountains, take our precious metals from the ground, and bring them to the factory where they can make state of the art white blood cell metal weapons. Let’s go a little closer into the woodlands.
+
 
 *INTRO*:
+
 *CHARACTER*:
-doctor: That certainly helped bring your health up, but let’s get you something to eat, you are weak after your journey. Let’s go to my friend’s grocery store. This is Dietician David. He will help you through a game about what foods you should eat to regain your strength.
-dietician: Welcome! The Transplant Tundra has left you feeling weak I’m sure, but I am here to help you. Nutrition is key during this time and even though you may be feeling nauseous, eating and drinking is very important if you can. Foods that are good for you to eat include mac and cheese, puddings, cooked fruits and veggies, cereal, chips, breads, hot dogs, cooked eggs, cooked tofu, and popsicles. Stay away from foods like fresh salsa, grapefruit, berries, raw oats, sushi, salami, undercooked meat, hand-served ice cream, honey, uncooked fruits and veggies In general, you can eat most foods that you might buy at the grocery store in a package and that are well-cooked, but stay away from undercooked, unwashed foods.
+doctor: But it looks as though Leukemia has already been through here. The steel mills are empty and the villagers are no longer producing white blood cell metals. Usually, the workers will make up to 1000 weapons a day. There is usually lively music coming from this factory as they work away.  Our task here is to find a bottle to hold our potion. We have been instructed that there this potion we are making must be put in a very special bottle so that the magic of our ingredients in the bottle keeps all of its power. This bottle we are looking for is made up of the white blood cell metal that they use to make their weapons in the factory, and they must travel through this maze to find it.
 
 *END INTRO*
 
 *QUIZ*:
-q1: What is a good rule to follow when it comes to your diet?
-a1: Only eat liquid foods
-a2: Avoid uncooked, unwashed foods*
-a3: Only eat fresh, raw foods
+q1: One of the villagers tells you they “feel super hot and super cold all the time” what is this feeling called?
+a1: Rash
+a2: Fever*
+a3: Headache
 
-q2: Pudding, cooked fruits and veggies - Can you eat these?
-a12: No
-a22: Yes*
-a32: Maybe
+q2: If one of the villagers in Panacea were to tell you that “My skin is so itchy and red” what would you call this?
+a12: Cough
+a22: Rash*
+a32: Nausea
 
-q3: Fresh salsa, grapefruit, berries, raw oats, - can you eat these?
-a13: Yes
-a23: Maybe
-a33: No*
+q3: One of the villagers tells you “My stomach feels like its turned upside down and it hurts when I use the bathroom” what is wrong?
+a13: Swelling and rash
+a23: Constipation and cough
+a33: Nausea and burning while peeing*
 
-*VIDEO*: Dietician
+*VIDEO*: none
 
 *END*
-

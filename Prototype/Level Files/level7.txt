@@ -1,32 +1,18 @@
-7 - Chemotherapy Canyon
+11 - Physical Therapist
 
 *PRE-INTRO*:
-Good work helping the villagers in the Woodlands of the White Blood Cells. Let’s now begin our journey. Now on to chemotherapy Canyon!
+The dragon trainer was raised in the Transplant Tundra which is where all the dragons come from. In the Tundra, dragons are hatched, grown, and when they are old enough, brought to the Capitol, where the trainer trains them to be great warriors to protect the kingdom and help with all types of things, from transporting goods to far off lands, to helping in the fields. The dragon trainer works every day with the dragons, teaching them to run fast and breathe fire, to be strong.
 
 *INTRO*:
+
 *CHARACTER*:
-doctor: We’ve heard that Count Leukemia’s minions have assembled and are terrorizing the commoners.  Let’s help free them! In this game, you will spray poison on the minions shaped like cancer cells - make sure you avoid the white blood cell trees. 
+
+pt: Just as the dragon trainer works with the dragons to make their bodies strong, your physical therapist will help you improve your movement and decrease bodily pain after and during your treatment. You’ll do exercises with them that will make you feel strong again. If you feel stiffness or pain in your joints and muscles, your physical therapist can help you work on gaining getter control over your body.
+
 
 *END INTRO*
 
-**Doctor will Introduce Himself Here*
-
-*QUIZ*:
-q1: What is chemotherapy?
-a1: Machine that gives you medicine
-a2: Drug that stops cells from dividing*
-a3: A form of emotional therapy
-
-q2: What are some common symptoms of chemotherapy?
-a12: Nausea and hair loss
-a22: Both A and C*
-a32: Mouth sores and loss of appetite
-
-q3: How often will you receive chemotherapy?
-a13: Every hour
-a23: Everyday
-a33: It varies from patient to patient*
-
-*VIDEO*: chemotherapy
+*VIDEO*: Whoismyphysicaltherapist
 
 *END*
+

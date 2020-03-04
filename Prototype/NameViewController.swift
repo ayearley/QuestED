@@ -50,7 +50,7 @@ class NameViewController: UIViewController, UITextFieldDelegate {
     func submitName() {
         (UIApplication.shared.delegate as! AppDelegate).name = nameField.text!
         
-        guard let path = Bundle.main.path(forResource: "Intro", ofType: "mp4") else {
+        guard let path = Bundle.main.path(forResource: "introvideo", ofType: "mp4") else {
             debugPrint("video.mp4 not found")
             return
         }

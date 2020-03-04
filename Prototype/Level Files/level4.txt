@@ -1,31 +1,15 @@
-4 - Central Line
+9 - NURSE
 
 *PRE-INTRO*:
-Our journey is going to take a lot out of us. This means that we need to find a way that I can give you back energy and other necessities that is easy. I am going to do that.
+Unibrow the unicorn is beloved by the entire kingdom, and knows all about everything in Panacea. Whenever the villagers have questions, they ask Unibrow for help. Unibrow flies through the villages on a daily basis, helping the villagers with anything they need. They care for children and elderly people and everyone in between. As you embark on this journey, Unibrow the unicorn can help you at any point. We understand that our village works differently than yours. There are dragons flying over head and magic brimming in the air. This can be overwhelming, so always just find Unibrow the unicorn if you need help. One time, Unibrow the unicorn helped a young girl who accidentally cast a spell on herself that made her grow fairy wings. While she liked flying, she was scared the wings were permanent. She asked Unibrow the unicorn for help, and Unibrow the unicorn was able to give her a potion so that her wings were no longer there. Many villagers have stories like that where Unibrow was able to save the day.
 
 *INTRO*:
-
 *CHARACTER*:
-doctor: It is important that we monitor your health during this journey. We will do this using one of my inventions, a Central Line. As you proceed through the kingdom, this magical tube will deliver health boosters and medicines directly to your heart during each level. Don’t worry, I’ll give you this potion to make you sleep before I put it in place so you won’t feel a thing...
+nurse: Just as Unibrow helps the villagers everyday with their work, brings them supplies, and is one of the most well-known figures in the kingdom, your nurses are here to help you on a day to day basis. They can help you do all kinds of things, from taking medicines to answering your questions.
 
 *END INTRO*
 
-*QUIZ*:
-q1: Will my doctor give me medicine so that I sleep when I get my central line?
-a1: Maybe
-a2: Yes*
-a3: No
-
-q2: Why do I need a central line?
-a12: So that I can watch my heart rate
-a22: Medicine that I can’t take as a pill*
-a32: So that I don't need to eat
-
-q3: What are the signs that I need to watch out for and tell my doctor if I see?
-a13: Itchy Skin
-a23: Cuts
-a33: All of the above*
-
-*VIDEO*: CentralLine
+*VIDEO*: Whoismynurse
 
 *END*
+

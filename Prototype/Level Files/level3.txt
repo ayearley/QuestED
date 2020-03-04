@@ -1,31 +1,32 @@
-3 - Pretransplant
+10 - Dietician
 
 *PRE-INTRO*:
-We need to prepare you for your journey, but that is going to require us to know how well your body is working. We are going to do lots of different tests so that we know we are sending the best version of you on this journey to save our kingdom’s people.
+Let us meet more people in Panacea who can help us throughout our journey. Panacea is filled with many people who are eager to join your team. Everyone in your team is here to help you complete your mission, and at any time, these people are here to answer questions or make you feel better if you are nervous. I would first like you to come with me to the food market, where we can learn all about what we can and cannot eat.
 
 *INTRO*:
-
 *CHARACTER*:
-doctor: It is time to go into battle, but it is important that we do many physical tests to test your strength. I know that you have the mental strength and physical strength to overcome Count Leukemia, but it is okay to be a worried about having to defend our kingdom against Count Leukemia. This first step of tests is going to be able to tell me if there is anything that I should take special note of to make sure that I give you the best chance of defending our great lands against Count Leukemia. There are a lot of different tests that will prepare you for battle, and I know it can be confusing or overwhelming at times, so ask me questions anytime along this journey of getting you ready to be our hero.
+doctor: As you prepare for your journey to save Leukemia, eating the right foods will be important. We want to keep you healthy on your journey, and we want to keep your energy high. Panacea grows all its food locally high up in the hills. We have wonderful farmers who tend to their plots of land and provide weekly food bounties that are served at the great market, which is where you are going to go.
+dietician: Hello there! I am the food expert in the market that has studied all the foods in the world. Panacea is a land filled with wonderful and delicious foods. If you go high into the hills, you can see that there is a river that runs through the countryside. If you were to hike all the way to the top, you would see an oasis filled with food and hard working farmers. Every week, they travel with the food on their backs down the mountain to the market. Each week, every villager will meet in the market to bring home food to their families for the week but also will enjoy a meal all together. The King and Queen come to this meal each week, and everyone talks as they eat one meal all together. Any one who does not have enough money for a meal can come to the market to get a meal while they catch up with their fellow villagers. I, as your dietician, know exactly what foods are best for you to eat and what foods you must avoid in Panacea. Since you are new to Panacea, there are foods that aren’t safe for you to eat here, so let’s learn what foods you can and can’t eat before we go to the market for you to meet all of the wonderful villagers for this week’s Great Feast.
 
 *END INTRO*
 
 *QUIZ*:
-q1: Do I have to remain very still during an X-ray, MRI, or CT scan?
-a1: No
-a2: Yes*
-a3: Maybe
+q1: What is a good rule to follow when it comes to your diet?
+a1: Anything you might buy at the grocery store in a package and or foods that are well-cooked are fine, but stay away from undercooked, unwashed foods.*
+a2: Only eat fresh, raw foods
+a3: Only eat foods in liquid forms (soup, smoothies)
 
-q2: Why does my doctor have to do a bone marrow biopsy?
-a12: To see how my heart is doing
-a22: To examine my bone marrow*
-a32: To see the fluid in my spinal cord
+q2: Pudding, cooked fruits and veggies - can you eat these?
+a12: No
+a22: Yes*
+a32: Maybe
 
-q3: Which of the following are tests they may do?
-a13: Bloodwork and Imaging
-a23: Spinal tap and bone marrow biopsy
-a33: All of the above*
+q3: Fresh salsa, grapefruit, berries and raw oats - can you eat these?
+a13: Yes
+a23: Maybe
+a33: No*
 
-*VIDEO*: pretransplant
+*VIDEO*: whoismydietician
 
 *END*
+

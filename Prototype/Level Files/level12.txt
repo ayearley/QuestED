@@ -1,32 +1,32 @@
-12 - Psychologist
+7 - Chemotherapy Canyon
 
 *PRE-INTRO*:
-Now that your body is fit enough, I must ensure that your mind is healthy as well. This journey has been long and difficult and only when both our mind and body are at their bests can we truly be successful against Count Leukemia. The psychologists here in the Healing Harbor can help you develop the right tools to understand the many thoughts and emotions you may have.
+We now must continue on to Chemotherapy Canyon. Chemotherapy Canyon is deep, with rock layers so old that they contain rock that exists nowhere else in Panacea. These rocks are used by the potion makers in the canyon to mix their magical potions. Come look over the top of the cliff. Do                   you see the cliff divers in the distance? These are the potion makers who will dive on their dragons into the depths of the canyons. The fire of the dragon is able to melt away the thick layers of rock, and it will leave them with precious gems and rocks. These potion makers live in caves with their dragons that they made themselves. When someone is in need of a potion, they will cast a spell on the potion that magically will transport it to the person in need within in a series of seconds. That is pretty cool isn’t it?!
 
 *INTRO*:
 *CHARACTER*:
-doctor: Now that your body is fit enough, I must ensure that your mind is healthy as well. This journey has been long and difficult, but mental health is just as important as physical health. Only when both our mind and body are at their bests can we truly be successful against Count Leukemia. The psychologists here in the Healing Harbor can help you develop the right tools to understand the many thoughts and emotions you may have.
+doctor: The ancient rock we need for our potion is called Keemo. It is known to be use to stop the growth of sick cells in the body. This ancient rock is the hardest of them all to find. The great wizard has not had success finding any Keemo for his potion, which is why he made it our job to do so. This is key for our potion to reverse the spell on Leukemia. Without this rock, we won’t be able to make our potion, but not to worry because I know you are the right person for the job and will find the magic rock.
 
 *END INTRO*
 
+**Doctor will Introduce Himself Here*
+
 *QUIZ*:
-q1: Why is it important to listen to your emotions?
-a1: It can with treatment
-a2: A and C*
-a3: A healthy mind = a healthy body
+q1: What is chemotherapy?
+a1: A machine that gives you your medicine
+a2: An anti-cancer drug that stops cancer cells from dividing*
+a3: A form of emotional therapy
 
-q2: Can you brainstorm one example of each of the following coping skills that works for you?
-a12: One  fun thing you like to do*
-a22: One way to release tension*
-a32: One person you can talk to*
+q2: What are some common symptoms of chemotherapy?
+a12: Nausea and hair loss
+a22: Mouth sores and loss of appetite
+a32: All of the above*
 
-q3: Why do I have to get cancer treatment?
-a13: the doctors want me to feel bad
-a23: To miss a lot of school
-a33: To feel better in the long run*
+q3: How often will you receive chemotherapy?
+a13: Every hour
+a23: Everyday
+a33: It varies from patient to patient*
 
-*VIDEO*: Psychosocial1
-
+*VIDEO*: Whatischemotherapy
 
 *END*
-

@@ -1,31 +1,17 @@
-5 - Woodlands of the White Blood Cells
+13 - Child Life Specialist
 
 *PRE-INTRO*:
-Let’s begin our journey. First stop - Woodlands of the White Blood Cells where we can see where everything started to go wrong. Villagers are reporting various symptoms. Let’s investigate!
+Now let’s meet my friend Pixie. Pixie is known for bringing fun to the lives of all the children in Panacea. Legend has it that anytime a child is feeling sad or lost, Pixie will visit them in their dreams, explain why life is the way it is, and play with them, lifting their spirits and making them feel better. 
 
 *INTRO*:
-
 *CHARACTER*:
-doctor: The villagers here have fallen ill, let’s see if we can identify what symptoms they have so that we don’t fall ill ourselves!
+
+childlife: Hello! Welcome to my shop, I want to tell you all about how I can help you. My team of child life specialists is here to guide you through this process.
 
 *END INTRO*
 
-*QUIZ*:
-q1: If one of the villagers in Panacea were to tell you that they, “feel super hot and super cold all the time” what is this feeling called?
-a1: rash
-a2: Fever*
-a3: headache
-
-q2: If one of the villagers in Panacea were to tell you that “My skin is so itchy and red” what would you call this?
-a12: cough
-a22: rash*
-a32: nausea
-
-q3: If one of the villagers in Panacea were to tell you that “My head hurts and my stomach feels like its turned upside down. It hurts when I use the bathroom” what is wrong?
-a13: swelling and rash
-a23: constipation and cough
-a33: nausea and burning while peeing*
-
-*VIDEO*: none
+*VIDEO*: Whoismychildlifespecialist
 
 *END*
+
+
