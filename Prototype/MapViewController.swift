@@ -123,7 +123,7 @@ class MapViewController: UIViewController {
             //buttonLevel.layer.borderColor = UIColor.yellow.cgColor
         } else {
             buttonLevel.setImage(UIImage(named:"level\(tag)red1.png"), for: .normal)
-            //buttonLevel.isEnabled = false; //comment this out to access all levels
+            buttonLevel.isEnabled = false; //comment this out to access all levels
         }
         
         buttonLevel.addTarget(self, action: #selector(buttonPressed), for:.touchUpInside)

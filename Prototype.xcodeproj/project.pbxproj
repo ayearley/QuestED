@@ -79,10 +79,6 @@
 		10CC90AB240F5F3E00CCC078 /* Whatischemotherapy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10CC909B240F5F3D00CCC078 /* Whatischemotherapy.mp4 */; };
 		10CC90AC240F5F3E00CCC078 /* Whatiscancer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10CC909C240F5F3E00CCC078 /* Whatiscancer.mp4 */; };
 		10CC90AD240F5F3E00CCC078 /* endingvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10CC909D240F5F3E00CCC078 /* endingvideo.mp4 */; };
-		10CC90BF240F5F8B00CCC078 /* pretransplant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10CC90AF240F5F8A00CCC078 /* pretransplant.mp4 */; };
-		10CC90C3240F5F8B00CCC078 /* Psychosocial1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10CC90B3240F5F8A00CCC078 /* Psychosocial1.mp4 */; };
-		10CC90C7240F5F8B00CCC078 /* Psychosocial2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10CC90B7240F5F8B00CCC078 /* Psychosocial2.mp4 */; };
-		10CC90CA240F5F8B00CCC078 /* Psychosocial3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10CC90BA240F5F8B00CCC078 /* Psychosocial3.mp4 */; };
 		10D142F72212633B00E6B62C /* nurse.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142F32212633A00E6B62C /* nurse.png */; };
 		10D142F82212633B00E6B62C /* dietician.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142F42212633A00E6B62C /* dietician.png */; };
 		10D142F92212633B00E6B62C /* pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D142F52212633A00E6B62C /* pt.png */; };
@@ -94,6 +90,7 @@
 		10E8675321F64F0000D1D69E /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E8675221F64F0000D1D69E /* QuizViewController.xib */; };
 		10E8675E21FA8C4100D1D69E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E8675D21FA8C4100D1D69E /* Question.swift */; };
 		10E867732212769A00D1D69E /* ending.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10E867722212769A00D1D69E /* ending.txt */; };
+		10F725B0242287A400EACB79 /* pretransplant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10F725AF242287A400EACB79 /* pretransplant.mp4 */; };
 		10FC1E2F23DCF4D800B3FD0E /* level9blue1.png in Resources */ = {isa = PBXBuildFile; fileRef = 10FC1E1423DCF4D600B3FD0E /* level9blue1.png */; };
 		10FC1E3023DCF4D800B3FD0E /* level4red1.png in Resources */ = {isa = PBXBuildFile; fileRef = 10FC1E1523DCF4D600B3FD0E /* level4red1.png */; };
 		10FC1E3123DCF4D900B3FD0E /* level7blue1.png in Resources */ = {isa = PBXBuildFile; fileRef = 10FC1E1623DCF4D600B3FD0E /* level7blue1.png */; };
@@ -232,10 +229,6 @@
 		10CC909B240F5F3D00CCC078 /* Whatischemotherapy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Whatischemotherapy.mp4; sourceTree = "<group>"; };
 		10CC909C240F5F3E00CCC078 /* Whatiscancer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Whatiscancer.mp4; sourceTree = "<group>"; };
 		10CC909D240F5F3E00CCC078 /* endingvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = endingvideo.mp4; sourceTree = "<group>"; };
-		10CC90AF240F5F8A00CCC078 /* pretransplant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = pretransplant.mp4; path = ../VideosOLD/pretransplant.mp4; sourceTree = "<group>"; };
-		10CC90B3240F5F8A00CCC078 /* Psychosocial1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Psychosocial1.mp4; path = ../VideosOLD/Psychosocial1.mp4; sourceTree = "<group>"; };
-		10CC90B7240F5F8B00CCC078 /* Psychosocial2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Psychosocial2.mp4; path = ../VideosOLD/Psychosocial2.mp4; sourceTree = "<group>"; };
-		10CC90BA240F5F8B00CCC078 /* Psychosocial3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Psychosocial3.mp4; path = ../VideosOLD/Psychosocial3.mp4; sourceTree = "<group>"; };
 		10D142F32212633A00E6B62C /* nurse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nurse.png; sourceTree = "<group>"; };
 		10D142F42212633A00E6B62C /* dietician.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dietician.png; sourceTree = "<group>"; };
 		10D142F52212633A00E6B62C /* pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pt.png; sourceTree = "<group>"; };
@@ -247,6 +240,7 @@
 		10E8675221F64F0000D1D69E /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 		10E8675D21FA8C4100D1D69E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		10E867722212769A00D1D69E /* ending.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ending.txt; sourceTree = "<group>"; };
+		10F725AF242287A400EACB79 /* pretransplant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pretransplant.mp4; sourceTree = "<group>"; };
 		10FC1E1423DCF4D600B3FD0E /* level9blue1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level9blue1.png; sourceTree = "<group>"; };
 		10FC1E1523DCF4D600B3FD0E /* level4red1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level4red1.png; sourceTree = "<group>"; };
 		10FC1E1623DCF4D600B3FD0E /* level7blue1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level7blue1.png; sourceTree = "<group>"; };
@@ -509,10 +503,7 @@
 				10CC909A240F5F3D00CCC078 /* Whoismynurse.mp4 */,
 				10CC9091240F5F3D00CCC078 /* Whoismyphysicaltherapist.mp4 */,
 				10CC9093240F5F3D00CCC078 /* Whoismyteacher.mp4 */,
-				10CC90AF240F5F8A00CCC078 /* pretransplant.mp4 */,
-				10CC90B3240F5F8A00CCC078 /* Psychosocial1.mp4 */,
-				10CC90B7240F5F8B00CCC078 /* Psychosocial2.mp4 */,
-				10CC90BA240F5F8B00CCC078 /* Psychosocial3.mp4 */,
+				10F725AF242287A400EACB79 /* pretransplant.mp4 */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -635,14 +626,13 @@
 				10FC1E3623DCF4D900B3FD0E /* level10blue1.png in Resources */,
 				10FC1E3723DCF4D900B3FD0E /* level4blue1.png in Resources */,
 				10FC1E3823DCF4D900B3FD0E /* level5blue1.png in Resources */,
-				10CC90C7240F5F8B00CCC078 /* Psychosocial2.mp4 in Resources */,
 				10CC909F240F5F3E00CCC078 /* Whataresymptoms.mp4 in Resources */,
 				10FC1E3923DCF4D900B3FD0E /* level11blue1.png in Resources */,
 				10FC1E3A23DCF4D900B3FD0E /* level10red1.png in Resources */,
+				10F725B0242287A400EACB79 /* pretransplant.mp4 in Resources */,
 				10FC1E3B23DCF4D900B3FD0E /* level6red1.png in Resources */,
 				10FC1E3C23DCF4D900B3FD0E /* level8blue1.png in Resources */,
 				10FC1E3D23DCF4D900B3FD0E /* level14blue1.png in Resources */,
-				10CC90CA240F5F8B00CCC078 /* Psychosocial3.mp4 in Resources */,
 				10FC1E3E23DCF4D900B3FD0E /* level1blue1.png in Resources */,
 				10FC1E3F23DCF4D900B3FD0E /* level5red1.png in Resources */,
 				10FC1E4023DCF4D900B3FD0E /* level2red1.png in Resources */,
@@ -719,7 +709,6 @@
 				10AD886722277E8800B16805 /* level14blue.png in Resources */,
 				B10A0A7321B2FDC8001FBA42 /* README.txt in Resources */,
 				10D142F82212633B00E6B62C /* dietician.png in Resources */,
-				10CC90BF240F5F8B00CCC078 /* pretransplant.mp4 in Resources */,
 				10AD888C22277F4700B16805 /* level12red.png in Resources */,
 				10CC90A9240F5F3E00CCC078 /* introvideo.mp4 in Resources */,
 				10AD888A22277F4700B16805 /* level9red.png in Resources */,
@@ -728,7 +717,6 @@
 				10AD886922277E8800B16805 /* level5blue.png in Resources */,
 				104DC58923DA53B70094744B /* speechbubble_nurse.png in Resources */,
 				10AD886822277E8800B16805 /* level6blue.png in Resources */,
-				10CC90C3240F5F8B00CCC078 /* Psychosocial1.mp4 in Resources */,
 				1044E5C721EBF48E003EEC1A /* level8.txt in Resources */,
 				10AD888F22277F4700B16805 /* level4red.png in Resources */,
 				10E867732212769A00D1D69E /* ending.txt in Resources */,
